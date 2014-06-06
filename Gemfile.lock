@@ -1,0 +1,292 @@
+GIT
+  remote: git://github.com/nambrot/asset_sync.git
+  revision: 89819493fe000e8291f7b3524859e3653416cae5
+  specs:
+    asset_sync (0.5.1)
+      activemodel
+      fog
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (3.2.12)
+      actionpack (= 3.2.12)
+      mail (~> 2.4.4)
+    actionpack (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      journey (~> 1.0.4)
+      rack (~> 1.4.5)
+      rack-cache (~> 1.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.2.1)
+    activemodel (3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+    activerecord (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activeresource (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+    activesupport (3.2.12)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    addressable (2.3.2)
+    arel (3.0.2)
+    awesome_print (1.1.0)
+    backbone-rails (0.9.2)
+      rails (>= 3.0.0)
+    bcrypt-ruby (3.0.1)
+    better_errors (0.3.2)
+      coderay (>= 1.0.0)
+      erubis (>= 2.7.0)
+    builder (3.0.4)
+    coderay (1.0.8)
+    coffee-rails (3.2.2)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.4.0)
+    cookiejar (0.3.0)
+    crack (0.3.1)
+    dalli (2.6.0)
+    delayed_job (3.0.4)
+      activesupport (~> 3.0)
+    delayed_job_active_record (0.3.3)
+      activerecord (>= 2.1.0, < 4)
+      delayed_job (~> 3.0)
+    diff-lcs (1.1.3)
+    dj_mon (1.1.0)
+      haml (~> 3.1)
+      rails (~> 3.1)
+    doorkeeper (0.6.6)
+      railties (~> 3.1)
+    em-http-request (1.0.3)
+      addressable (>= 2.2.3)
+      cookiejar
+      em-socksify
+      eventmachine (>= 1.0.0.beta.4)
+      http_parser.rb (>= 0.5.3)
+    em-socksify (0.2.1)
+      eventmachine (>= 1.0.0.beta.4)
+    erubis (2.7.0)
+    escape (0.0.4)
+    eventmachine (1.0.0)
+    excon (0.16.10)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
+    fog (1.8.0)
+      builder
+      excon (~> 0.14)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0)
+      net-scp (~> 1.0.4)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    formatador (0.2.4)
+    gritter (1.0.2)
+    haml (3.1.7)
+    hashie (1.2.0)
+    high_voltage (1.2.1)
+    hike (1.2.1)
+    http_parser.rb (0.5.3)
+    httparty (0.9.0)
+      multi_json (~> 1.0)
+      multi_xml
+    httpauth (0.2.0)
+    i18n (0.6.1)
+    i18n-js (2.1.2)
+      i18n
+    journey (1.0.4)
+    jquery-rails (2.1.3)
+      railties (>= 3.1.0, < 5.0)
+      thor (~> 0.14)
+    json (1.7.7)
+    jwt (0.1.5)
+      multi_json (>= 1.0)
+    kgio (2.7.4)
+    kramdown (0.14.1)
+    mail (2.4.4)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    memcachier (0.0.2)
+    meta-tags (1.2.6)
+      actionpack
+    mime-types (1.21)
+    mixpanel (3.1.0)
+      escape
+      json
+      rack
+    multi_json (1.6.1)
+    multi_xml (0.5.1)
+    multipart-post (1.1.5)
+    neography (1.0.3)
+      httparty (>= 0.8.1)
+      json (>= 1.6.0)
+      multi_json (>= 1.3.2)
+      os (>= 0.9.6)
+      rubyzip (>= 0.9.7)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-ssh (2.6.2)
+    newrelic_rpm (3.5.4.34)
+    nokogiri (1.5.6)
+    oauth (0.4.7)
+    oauth2 (0.8.0)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    oj (2.0.0)
+    omniauth (1.1.1)
+      hashie (~> 1.2)
+      rack
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
+    os (0.9.6)
+    pg (0.14.1)
+    phony (1.8.4)
+    polyglot (0.3.3)
+    rabl (0.7.9)
+      activesupport (>= 2.3.14)
+      multi_json (~> 1.0)
+    rack (1.4.5)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-rewrite (1.3.3)
+    rack-ssl (1.3.3)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rails (3.2.12)
+      actionmailer (= 3.2.12)
+      actionpack (= 3.2.12)
+      activerecord (= 3.2.12)
+      activeresource (= 3.2.12)
+      activesupport (= 3.2.12)
+      bundler (~> 1.0)
+      railties (= 3.2.12)
+    railties (3.2.12)
+      actionpack (= 3.2.12)
+      activesupport (= 3.2.12)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (>= 0.14.6, < 2.0)
+    raindrops (0.10.0)
+    rake (10.0.3)
+    rdoc (3.12.1)
+      json (~> 1.4)
+    redcarpet (2.2.2)
+    redis (2.2.2)
+    redis-store (1.0.0.1)
+      redis (~> 2.2.1)
+    rspec-core (2.12.2)
+    rspec-expectations (2.12.1)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.12.1)
+    rspec-rails (2.12.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.12.0)
+      rspec-expectations (~> 2.12.0)
+      rspec-mocks (~> 2.12.0)
+    ruby-hmac (0.4.0)
+    rubyzip (0.9.9)
+    simple_oauth (0.1.9)
+    sprockets (2.2.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    thor (0.17.0)
+    tilt (1.3.3)
+    treetop (1.4.12)
+      polyglot
+      polyglot (>= 0.3.1)
+    twilio-ruby (3.9.0)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.3.0)
+    tzinfo (0.3.35)
+    uglifier (1.3.0)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    unicorn (4.5.0)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  asset_sync!
+  awesome_print
+  backbone-rails
+  bcrypt-ruby
+  better_errors
+  coffee-rails (~> 3.2.1)
+  crack
+  dalli
+  delayed_job_active_record
+  dj_mon
+  doorkeeper (>= 0.6.6)
+  em-http-request
+  fog
+  gritter
+  high_voltage
+  httparty
+  i18n-js
+  jquery-rails
+  kramdown
+  memcachier
+  meta-tags
+  mixpanel
+  multi_json
+  neography
+  newrelic_rpm
+  nokogiri
+  oj
+  omniauth
+  omniauth-oauth
+  omniauth-oauth2 (~> 1.1.0)
+  pg
+  phony
+  rabl
+  rack-rewrite
+  rails (= 3.2.12)
+  rdoc
+  redcarpet
+  redis
+  redis-store (~> 1.0.0)
+  rspec-rails
+  simple_oauth
+  twilio-ruby
+  uglifier (>= 1.0.3)
+  unicorn
+  webrat (= 0.7.1)
+  yajl-ruby

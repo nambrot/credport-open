@@ -1,0 +1,444 @@
+# Logfile created on 2013-03-04 20:51:20 +0100 by logger.rb/31641
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] INFO : Dispatcher: webrick
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] WARN : Agent configured not to send data in this environment.
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 13821
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/04/13 20:51:20 +0100 nam.fritz.box (13821)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] INFO : Dispatcher: webrick
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] WARN : Agent configured not to send data in this environment.
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 14092
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/04/13 20:58:00 +0100 nam.fritz.box (14092)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/06/13 13:09:35 +0100 nam.local (22074)] INFO : Dispatcher: webrick
+[03/06/13 13:09:35 +0100 nam.local (22074)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/06/13 13:09:35 +0100 nam.local (22074)] WARN : Agent configured not to send data in this environment.
+[03/06/13 13:09:35 +0100 nam.local (22074)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22074
+[03/06/13 13:09:35 +0100 nam.local (22074)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/06/13 13:09:36 +0100 nam.local (22074)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/06/13 13:09:36 +0100 nam.local (22074)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:13:17 -0400 nam.local (17028)] INFO : Dispatcher: webrick
+[03/21/13 20:13:17 -0400 nam.local (17028)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:13:17 -0400 nam.local (17028)] ERROR : Invalid license key: 
+[03/21/13 20:13:17 -0400 nam.local (17028)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17028
+[03/21/13 20:13:17 -0400 nam.local (17028)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:13:17 -0400 nam.local (17028)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:13:18 -0400 nam.local (17028)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:13:18 -0400 nam.local (17028)] INFO : Starting the worker thread in 17028 after forking.
+[03/21/13 20:13:30 -0400 nam.local (17051)] INFO : Dispatcher: webrick
+[03/21/13 20:13:30 -0400 nam.local (17051)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:13:30 -0400 nam.local (17051)] WARN : Agent configured not to send data in this environment.
+[03/21/13 20:13:30 -0400 nam.local (17051)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17051
+[03/21/13 20:13:30 -0400 nam.local (17051)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:13:30 -0400 nam.local (17051)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:13:30 -0400 nam.local (17051)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : Dispatcher: webrick
+[03/21/13 20:15:36 -0400 nam.local (17261)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:15:36 -0400 nam.local (17261)] ERROR : Invalid license key: 
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17261
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:15:36 -0400 nam.local (17261)] INFO : Starting the worker thread in 17261 after forking.
+[03/21/13 20:15:59 -0400 nam.local (17281)] INFO : Dispatcher: webrick
+[03/21/13 20:15:59 -0400 nam.local (17281)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:15:59 -0400 nam.local (17281)] WARN : Agent configured not to send data in this environment.
+[03/21/13 20:15:59 -0400 nam.local (17281)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17281
+[03/21/13 20:15:59 -0400 nam.local (17281)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:15:59 -0400 nam.local (17281)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:15:59 -0400 nam.local (17281)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:16:32 -0400 nam.local (17323)] INFO : Dispatcher: webrick
+[03/21/13 20:16:32 -0400 nam.local (17323)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:16:32 -0400 nam.local (17323)] WARN : Agent configured not to send data in this environment.
+[03/21/13 20:16:32 -0400 nam.local (17323)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17323
+[03/21/13 20:16:32 -0400 nam.local (17323)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:16:32 -0400 nam.local (17323)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:16:32 -0400 nam.local (17323)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[03/21/13 20:17:55 -0400 nam.local (17406)] INFO : Dispatcher: webrick
+[03/21/13 20:17:55 -0400 nam.local (17406)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/21/13 20:17:55 -0400 nam.local (17406)] WARN : Agent configured not to send data in this environment.
+[03/21/13 20:17:55 -0400 nam.local (17406)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 17406
+[03/21/13 20:17:55 -0400 nam.local (17406)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[03/21/13 20:17:56 -0400 nam.local (17406)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/21/13 20:17:56 -0400 nam.local (17406)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 17:29:50 +0200 nam.local (18894)] INFO : Dispatcher: webrick
+[04/01/13 17:29:50 +0200 nam.local (18894)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 17:29:50 +0200 nam.local (18894)] WARN : Agent configured not to send data in this environment.
+[04/01/13 17:29:50 +0200 nam.local (18894)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 18894
+[04/01/13 17:29:50 +0200 nam.local (18894)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 17:29:50 +0200 nam.local (18894)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 17:29:50 +0200 nam.local (18894)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 17:41:31 +0200 nam.local (19069)] INFO : Dispatcher: webrick
+[04/01/13 17:41:31 +0200 nam.local (19069)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 17:41:31 +0200 nam.local (19069)] WARN : Agent configured not to send data in this environment.
+[04/01/13 17:41:31 +0200 nam.local (19069)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19069
+[04/01/13 17:41:31 +0200 nam.local (19069)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 17:41:31 +0200 nam.local (19069)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 17:41:31 +0200 nam.local (19069)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 17:52:23 +0200 nam.local (19334)] INFO : Dispatcher: webrick
+[04/01/13 17:52:23 +0200 nam.local (19334)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 17:52:23 +0200 nam.local (19334)] WARN : Agent configured not to send data in this environment.
+[04/01/13 17:52:23 +0200 nam.local (19334)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19334
+[04/01/13 17:52:23 +0200 nam.local (19334)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 17:52:23 +0200 nam.local (19334)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 17:52:23 +0200 nam.local (19334)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:00:39 +0200 nam.local (19513)] INFO : Dispatcher: webrick
+[04/01/13 18:00:39 +0200 nam.local (19513)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:00:39 +0200 nam.local (19513)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:00:39 +0200 nam.local (19513)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19513
+[04/01/13 18:00:39 +0200 nam.local (19513)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:00:39 +0200 nam.local (19513)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:00:39 +0200 nam.local (19513)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:09:21 +0200 nam.local (19653)] INFO : Dispatcher: webrick
+[04/01/13 18:09:21 +0200 nam.local (19653)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:09:21 +0200 nam.local (19653)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:09:21 +0200 nam.local (19653)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19653
+[04/01/13 18:09:21 +0200 nam.local (19653)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:09:21 +0200 nam.local (19653)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:09:21 +0200 nam.local (19653)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:20:42 +0200 nam.local (19812)] INFO : Dispatcher: webrick
+[04/01/13 18:20:42 +0200 nam.local (19812)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:20:42 +0200 nam.local (19812)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:20:42 +0200 nam.local (19812)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19812
+[04/01/13 18:20:42 +0200 nam.local (19812)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:20:42 +0200 nam.local (19812)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:20:42 +0200 nam.local (19812)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:23:56 +0200 nam.local (19921)] INFO : Dispatcher: webrick
+[04/01/13 18:23:56 +0200 nam.local (19921)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:23:56 +0200 nam.local (19921)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:23:56 +0200 nam.local (19921)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 19921
+[04/01/13 18:23:56 +0200 nam.local (19921)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:23:56 +0200 nam.local (19921)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:23:56 +0200 nam.local (19921)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:29:14 +0200 nam.local (20047)] INFO : Dispatcher: webrick
+[04/01/13 18:29:14 +0200 nam.local (20047)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:29:14 +0200 nam.local (20047)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:29:14 +0200 nam.local (20047)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 20047
+[04/01/13 18:29:14 +0200 nam.local (20047)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:29:14 +0200 nam.local (20047)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:29:14 +0200 nam.local (20047)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 18:30:54 +0200 nam.local (20116)] INFO : Dispatcher: webrick
+[04/01/13 18:30:54 +0200 nam.local (20116)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 18:30:54 +0200 nam.local (20116)] WARN : Agent configured not to send data in this environment.
+[04/01/13 18:30:54 +0200 nam.local (20116)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 20116
+[04/01/13 18:30:54 +0200 nam.local (20116)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 18:30:54 +0200 nam.local (20116)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 18:30:54 +0200 nam.local (20116)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 19:55:53 +0200 nam.local (20844)] INFO : Dispatcher: webrick
+[04/01/13 19:55:53 +0200 nam.local (20844)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 19:55:53 +0200 nam.local (20844)] WARN : Agent configured not to send data in this environment.
+[04/01/13 19:55:53 +0200 nam.local (20844)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 20844
+[04/01/13 19:55:53 +0200 nam.local (20844)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 19:55:53 +0200 nam.local (20844)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 19:55:53 +0200 nam.local (20844)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 19:59:33 +0200 nam.local (20938)] INFO : Dispatcher: webrick
+[04/01/13 19:59:33 +0200 nam.local (20938)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 19:59:33 +0200 nam.local (20938)] WARN : Agent configured not to send data in this environment.
+[04/01/13 19:59:33 +0200 nam.local (20938)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 20938
+[04/01/13 19:59:33 +0200 nam.local (20938)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 19:59:33 +0200 nam.local (20938)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 19:59:33 +0200 nam.local (20938)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:02:34 +0200 nam.local (21034)] INFO : Dispatcher: webrick
+[04/01/13 20:02:34 +0200 nam.local (21034)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:02:34 +0200 nam.local (21034)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:02:34 +0200 nam.local (21034)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21034
+[04/01/13 20:02:34 +0200 nam.local (21034)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:02:34 +0200 nam.local (21034)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:02:34 +0200 nam.local (21034)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:21:27 +0200 nam.local (21348)] INFO : Dispatcher: webrick
+[04/01/13 20:21:27 +0200 nam.local (21348)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:21:27 +0200 nam.local (21348)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:21:27 +0200 nam.local (21348)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21348
+[04/01/13 20:21:27 +0200 nam.local (21348)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:21:27 +0200 nam.local (21348)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:21:27 +0200 nam.local (21348)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:23:13 +0200 nam.local (21407)] INFO : Dispatcher: webrick
+[04/01/13 20:23:13 +0200 nam.local (21407)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:23:13 +0200 nam.local (21407)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:23:13 +0200 nam.local (21407)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21407
+[04/01/13 20:23:13 +0200 nam.local (21407)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:23:13 +0200 nam.local (21407)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:23:13 +0200 nam.local (21407)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:25:37 +0200 nam.local (21488)] INFO : Dispatcher: webrick
+[04/01/13 20:25:37 +0200 nam.local (21488)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:25:37 +0200 nam.local (21488)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:25:37 +0200 nam.local (21488)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21488
+[04/01/13 20:25:37 +0200 nam.local (21488)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:25:37 +0200 nam.local (21488)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:25:37 +0200 nam.local (21488)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:32:52 +0200 nam.local (21641)] INFO : Dispatcher: webrick
+[04/01/13 20:32:52 +0200 nam.local (21641)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:32:52 +0200 nam.local (21641)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:32:52 +0200 nam.local (21641)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21641
+[04/01/13 20:32:52 +0200 nam.local (21641)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:32:52 +0200 nam.local (21641)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:32:52 +0200 nam.local (21641)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:35:08 +0200 nam.local (21724)] INFO : Dispatcher: webrick
+[04/01/13 20:35:08 +0200 nam.local (21724)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:35:08 +0200 nam.local (21724)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:35:08 +0200 nam.local (21724)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 21724
+[04/01/13 20:35:08 +0200 nam.local (21724)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:35:08 +0200 nam.local (21724)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:35:08 +0200 nam.local (21724)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 20:56:02 +0200 nam.local (22052)] INFO : Dispatcher: webrick
+[04/01/13 20:56:02 +0200 nam.local (22052)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 20:56:02 +0200 nam.local (22052)] WARN : Agent configured not to send data in this environment.
+[04/01/13 20:56:02 +0200 nam.local (22052)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22052
+[04/01/13 20:56:02 +0200 nam.local (22052)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 20:56:02 +0200 nam.local (22052)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 20:56:02 +0200 nam.local (22052)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 21:05:08 +0200 nam.local (22234)] INFO : Dispatcher: webrick
+[04/01/13 21:05:08 +0200 nam.local (22234)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 21:05:08 +0200 nam.local (22234)] WARN : Agent configured not to send data in this environment.
+[04/01/13 21:05:08 +0200 nam.local (22234)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22234
+[04/01/13 21:05:08 +0200 nam.local (22234)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 21:05:08 +0200 nam.local (22234)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 21:05:08 +0200 nam.local (22234)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 21:11:40 +0200 nam.local (22337)] INFO : Dispatcher: webrick
+[04/01/13 21:11:40 +0200 nam.local (22337)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 21:11:40 +0200 nam.local (22337)] WARN : Agent configured not to send data in this environment.
+[04/01/13 21:11:40 +0200 nam.local (22337)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22337
+[04/01/13 21:11:40 +0200 nam.local (22337)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 21:11:40 +0200 nam.local (22337)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 21:11:40 +0200 nam.local (22337)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 21:19:36 +0200 nam.local (22444)] INFO : Dispatcher: webrick
+[04/01/13 21:19:36 +0200 nam.local (22444)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 21:19:36 +0200 nam.local (22444)] WARN : Agent configured not to send data in this environment.
+[04/01/13 21:19:36 +0200 nam.local (22444)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22444
+[04/01/13 21:19:36 +0200 nam.local (22444)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 21:19:36 +0200 nam.local (22444)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 21:19:36 +0200 nam.local (22444)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 21:27:35 +0200 nam.local (22658)] INFO : Dispatcher: webrick
+[04/01/13 21:27:35 +0200 nam.local (22658)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 21:27:35 +0200 nam.local (22658)] WARN : Agent configured not to send data in this environment.
+[04/01/13 21:27:35 +0200 nam.local (22658)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 22658
+[04/01/13 21:27:35 +0200 nam.local (22658)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 21:27:35 +0200 nam.local (22658)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 21:27:35 +0200 nam.local (22658)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/01/13 23:48:59 +0200 nam.local (24717)] INFO : Dispatcher: webrick
+[04/01/13 23:48:59 +0200 nam.local (24717)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/01/13 23:48:59 +0200 nam.local (24717)] WARN : Agent configured not to send data in this environment.
+[04/01/13 23:48:59 +0200 nam.local (24717)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 24717
+[04/01/13 23:48:59 +0200 nam.local (24717)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/01/13 23:48:59 +0200 nam.local (24717)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/01/13 23:49:00 +0200 nam.local (24717)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/02/13 00:08:19 +0200 nam.local (25114)] INFO : Dispatcher: webrick
+[04/02/13 00:08:19 +0200 nam.local (25114)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/02/13 00:08:19 +0200 nam.local (25114)] WARN : Agent configured not to send data in this environment.
+[04/02/13 00:08:19 +0200 nam.local (25114)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 25114
+[04/02/13 00:08:19 +0200 nam.local (25114)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/02/13 00:08:19 +0200 nam.local (25114)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/13 00:08:19 +0200 nam.local (25114)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/11/13 16:23:10 -0400 nam.local (72605)] INFO : Dispatcher: webrick
+[04/11/13 16:23:10 -0400 nam.local (72605)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/11/13 16:23:10 -0400 nam.local (72605)] WARN : Agent configured not to send data in this environment.
+[04/11/13 16:23:10 -0400 nam.local (72605)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 72605
+[04/11/13 16:23:10 -0400 nam.local (72605)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/11/13 16:23:10 -0400 nam.local (72605)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/11/13 16:23:10 -0400 nam.local (72605)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/11/13 16:33:51 -0400 nam.local (72964)] INFO : Dispatcher: webrick
+[04/11/13 16:33:51 -0400 nam.local (72964)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/11/13 16:33:51 -0400 nam.local (72964)] WARN : Agent configured not to send data in this environment.
+[04/11/13 16:33:51 -0400 nam.local (72964)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 72964
+[04/11/13 16:33:51 -0400 nam.local (72964)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/11/13 16:33:51 -0400 nam.local (72964)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/11/13 16:33:51 -0400 nam.local (72964)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/11/13 20:57:08 -0400 nam.local (77562)] INFO : Dispatcher: webrick
+[04/11/13 20:57:08 -0400 nam.local (77562)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/11/13 20:57:08 -0400 nam.local (77562)] WARN : Agent configured not to send data in this environment.
+[04/11/13 20:57:08 -0400 nam.local (77562)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 77562
+[04/11/13 20:57:08 -0400 nam.local (77562)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/11/13 20:57:08 -0400 nam.local (77562)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/11/13 20:57:08 -0400 nam.local (77562)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/12/13 15:39:38 -0400 nam.local (4074)] INFO : Dispatcher: webrick
+[04/12/13 15:39:38 -0400 nam.local (4074)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/12/13 15:39:38 -0400 nam.local (4074)] WARN : Agent configured not to send data in this environment.
+[04/12/13 15:39:38 -0400 nam.local (4074)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 4074
+[04/12/13 15:39:38 -0400 nam.local (4074)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/12/13 15:39:38 -0400 nam.local (4074)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/12/13 15:39:39 -0400 nam.local (4074)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/12/13 16:00:01 -0400 nam.local (4668)] INFO : Dispatcher: webrick
+[04/12/13 16:00:01 -0400 nam.local (4668)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/12/13 16:00:01 -0400 nam.local (4668)] WARN : Agent configured not to send data in this environment.
+[04/12/13 16:00:01 -0400 nam.local (4668)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 4668
+[04/12/13 16:00:01 -0400 nam.local (4668)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/12/13 16:00:01 -0400 nam.local (4668)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/12/13 16:00:01 -0400 nam.local (4668)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/16/13 18:49:05 -0400 nam.local (30168)] INFO : Dispatcher: webrick
+[04/16/13 18:49:05 -0400 nam.local (30168)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/16/13 18:49:05 -0400 nam.local (30168)] WARN : Agent configured not to send data in this environment.
+[04/16/13 18:49:05 -0400 nam.local (30168)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 30168
+[04/16/13 18:49:05 -0400 nam.local (30168)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/16/13 18:49:05 -0400 nam.local (30168)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/16/13 18:49:05 -0400 nam.local (30168)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/18/13 20:05:36 +0200 nam.local (42177)] INFO : Dispatcher: webrick
+[04/18/13 20:05:36 +0200 nam.local (42177)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/18/13 20:05:36 +0200 nam.local (42177)] WARN : Agent configured not to send data in this environment.
+[04/18/13 20:05:36 +0200 nam.local (42177)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 42177
+[04/18/13 20:05:36 +0200 nam.local (42177)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/18/13 20:05:36 +0200 nam.local (42177)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/18/13 20:05:36 +0200 nam.local (42177)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/18/13 20:07:47 +0200 nam.local (42243)] INFO : Dispatcher: webrick
+[04/18/13 20:07:47 +0200 nam.local (42243)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/18/13 20:07:47 +0200 nam.local (42243)] WARN : Agent configured not to send data in this environment.
+[04/18/13 20:07:47 +0200 nam.local (42243)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 42243
+[04/18/13 20:07:47 +0200 nam.local (42243)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/18/13 20:07:47 +0200 nam.local (42243)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/18/13 20:07:47 +0200 nam.local (42243)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/18/13 20:59:20 +0200 nam.local (43697)] INFO : Dispatcher: webrick
+[04/18/13 20:59:20 +0200 nam.local (43697)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/18/13 20:59:20 +0200 nam.local (43697)] WARN : Agent configured not to send data in this environment.
+[04/18/13 20:59:20 +0200 nam.local (43697)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 43697
+[04/18/13 20:59:20 +0200 nam.local (43697)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/18/13 20:59:20 +0200 nam.local (43697)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/18/13 20:59:20 +0200 nam.local (43697)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/18/13 21:22:33 +0200 nam.local (44616)] INFO : Dispatcher: webrick
+[04/18/13 21:22:33 +0200 nam.local (44616)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/18/13 21:22:33 +0200 nam.local (44616)] WARN : Agent configured not to send data in this environment.
+[04/18/13 21:22:33 +0200 nam.local (44616)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 44616
+[04/18/13 21:22:33 +0200 nam.local (44616)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/18/13 21:22:33 +0200 nam.local (44616)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/18/13 21:22:34 +0200 nam.local (44616)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/25/13 14:03:39 +0200 nam.home (25029)] INFO : Dispatcher: webrick
+[04/25/13 14:03:39 +0200 nam.home (25029)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/25/13 14:03:39 +0200 nam.home (25029)] WARN : Agent configured not to send data in this environment.
+[04/25/13 14:03:39 +0200 nam.home (25029)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 25029
+[04/25/13 14:03:39 +0200 nam.home (25029)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/25/13 14:03:39 +0200 nam.home (25029)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/25/13 14:03:39 +0200 nam.home (25029)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/25/13 14:04:09 +0200 nam.home (25061)] INFO : Dispatcher: webrick
+[04/25/13 14:04:09 +0200 nam.home (25061)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/25/13 14:04:09 +0200 nam.home (25061)] WARN : Agent configured not to send data in this environment.
+[04/25/13 14:04:09 +0200 nam.home (25061)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 25061
+[04/25/13 14:04:09 +0200 nam.home (25061)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/25/13 14:04:09 +0200 nam.home (25061)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/25/13 14:04:09 +0200 nam.home (25061)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[04/25/13 15:22:51 +0200 nam.home (27585)] INFO : Dispatcher: webrick
+[04/25/13 15:22:51 +0200 nam.home (27585)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[04/25/13 15:22:51 +0200 nam.home (27585)] WARN : Agent configured not to send data in this environment.
+[04/25/13 15:22:51 +0200 nam.home (27585)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 27585
+[04/25/13 15:22:51 +0200 nam.home (27585)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[04/25/13 15:22:51 +0200 nam.home (27585)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/25/13 15:22:51 +0200 nam.home (27585)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] INFO : Dispatcher: unicorn
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37717
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] INFO : Dispatcher: unicorn
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37716
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] INFO : Dispatcher: unicorn
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37715
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37716)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37717)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:00:06 -0400 201-62-41-155-wireless1x.bu.edu (37715)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] INFO : Dispatcher: webrick
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37806
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:00:46 -0400 201-62-41-155-wireless1x.bu.edu (37806)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] INFO : Dispatcher: webrick
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37874
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:01:52 -0400 201-62-41-155-wireless1x.bu.edu (37874)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] INFO : Dispatcher: webrick
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37897
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:02:05 -0400 201-62-41-155-wireless1x.bu.edu (37897)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] INFO : Dispatcher: webrick
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37934
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:03:00 -0400 201-62-41-155-wireless1x.bu.edu (37934)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] INFO : Dispatcher: webrick
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 37982
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:04:08 -0400 201-62-41-155-wireless1x.bu.edu (37982)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:17:21 -0400 201-62-41-155-wireless1x.bu.edu (51763)] INFO : Dispatcher: webrick
+[10/11/13 14:17:21 -0400 201-62-41-155-wireless1x.bu.edu (51763)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:17:21 -0400 201-62-41-155-wireless1x.bu.edu (51763)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:17:21 -0400 201-62-41-155-wireless1x.bu.edu (51763)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 51763
+[10/11/13 14:17:21 -0400 201-62-41-155-wireless1x.bu.edu (51763)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:17:22 -0400 201-62-41-155-wireless1x.bu.edu (51763)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:17:22 -0400 201-62-41-155-wireless1x.bu.edu (51763)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] INFO : Dispatcher: webrick
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 52114
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:20:36 -0400 201-62-41-155-wireless1x.bu.edu (52114)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] INFO : Dispatcher: webrick
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 52151
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:20:53 -0400 201-62-41-155-wireless1x.bu.edu (52151)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] INFO : Dispatcher: webrick
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] WARN : Agent configured not to send data in this environment.
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 52191
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[10/11/13 14:22:38 -0400 201-62-41-155-wireless1x.bu.edu (52191)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] INFO : Dispatcher: webrick
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] WARN : Agent configured not to send data in this environment.
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 54035
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/04/13 20:00:38 -0500 153-48-41-155-wireless1x.bu.edu (54035)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] INFO : Dispatcher: webrick
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] WARN : Agent configured not to send data in this environment.
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 54117
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/04/13 20:02:21 -0500 153-48-41-155-wireless1x.bu.edu (54117)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] INFO : Dispatcher: webrick
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] WARN : Agent configured not to send data in this environment.
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 54190
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/04/13 20:03:45 -0500 153-48-41-155-wireless1x.bu.edu (54190)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] INFO : Dispatcher: webrick
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] WARN : Agent configured not to send data in this environment.
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 54210
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/04/13 20:04:13 -0500 153-48-41-155-wireless1x.bu.edu (54210)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[11/04/13 20:04:47 -0500 153-48-41-155-wireless1x.bu.edu (54245)] INFO : Dispatcher: webrick
+[11/04/13 20:04:47 -0500 153-48-41-155-wireless1x.bu.edu (54245)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[11/04/13 20:04:47 -0500 153-48-41-155-wireless1x.bu.edu (54245)] WARN : Agent configured not to send data in this environment.
+[11/04/13 20:04:47 -0500 153-48-41-155-wireless1x.bu.edu (54245)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 54245
+[11/04/13 20:04:47 -0500 153-48-41-155-wireless1x.bu.edu (54245)] INFO : Agent Log at /Users/nambrot/Dropbox/devstuff/webcred/credport/log/newrelic_agent.log
+[11/04/13 20:04:48 -0500 153-48-41-155-wireless1x.bu.edu (54245)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/04/13 20:04:48 -0500 153-48-41-155-wireless1x.bu.edu (54245)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present

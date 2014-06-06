@@ -1,0 +1,17 @@
+<% cache [I18n.locale, params[:id]] do %>
+<article class="landingpage">
+  <header>
+    <div class='row'>
+      <div id='headerpic' class='seven columns'>
+        <img class='small' src="<%= asset_path 'blue_world.png' %>">
+      </div>
+      <div id='headerdesc' class='five columns'>
+        <h3>Webcred is Now Credport</h3>
+        <h5>We've got a new name, but the same mission.</h5>
+        <a href="/" class='button'>Check it out</a>
+      </div>
+    </div> 
+  </header>  
+
+</article>
+<% end -%>

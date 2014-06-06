@@ -1,0 +1,1802 @@
+Thread ID: 70203417516760
+Total: 0.001690
+Sort by: self_time
+
+ %self     total     self     wait    child    calls   name
+590794.50     10.21     9.98     0.00     0.22     1435   Psych::Parser#parse 
+298527.28    258.20     5.05     0.00   253.15   275225   Array#each 
+123111.78     17.89     2.08     0.00    15.81   505070   Class#new 
+115125.68      1.95     1.95     0.00     0.00   905631   Symbol#to_s 
+114413.43      1.93     1.93     0.00     0.00   785090   String#intern 
+100324.20     27.35     1.70     0.00    25.66   212707   Arel::Visitors::Visitor#visit 
+66849.41      1.13     1.13     0.00     0.00    12660   PG::Connection#async_exec 
+48826.69      0.83     0.83     0.00     0.00   469814   Kernel#class 
+45253.37      0.76     0.76     0.00     0.00   367817   Module#=== 
+43381.78      0.73     0.73     0.00     0.00   362595   <Class::BasicObject>#allocate 
+40891.54      0.78     0.69     0.00     0.09    68479   Array#- 
+36583.08      0.62     0.62     0.00     0.00   358303   Kernel#hash 
+35900.41      0.61     0.61     0.00     0.00   281471   Kernel#instance_variable_set 
+35815.15     12.11     0.61     0.00    11.51    45757   ActiveRecord::AttributeMethods::Read::ClassMethods#type_cast_attribute 
+33819.82      9.87     0.57     0.00     9.29    46863   ActiveRecord::SpawnMethods#except 
+33213.79      1.17     0.56     0.00     0.61    78972   ActiveRecord::ConnectionAdapters::ConnectionHandler#retrieve_connection_pool 
+32920.47     29.31     0.56     0.00    28.75    93024   Array#map 
+31524.44     20.49     0.53     0.00    19.96    17852   Array#collect 
+31187.40      0.69     0.53     0.00     0.17   150877   Kernel#respond_to? 
+30100.65      0.51     0.51     0.00     0.00   212707   Arel::Visitors::Visitor#dispatch 
+29559.47      2.43     0.50     0.00     1.93    43085   Arel::Visitors::ToSql#visit_Arel_Attributes_Attribute 
+29250.00      0.49     0.49     0.00     0.00    86379   Array#join 
+27579.17      3.73     0.47     0.00     3.26    12679   ActiveRecord::LogSubscriber#sql 
+27501.12      1.32     0.46     0.00     0.85    43085   Arel::Visitors::ToSql#column_for 
+26223.02      5.83     0.44     0.00     5.39    20852   ActiveRecord::QueryMethods#build_arel 
+26161.54      0.44     0.44     0.00     0.00   122626   Arel::Nodes::Binary#initialize 
+25201.42      3.08     0.43     0.00     2.65    20935   Hash#each 
+24854.32      7.82     0.42     0.00     7.40    10423   Arel::Visitors::ToSql#visit_Arel_Nodes_SelectCore 
+24277.63      0.41     0.41     0.00     0.00    54397   <Class::ActiveRecord::Base>#logger 
+22689.11      0.38     0.38     0.00     0.00   187367   Kernel#is_a? 
+22586.51      0.82     0.38     0.00     0.44   105531   <Class::#<Class:0x007fb303a48748>>#new 
+22020.47      1.72     0.37     0.00     1.35    46895   Kernel#clone 
+20476.39      0.35     0.35     0.00     0.00   158480   String#to_s 
+20270.53      0.34     0.34     0.00     0.00   167658   Fixnum#to_s 
+20044.26      1.79     0.34     0.00     1.45    39433   ActiveRecord::AttributeMethods#respond_to? 
+19915.98      0.34     0.34     0.00     0.01    13326   String#% 
+19862.84      0.34     0.34     0.00     0.00   115040   Module#name 
+19617.40      0.33     0.33     0.00     0.00   165636   String#initialize 
+19199.64      0.37     0.32     0.00     0.04    33683   Array#flatten 
+19197.81      1.55     0.32     0.00     1.22    77968   Arel::AliasPredication#as 
+19086.86      0.32     0.32     0.00     0.00   170375   <Class::Thread>#current 
+18756.80      0.43     0.32     0.00     0.12    84243   Hash#[]= 
+18434.08      0.31     0.31     0.00     0.00   167082   Array#empty? 
+18120.00      2.27     0.31     0.00     1.97    78956   <Class::ActiveRecord::Base>#retrieve_connection 
+17635.68      0.66     0.30     0.00     0.36    20941   ActiveSupport::Callbacks::ClassMethods#__callback_runner_name 
+17527.63      8.46     0.30     0.00     8.16    12679   ActiveSupport::Notifications::Instrumenter#instrument 
+17501.24      0.30     0.30     0.00     0.00    46151   ActiveRecord::Relation#reset 
+17268.58      0.29     0.29     0.00     0.00    38206   String#=~ 
+17084.50      0.29     0.29     0.00     0.00   165883   <Class::String>#allocate 
+16991.01      3.71     0.29     0.00     3.43    15636   ActiveRecord::Relation#initialize 
+16785.56      0.28     0.28     0.00     0.00    12672   IO#write 
+16612.49      0.94     0.28     0.00     0.66    39433   ActiveModel::AttributeMethods#respond_to? 
+16559.35      0.28     0.28     0.00     0.00    71132   UnboundMethod#bind 
+16505.86      0.88     0.28     0.00     0.60    66128   Kernel#dup 
+15790.77      0.27     0.27     0.00     0.00   119277   Hash#has_key? 
+15753.02     28.95     0.27     0.00    28.68    11904   ActiveRecord::Validations::UniquenessValidator#validate_each 
+15748.34      0.85     0.27     0.00     0.58    80212   <Module::Arel>#sql 
+15687.75      0.27     0.27     0.00     0.00    98960   Thread#[] 
+15558.52      9.53     0.26     0.00     9.26    10390   ActiveRecord::Scoping::ClassMethods#with_scope 
+15492.54     12.45     0.26     0.00    12.19    45757   ActiveRecord::AttributeMethods::Read#read_attribute 
+15381.89      0.84     0.26     0.00     0.58    77968   Arel::Nodes::TableAlias#[] 
+15122.78      0.37     0.26     0.00     0.11    54255   Arel::Visitors::ToSql#quote_table_name 
+14955.09      1.85     0.25     0.00     1.60    39478   ActiveRecord::ConnectionAdapters::ConnectionHandler#retrieve_connection 
+14938.40      1.05     0.25     0.00     0.80    46151   ActiveRecord::Relation#initialize_copy 
+14504.20      0.25     0.25     0.00     0.00    86025   Kernel#instance_variable_defined? 
+14330.12      0.24     0.24     0.00     0.00    74996   ActiveRecord::Associations::JoinDependency::JoinBase#aliased_prefix 
+14178.70      0.24     0.24     0.00     0.00   123880   Kernel#nil? 
+14127.04      0.24     0.24     0.00     0.00    91581   ActiveRecord::AttributeMethods::ClassMethods#generated_external_attribute_methods 
+13509.94      0.23     0.23     0.00     0.00   105531   <Class::#<Class:0x007fb303a48748>>#allocate 
+13495.33      1.61     0.23     0.00     1.38    12652   Logger#add 
+12929.17      0.22     0.22     0.00     0.00   110792   Struct#initialize 
+12727.87      0.32     0.22     0.00     0.10    34243   Array#uniq 
+12526.63      0.76     0.21     0.00     0.55    21545   ActiveRecord::Associations#association 
+12267.04     34.11     0.21     0.00    33.90     7439   ActiveRecord::FinderMethods#exists? 
+12140.77      1.53     0.21     0.00     1.33    19336   ActiveRecord::Associations::JoinDependency::JoinPart#column_names_with_alias 
+11976.63      1.01     0.20     0.00     0.80    71132   Method#call 
+11971.78      0.47     0.20     0.00     0.27    66968   Kernel#initialize_dup 
+11970.41      2.80     0.20     0.00     2.59    20094   Arel::Visitors::ToSql#visit_Arel_Nodes_Equality 
+11570.95      0.39     0.20     0.00     0.19    39478   <Class::ActiveRecord::Base>#connection_id 
+11565.74    262.03     0.20     0.00   261.83    20854   ActiveSupport::Callbacks::ClassMethods#__run_callback 
+11405.27      0.19     0.19     0.00     0.00   115208   #<Class:0x007fb303a48748>#relation 
+11400.65      0.49     0.19     0.00     0.30    29537   <Class::Array>#wrap 
+11390.47      0.31     0.19     0.00     0.12    18978   ActiveSupport::LogSubscriber#color 
+11310.65      1.19     0.19     0.00     1.00    20852   ActiveRecord::QueryMethods#collapse_wheres 
+11290.77      0.57     0.19     0.00     0.38    50662   ActiveRecord::LogSubscriber#logger 
+11286.39      0.22     0.19     0.00     0.03     2237   Kernel#raise 
+11186.15      0.19     0.19     0.00     0.00    95497   Kernel#block_given? 
+11149.88      0.47     0.19     0.00     0.28    11925   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#extract_pg_identifier_from_name 
+10762.96      0.52     0.18     0.00     0.34    42492   <Class::Time>#now 
+10728.05      2.65     0.18     0.00     2.46     8927   ActiveRecord::Associations::JoinDependency#initialize 
+10658.76      0.18     0.18     0.00     0.00      734   Module#module_eval 
+10638.93    262.42     0.18     0.00   262.24    20854   ActiveSupport::Callbacks#run_callbacks 
+10412.13      0.18     0.18     0.00     0.00    87596   Kernel#respond_to_missing? 
+10397.28      5.36     0.18     0.00     5.18    12679   ActiveSupport::LogSubscriber#call 
+10255.15      8.66     0.17     0.00     8.49    12679   ActiveRecord::ConnectionAdapters::AbstractAdapter#log 
+10223.31      0.45     0.17     0.00     0.28    11904   ActiveRecord::ConnectionAdapters::Quoting#quote 
+10047.34      0.17     0.17     0.00     0.00    17433   Hash#initialize_copy 
+9971.12      1.03     0.17     0.00     0.87    12679   ActiveSupport::Notifications::Event#initialize 
+9916.63      0.71     0.17     0.00     0.54    39478   ActiveRecord::ConnectionAdapters::ConnectionPool#connection 
+9852.49      1.02     0.17     0.00     0.85    15621   ActiveRecord::QueryMethods#select 
+9667.10      0.27     0.16     0.00     0.10    43107   ActiveRecord::ConnectionAdapters::SchemaCache#table_exists? 
+9629.35      8.53     0.16     0.00     8.37    10423   Arel::Visitors::ToSql#visit_Arel_Nodes_SelectStatement 
+9359.53      9.68     0.16     0.00     9.53    10390   ActiveRecord::Relation#scoping 
+9104.02      0.54     0.15     0.00     0.39    39478   ActiveRecord::ConnectionAdapters::ConnectionPool#current_connection_id 
+9087.75      0.15     0.15     0.00     0.00    15687   Hash#initialize 
+9080.53      1.21     0.15     0.00     1.05    46895   Kernel#initialize_clone 
+9073.14      0.87     0.15     0.00     0.72    12652   MonitorMixin#mon_synchronize 
+8970.89      0.15     0.15     0.00     0.00    10426   Arel::Nodes::SelectStatement#initialize 
+8874.08      0.15     0.15     0.00     0.00    47551   Module#method_defined? 
+8868.52      0.15     0.15     0.00     0.00    86242   #<Class:0x007fb303a48748>#name 
+8820.47      0.23     0.15     0.00     0.08    42492   Time#initialize 
+8751.36      0.41     0.15     0.00     0.26    43085   Arel::Visitors::ToSql#table_exists? 
+8692.07      1.13     0.15     0.00     0.98    10423   ActiveRecord::QueryMethods#build_where 
+8553.20      0.16     0.14     0.00     0.01    35955   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#primary_key 
+8551.18     32.23     0.14     0.00    32.09     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_run__218580901925583510__validate__4176206310142971996__callbacks 
+8480.65      0.35     0.14     0.00     0.21    14919   Time#minus_without_duration 
+8469.11      0.24     0.14     0.00     0.09    11922   Arel::Table#initialize 
+8365.50      0.14     0.14     0.00     0.00    59955   Hash#key? 
+8356.04      1.14     0.14     0.00     1.00    11907   ActiveRecord::Associations::AliasTracker#initial_count_for 
+8343.91      2.30     0.14     0.00     2.15    39478   <Class::ActiveRecord::Base>#connection 
+8319.29      1.46     0.14     0.00     1.32     5952   ActiveRecord::Validations::UniquenessValidator#build_relation 
+8216.09      0.15     0.14     0.00     0.01    32043   ActiveRecord::ModelSchema::ClassMethods#table_name 
+8167.93      0.26     0.14     0.00     0.12    12652   MonitorMixin#mon_exit 
+7881.01      0.18     0.13     0.00     0.05    17458   #<Module:0x007fb303ed3420>#__temp__ 
+7854.20      0.28     0.13     0.00     0.14    20780   ActiveRecord::Scoping::ClassMethods#current_scope= 
+7824.73      0.70     0.13     0.00     0.57    11904   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#quote 
+7812.60      0.13     0.13     0.00     0.00    71792   NilClass#nil? 
+7799.82      0.14     0.13     0.00     0.01    43101   Arel::Visitors::ToSql#quote_column_name 
+7610.89    122.22     0.13     0.00   122.09    25296   ActiveModel::EachValidator#validate 
+7607.28      1.18     0.13     0.00     1.06    20065   ActiveRecord::Associations::BelongsToAssociation#stale_state 
+7533.61      5.67     0.13     0.00     5.55    25358   ActiveSupport::Notifications::Fanout::Subscriber#publish 
+7473.08      0.26     0.13     0.00     0.13    17029   ActiveRecord::Scoping::ClassMethods#current_scope 
+7415.38      1.49     0.13     0.00     1.37    32727   ActiveRecord::Base#[] 
+7379.29      0.85     0.12     0.00     0.72     6705   ActiveRecord::SpawnMethods#merge 
+7276.69      0.46     0.12     0.00     0.34    32811   String#blank? 
+7142.54      0.12     0.12     0.00     0.00    39441   ActiveRecord::AttributeMethods::ClassMethods#attribute_methods_generated? 
+7111.83      0.18     0.12     0.00     0.06    38687   ActiveModel::Validations#errors 
+7097.87      0.41     0.12     0.00     0.29     5952   ActiveSupport::Multibyte::Chars#slice 
+7088.64      1.04     0.12     0.00     0.92    10413   ActiveRecord::Associations::JoinDependency#build 
+7078.88      0.12     0.12     0.00     0.00    59666   <Class::Array>#allocate 
+6957.34      0.26     0.12     0.00     0.15    10426   Arel::Nodes::SelectCore#initialize 
+6956.45      0.25     0.12     0.00     0.13    36604   Enumerable#any? 
+6881.83      0.12     0.12     0.00     0.00    45328   Arel::Visitors::ToSql#literal 
+6867.75      8.20     0.12     0.00     8.09    17084   ActiveRecord::Associations::SingularAssociation#reader 
+6826.75      1.46     0.12     0.00     1.35    11907   ActiveRecord::Associations::AliasTracker#aliased_name_for 
+6800.36      0.11     0.11     0.00     0.00    43085   Arel::Visitors::ToSql#column_cache 
+6785.74      0.18     0.11     0.00     0.06     9709   Array#initialize 
+6772.49      0.76     0.11     0.00     0.65    14919   Time#minus_with_coercion 
+6735.15      0.25     0.11     0.00     0.14    12652   MonitorMixin#mon_enter 
+6660.47      0.11     0.11     0.00     0.00    37938   Thread#[]= 
+6651.78      0.16     0.11     0.00     0.04     2232   URI::Generic#to_s 
+6609.94      0.87     0.11     0.00     0.75    10426   Arel::SelectManager#initialize 
+6532.72      0.25     0.11     0.00     0.14     2236   URI::Generic#initialize 
+6419.70      0.11     0.11     0.00     0.00    42492   <Class::Time>#allocate 
+6380.18      0.38     0.11     0.00     0.27    35790   Kernel#!~ 
+6373.91      1.79     0.11     0.00     1.68    10423   ActiveRecord::QueryMethods#where 
+6336.92      0.20     0.11     0.00     0.09    29041   Array#include? 
+6282.07      0.16     0.11     0.00     0.05    25244   ActiveRecord::Associations#association_instance_get 
+6272.54      4.93     0.11     0.00     4.82    17856   ActiveModel::Validations::PresenceValidator#validate 
+6227.10      8.54     0.11     0.00     8.43    20088   ActiveModel::Errors#add_on_blank 
+6216.80      0.36     0.11     0.00     0.25     8222   ActiveModel::AttributeMethods#match_attribute_method? 
+6172.37      0.10     0.10     0.00     0.00    38642   ActiveRecord::Associations::Association#loaded? 
+6171.89      0.10     0.10     0.00     0.00    41582   Module#to_s 
+6135.03      0.10     0.10     0.00     0.00    49954   Array#initialize_copy 
+6024.91     15.49     0.10     0.00    15.39     5231   ActiveRecord::Explain#logging_query_plan 
+6018.46      0.91     0.10     0.00     0.81    17867   Object#blank? 
+5969.47      0.72     0.10     0.00     0.62    10423   Arel::Visitors::ToSql#visit_Arel_Nodes_JoinSource 
+5957.75      0.34     0.10     0.00     0.24    27563   Arel::Table#[] 
+5943.91      0.10     0.10     0.00     0.00    52551   Symbol#== 
+5854.85      0.10     0.10     0.00     0.00    19192   Regexp#=== 
+5839.64      0.75     0.10     0.00     0.66    11925   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#quote_table_name 
+5804.44      0.13     0.10     0.00     0.04    13392   #<Module:0x007fb30937b270>#__temp__ 
+5788.88      0.10     0.10     0.00     0.00    45355   Class#superclass 
+5761.72      1.43     0.10     0.00     1.34    17080   ActiveRecord::Associations::Association#stale_target? 
+5691.42     16.01     0.10     0.00    15.91     2232   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_run__2907036350389489085__validate__4176206310142971996__callbacks 
+5665.09      0.19     0.10     0.00     0.09    12646   #<Module:0x007fb309698610>#__temp__ 
+5639.35     11.67     0.10     0.00    11.58    12599   Hash#inspect 
+5541.66      0.32     0.09     0.00     0.22     9717   Enumerable#to_a 
+5536.33     65.39     0.09     0.00    65.30     1487   ActiveRecord::ConnectionAdapters::DatabaseStatements#transaction 
+5505.33      0.09     0.09     0.00     0.00    36053   String#to_i 
+5488.58      0.09     0.09     0.00     0.00    12660   Mutex#lock 
+5470.83     23.19     0.09     0.00    23.10     2914   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__446239950780992892__validate__4176206310142971996__callbacks 
+5470.12      0.09     0.09     0.00     0.00    11935   Regexp#match 
+5457.93      1.96     0.09     0.00     1.87    12652   ActiveSupport::LogSubscriber#debug 
+5443.25      0.14     0.09     0.00     0.05    11169   Arel::SelectManager#from 
+5414.26     13.55     0.09     0.00    13.45    10425   ActiveRecord::ConnectionAdapters::DatabaseStatements#to_sql 
+5376.15      0.09     0.09     0.00     0.00    42169   Array#last 
+5353.85      1.23     0.09     0.00     1.13    14055   Arel::Visitors::ToSql#visit_Arel_Nodes_As 
+5345.80    131.38     0.09     0.00   131.29     6696   ActiveModel::Validations#valid? 
+5342.07      0.09     0.09     0.00     0.00    46764   Fixnum#+ 
+5334.50      0.21     0.09     0.00     0.12    14914   ActiveRecord::Scoping::Default::ClassMethods#build_default_scope 
+5270.06      0.53     0.09     0.00     0.44    14919   Time#minus_with_duration 
+5234.02      0.09     0.09     0.00     0.00    35741   Array#compact 
+5209.29      0.51     0.09     0.00     0.42     9709   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#result_as_array 
+5127.16      0.14     0.09     0.00     0.06    23850   #<Module:0x007fb3054048d0>#__temp__ 
+5090.06      0.11     0.09     0.00     0.03    12652   Logger::SimpleFormatter#call 
+5079.17      0.09     0.09     0.00     0.00    40075   Array#first 
+5061.12      0.65     0.09     0.00     0.57    10426   ActiveRecord::QueryMethods#build_select 
+5035.09      0.26     0.09     0.00     0.18    10419   Arel::SelectManager#take 
+4991.01      0.22     0.08     0.00     0.14    10427   Array#grep 
+4952.25      1.17     0.08     0.00     1.08    18603   ActiveRecord::Delegation#connection 
+4941.83    131.60     0.08     0.00   131.51     6696   ActiveRecord::Validations#valid? 
+4901.30      0.28     0.08     0.00     0.19     8182   ActiveRecord::FinderMethods#apply_join_dependency 
+4866.80      0.19     0.08     0.00     0.10    12679   ActiveRecord::ExplainSubscriber#call 
+4839.29     11.43     0.08     0.00    11.35     8182   ActiveRecord::FinderMethods#construct_relation_for_association_find 
+4757.16      0.17     0.08     0.00     0.09    11917   <Class::ActiveRecord::Base>#relation 
+4711.12      0.13     0.08     0.00     0.05    11904   ActiveSupport::Multibyte::Chars#initialize 
+4649.17      0.13     0.08     0.00     0.05    11154   ActiveRecord::Associations::JoinDependency::JoinPart#table_name 
+4643.73      0.08     0.08     0.00     0.00    27535   Arel::Nodes::Unary#initialize 
+4619.53      0.08     0.08     0.00     0.00    13603   String#split 
+4581.24      0.08     0.08     0.00     0.00    26086   MatchData#[] 
+4570.12      1.28     0.08     0.00     1.21     2984   ActiveRecord::Inheritance::ClassMethods#instantiate 
+4568.17      0.26     0.08     0.00     0.18    13410   ActiveRecord::Relation#with_default_scope 
+4504.67      0.14     0.08     0.00     0.06    12679   <Class::ActiveRecord::LogSubscriber>#runtime 
+4459.70      0.12     0.08     0.00     0.05    19296   ActiveRecord::Reflection::ClassMethods#reflect_on_aggregation 
+4459.17      0.15     0.08     0.00     0.07    17850   ActiveRecord::Associations::JoinDependency::JoinPart#primary_key 
+4457.34      0.08     0.08     0.00     0.00    26030   ActiveRecord::Reflection::AssociationReflection#foreign_key 
+4436.04      0.42     0.07     0.00     0.35     5183   ActiveRecord::Scoping::Named::ClassMethods#scoped 
+4383.67      0.93     0.07     0.00     0.86     4478   ActiveRecord::AttributeMethods::Dirty#write_attribute 
+4359.11      0.07     0.07     0.00     0.00    41891   Fixnum#abs 
+4338.70      6.31     0.07     0.00     6.23     8184   ConnectionValidator#validate 
+4336.04      0.07     0.07     0.00     0.00    27152   String#to_sym 
+4297.22      0.07     0.07     0.00     0.00    12652   String#squeeze 
+4278.88      0.07     0.07     0.00     0.00    33120   <Class::Hash>#allocate 
+4254.44      0.07     0.07     0.00     0.00    25011   String#inspect 
+4247.57      1.28     0.07     0.00     1.21    12002   Proc#yield 
+4243.43      1.06     0.07     0.00     0.99     2984   ActiveRecord::Base#init_with 
+4185.15    130.43     0.07     0.00   130.36     6696   ActiveModel::Validations#run_validations! 
+4184.20      0.24     0.07     0.00     0.17       12   <Module::Kernel>#load 
+4152.43      0.11     0.07     0.00     0.04    17856   ActiveRecord::QueryMethods#apply_modules 
+4083.49      0.07     0.07     0.00     0.00    36507   Symbol#to_sym 
+4063.31     11.08     0.07     0.00    11.01     8544   ActiveRecord::AttributeMethods#attribute_for_inspect 
+4049.29     20.57     0.07     0.00    20.50     9680   ActiveRecord::ConnectionAdapters::QueryCache#select_all 
+4036.27      5.92     0.07     0.00     5.85    12679   ActiveSupport::Notifications::Fanout#publish 
+4011.83      0.25     0.07     0.00     0.18    18608   Arel::Predications#eq 
+4000.36      0.13     0.07     0.00     0.06    12679   <Class::ActiveRecord::LogSubscriber>#runtime= 
+3989.64      0.16     0.07     0.00     0.09    11907   Enumerable#sum 
+3978.82      0.07     0.07     0.00     0.00    40041   Module#== 
+3956.98      0.09     0.07     0.00     0.03    13404   ActiveRecord::Inheritance::ClassMethods#finder_needs_type_condition? 
+3951.48      0.15     0.07     0.00     0.08     8264   ActiveModel::AttributeMethods::ClassMethods#attribute_method_matcher 
+3829.64      8.75     0.06     0.00     8.69     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_run__1426109599698765738__validate__4176206310142971996__callbacks 
+3812.19      0.06     0.06     0.00     0.00    34265   PG::Result#ftype 
+3805.15      0.47     0.06     0.00     0.41    10426   Arel::SelectManager#project 
+3767.22      0.10     0.06     0.00     0.03    16370   <Class::ActiveRecord::Base>#=== 
+3754.20      0.59     0.06     0.00     0.52     5952   Arel::Visitors::ToSql#visit_Arel_Nodes_NotEqual 
+3745.33      0.15     0.06     0.00     0.09    11170   Arel::Visitors::ToSql#visit_Arel_Table 
+3722.13      2.61     0.06     0.00     2.54     8182   ActiveRecord::FinderMethods#construct_join_dependency_for_association_find 
+3717.87      0.94     0.06     0.00     0.87    12652   Logger::LogDevice#write 
+3684.97     20.50     0.06     0.00    20.44     9680   ActiveRecord::ConnectionAdapters::DatabaseStatements#select_all 
+3673.85      0.18     0.06     0.00     0.11     7446   ActiveRecord::Scoping::Default::ClassMethods#unscoped 
+3670.53      0.10     0.06     0.00     0.04     6696   ActiveRecord::Persistence#persisted? 
+3668.40      0.08     0.06     0.00     0.02    10425   Arel::TreeManager#where 
+3660.59      0.09     0.06     0.00     0.03    12652   MonitorMixin#mon_check_owner 
+3638.28     12.20     0.06     0.00    12.14     2239   ActiveRecord::Relation#exec_queries 
+3638.17      5.68     0.06     0.00     5.62    11172   ActiveRecord::QueryMethods#arel 
+3632.25      0.17     0.06     0.00     0.11    12652   Logger#format_message 
+3614.38      0.10     0.06     0.00     0.03     9638   Array#hash 
+3583.25      8.82     0.06     0.00     8.76    10425   Arel::Visitors::ToSql#accept 
+3580.89      0.26     0.06     0.00     0.20    10419   ActiveRecord::Associations::AliasTracker#initialize 
+3578.52      0.24     0.06     0.00     0.18    10419   Arel::Visitors::ToSql#visit_Arel_Nodes_Limit 
+3574.85      0.06     0.06     0.00     0.00    11904   PG::Connection#escape 
+3552.19      4.32     0.06     0.00     4.26    11911   Arel::Visitors::ToSql#visit_Arel_Nodes_And 
+3551.12      0.06     0.06     0.00     0.00    18978   ActiveSupport::LogSubscriber#colorize_logging 
+3515.03      0.38     0.06     0.00     0.32    16584   Enumerable#inject 
+3513.14      0.48     0.06     0.00     0.42     8925   ActiveRecord::Associations::JoinDependency::JoinBase#table 
+3509.59      0.18     0.06     0.00     0.12     8928   <Class::RedirectUriValidator>#test_redirect_uri 
+3483.14      0.35     0.06     0.00     0.29     9676   ActiveRecord::QueryMethods#limit 
+3470.95      0.08     0.06     0.00     0.02    11913   Arel::Nodes::And#initialize 
+3449.11      0.68     0.06     0.00     0.62     8925   ActiveRecord::Associations::JoinDependency::JoinPart#aliased_table 
+3422.84      0.09     0.06     0.00     0.04    13401   ActiveRecord::Reflection::ClassMethods#reflect_on_association 
+3398.93      0.06     0.06     0.00     0.00    12679   ActiveSupport::Notifications::Fanout#listeners_for 
+3365.56     82.99     0.06     0.00    82.93     6706   Array#reject 
+3345.62      0.19     0.06     0.00     0.13     4467   ActiveRecord::Associations::Association#initialize 
+3344.14      0.08     0.06     0.00     0.03    14919   <Class::ActiveSupport::Duration>#=== 
+3343.02     14.66     0.06     0.00    14.60     7441   ActiveRecord::ConnectionAdapters::DatabaseStatements#select_one 
+3325.09      0.16     0.06     0.00     0.11    11955   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#quote_column_name 
+3308.22      0.16     0.06     0.00     0.10     5952   ActiveRecord::Validations::UniquenessValidator#find_finder_class_for 
+3282.84     10.72     0.06     0.00    10.67    13593   #<Module:0x007fb306ddc690>#__temp__ 
+3274.32      0.77     0.06     0.00     0.72     7448   ActiveRecord::Associations::BelongsToPolymorphicAssociation#stale_state 
+3269.88      0.06     0.06     0.00     0.00    22690   Hash#include? 
+3258.99      0.10     0.06     0.00     0.05    11916   <Module::ActiveRecord::IdentityMap>#enabled 
+3243.67      0.29     0.05     0.00     0.24     4478   ActiveRecord::AttributeMethods::Write#write_attribute 
+3190.24      0.22     0.05     0.00     0.17     7456   ActiveRecord::AttributeMethods::Serialization::ClassMethods#initialize_attributes 
+3180.12      0.05     0.05     0.00     0.00    21970   NilClass#to_s 
+3171.07      0.05     0.05     0.00     0.00    31127   Kernel#eql? 
+3142.07      0.07     0.05     0.00     0.02     8222   ActiveRecord::AttributeMethods#attribute_method? 
+3119.59      0.05     0.05     0.00     0.00    23850   String#start_with? 
+3090.12      0.05     0.05     0.00     0.00    10413   ActiveRecord::Associations::JoinDependency::JoinPart#initialize 
+3082.90      0.22     0.05     0.00     0.17     9680   ActiveRecord::Result#each 
+3070.00      0.27     0.05     0.00     0.22     5952   String#mb_chars 
+3067.04      1.66     0.05     0.00     1.61    12652   Logger#debug 
+3064.26      0.05     0.05     0.00     0.00     4467   ActiveRecord::Reflection::AssociationReflection#association_class 
+3055.21      7.42     0.05     0.00     7.37     9680   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#select 
+3051.66      0.11     0.05     0.00     0.06     8974   ActiveRecord::AttributeMethods#column_for_attribute 
+3044.14      0.05     0.05     0.00     0.00     9708   ActiveRecord::Result#initialize 
+3041.07      0.06     0.05     0.00     0.01    17362   ActiveRecord::ModelSchema::ClassMethods#columns_hash 
+3025.56      0.06     0.05     0.00     0.01    20390   String#== 
+3018.93      0.05     0.05     0.00     0.00     5924   <Class::Hash>#[] 
+3013.43      0.18     0.05     0.00     0.13    13393   ActiveModel::Errors#each 
+3011.30      0.99     0.05     0.00     0.93     9689   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#exec_no_cache 
+2985.92      0.08     0.05     0.00     0.03    14055   Arel::Nodes::TableAlias#table_name 
+2950.83      0.14     0.05     0.00     0.09     9680   ActiveRecord::Result#hash_rows 
+2949.82      0.80     0.05     0.00     0.75    11904   Arel::Visitors::ToSql#quoted 
+2948.11      0.30     0.05     0.00     0.25     3046   ActiveRecord::SpawnMethods#apply_finder_options 
+2942.43      0.07     0.05     0.00     0.02    10419   ActiveRecord::ConnectionAdapters::DatabaseStatements#sanitize_limit 
+2940.00      0.08     0.05     0.00     0.03    11899   ActiveRecord::Associations::JoinDependency#join_associations 
+2929.11      0.10     0.05     0.00     0.05    14919   Numeric#quo 
+2926.98      0.05     0.05     0.00     0.00    14919   Rational#/ 
+2897.40      0.75     0.05     0.00     0.70    11904   Arel::Visitors::ToSql#quote 
+2894.26      0.05     0.05     0.00     0.00    12652   ActiveRecord::LogSubscriber#odd? 
+2883.55      0.05     0.05     0.00     0.00     9708   PG::Result#fields 
+2875.44      0.05     0.05     0.00     0.00    16414   ActiveRecord::Associations::AssociationScope#reflection 
+2837.04      0.17     0.05     0.00     0.12     8956   ActiveRecord::AttributeMethods::Serialization#type_cast_attribute_for_write 
+2833.79      0.07     0.05     0.00     0.02     6539   #<Module:0x007fb305c4f9b8>#__temp__ 
+2826.04      0.05     0.05     0.00     0.00    20957   String#hash 
+2788.82      5.81     0.05     0.00     5.76     8182   ActiveRecord::Associations::JoinDependency#columns 
+2775.15      0.22     0.05     0.00     0.17     4478   ActiveRecord::AttributeMethods::Dirty#field_changed? 
+2767.63      0.08     0.05     0.00     0.03    14919   Rational#to_f 
+2725.62      0.20     0.05     0.00     0.16    13392   ActiveModel::Errors#empty? 
+2723.61      0.12     0.05     0.00     0.07    15648   ActiveRecord::Reflection::AssociationReflection#klass 
+2721.30      0.05     0.05     0.00     0.00    11904   String#unpack 
+2714.67      0.05     0.05     0.00     0.00    16511   ActiveModel::AttributeMethods::ClassMethods#attribute_method_matchers_cache 
+2689.23      0.16     0.05     0.00     0.11    13402   Enumerable#all? 
+2674.08      7.08     0.05     0.00     7.04     9708   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#exec_query 
+2670.95    131.16     0.05     0.00   131.12     6696   ActiveModel::Validations::Callbacks#run_validations! 
+2648.99      1.32     0.04     0.00     1.28    12002   Hash#default 
+2648.70      0.04     0.04     0.00     0.00    10426   Arel::SelectManager#distinct 
+2594.02      8.76     0.04     0.00     8.72    10427   Arel::Visitors::Visitor#accept 
+2590.59      0.10     0.04     0.00     0.06    11904   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#quote_string 
+2585.74      0.98     0.04     0.00     0.94    10426   Arel::Table#from 
+2557.46      0.08     0.04     0.00     0.03     8925   ActiveRecord::Associations::JoinDependency::JoinPart#column_names 
+2521.01    131.04     0.04     0.00   130.99     6696   ActiveRecord::Base#_run_validation_callbacks 
+2502.37      0.07     0.04     0.00     0.03     8925   ActiveRecord::Associations::JoinDependency::JoinPart#arel_engine 
+2493.73      0.11     0.04     0.00     0.07    11294   Object#present? 
+2485.44      0.06     0.04     0.00     0.02     4547   ActiveRecord::ConnectionAdapters::Column#type_cast 
+2453.25      0.04     0.04     0.00     0.00    10428   Arel::TreeManager#initialize 
+2436.98      0.04     0.04     0.00     0.00     7460   Kernel#method 
+2425.68      0.14     0.04     0.00     0.10    16423   Hash#each_key 
+2387.87      0.08     0.04     0.00     0.04    10426   Arel::Nodes::JoinSource#initialize 
+2381.01      0.04     0.04     0.00     0.00    11904   <Module::ActiveSupport::Multibyte>#proxy_class 
+2369.53     14.71     0.04     0.00    14.67     7441   ActiveRecord::ConnectionAdapters::DatabaseStatements#select_value 
+2352.43      0.04     0.04     0.00     0.00     9708   PG::Result#clear 
+2350.47      0.13     0.04     0.00     0.09    11933   String#match 
+2349.11      0.07     0.04     0.00     0.03     8163   Array#eql? 
+2348.93      0.04     0.04     0.00     0.00    14961   String#downcase 
+2337.46      0.04     0.04     0.00     0.00    12652   Logger#format_severity 
+2336.39     10.54     0.04     0.00    10.50     6628   ActiveRecord::AttributeMethods::Serialization::Attribute#unserialized_value 
+2282.49      0.04     0.04     0.00     0.00    12679   Logger#debug? 
+2273.96      1.26     0.04     0.00     1.22    11162   Enumerable#each_with_index 
+2267.75      0.08     0.04     0.00     0.04     3710   BasicObject#instance_eval 
+2255.62      0.07     0.04     0.00     0.03     8212   ActiveRecord::ConnectionAdapters::Column#number? 
+2254.26      0.04     0.04     0.00     0.00    13402   ActiveRecord::Persistence#new_record? 
+2237.10      4.57     0.04     0.00     4.53     8181   ActiveRecord::Delegation#ast 
+2231.78      0.06     0.04     0.00     0.02     5968   ActiveRecord::ModelSchema::ClassMethods#inheritance_column 
+2221.78      0.12     0.04     0.00     0.08    11254   BasicObject#!= 
+2199.29    130.16     0.04     0.00   130.13     6696   ActiveRecord::Base#_run_validate_callbacks 
+2181.24      0.06     0.04     0.00     0.02     8182   ActiveRecord::Delegation#respond_to? 
+2174.97      4.74     0.04     0.00     4.71     1484   <Class::Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)>#validate_against_context 
+2156.04      0.07     0.04     0.00     0.03    10030   ActiveRecord::AttributeMethods#has_attribute? 
+2155.62     83.26     0.04     0.00    83.22     5952   ActiveRecord::Validations::AssociatedValidator#validate_each 
+2140.53      0.11     0.04     0.00     0.08    10427   Array#original_grep 
+2115.86      0.04     0.04     0.00     0.00    11955   <Class::PG::Connection>#quote_ident 
+2109.64      0.04     0.04     0.00     0.00     9709   PG::Result#values 
+2092.43      0.13     0.04     0.00     0.10     9722   Enumerable#detect 
+2084.08      0.04     0.04     0.00     0.00    15592   Kernel#kind_of? 
+2071.30      0.05     0.04     0.00     0.01     5956   Array#== 
+2052.31      1.28     0.03     0.00     1.25     1492   ActiveRecord::Associations::AssociationScope#scope 
+2049.88      0.09     0.03     0.00     0.05     5955   ActiveRecord::Associations::Association#reset 
+2017.51      0.03     0.03     0.00     0.00    12193   String#[] 
+2012.66      0.08     0.03     0.00     0.05     2236   URI::Parser#split 
+2009.53      0.13     0.03     0.00     0.09     8952   ActiveRecord::Associations::Association#klass 
+2004.20      0.03     0.03     0.00     0.00    11992   Array#concat 
+1979.35      0.03     0.03     0.00     0.00    10419   Arel::Visitors::ToSql#visit_Arel_Nodes_Top 
+1956.51      0.03     0.03     0.00     0.00    14919   Fixnum#fdiv 
+1955.56      0.03     0.03     0.00     0.00    10423   Arel::Nodes::JoinSource#empty? 
+1935.68      0.84     0.03     0.00     0.81     2232   RedirectUriValidator#validate_each 
+1932.25      0.03     0.03     0.00     0.00    14919   Fixnum#- 
+1913.02      2.20     0.03     0.00     2.17     5952   Arel::Visitors::ToSql#visit_Arel_Nodes_Grouping 
+1904.56      0.06     0.03     0.00     0.03     8182   ActiveRecord::Associations::JoinDependency::JoinBase#aliased_table_name 
+1893.55      0.03     0.03     0.00     0.00    12660   Mutex#unlock 
+1893.14      0.08     0.03     0.00     0.05     8182   ActiveRecord::FinderMethods#using_limitable_reflections? 
+1885.09      3.87     0.03     0.00     3.84     2976   ActiveRecord::AttributeAssignment#assign_attributes 
+1872.66      0.43     0.03     0.00     0.40     1486   ActiveRecord::Associations::JoinDependency::JoinAssociation#initialize 
+1843.91      0.05     0.03     0.00     0.02     9649   ActiveRecord::ModelSchema::ClassMethods#column_names 
+1823.55      1.31     0.03     0.00     1.27     2232   ActiveRecord::Associations::BelongsToAssociation#replace 
+1822.84      0.06     0.03     0.00     0.03     5952   <Class::ActiveSupport::Multibyte::Chars>#consumes? 
+1801.60      0.10     0.03     0.00     0.07     5952   ActiveSupport::Multibyte::Chars#respond_to? 
+1793.67      0.03     0.03     0.00     0.00    14269   Symbol#inspect 
+1789.70      0.06     0.03     0.00     0.03     6700   URI::Generic#default_port 
+1782.37      0.03     0.03     0.00     0.00     6006   Array#pack 
+1780.30      0.25     0.03     0.00     0.22     4472   ActiveRecord::AttributeMethods#clone_attribute_value 
+1758.40      0.03     0.03     0.00     0.00     8948   <Class::ActiveRecord::Base>#arel_engine 
+1753.37      0.42     0.03     0.00     0.39     2236   URI::Parser#parse 
+1750.65      0.73     0.03     0.00     0.70     7438   ActiveRecord::Delegation#name 
+1748.34      0.03     0.03     0.00     0.00     3775   Array#flatten! 
+1747.81      0.03     0.03     0.00     0.00    11962   String#force_encoding 
+1736.15      0.35     0.03     0.00     0.32     5957   ActiveRecord::Associations::Association#loaded! 
+1716.15      0.03     0.03     0.00     0.00    11941   String#include? 
+1714.97      0.05     0.03     0.00     0.03     3728   ActiveRecord::Locking::Optimistic::ClassMethods#initialize_attributes 
+1711.12      0.04     0.03     0.00     0.01     8211   <Class::ActiveRecord::Base>#arel_table 
+1698.17      0.04     0.03     0.00     0.01     5952   ActiveRecord::ConnectionAdapters::Column#text? 
+1684.38      0.05     0.03     0.00     0.02     5952   ActiveSupport::Multibyte::Unicode#u_unpack 
+1675.09      0.13     0.03     0.00     0.10     7440   Arel::Nodes::Node#and 
+1668.05      0.04     0.03     0.00     0.01     5953   ActiveRecord::Reflection::AssociationReflection#check_validity_of_inverse! 
+1645.98     16.28     0.03     0.00    16.25     2232   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_run__2907036350389489085__validation__4176206310142971996__callbacks 
+1635.03      0.07     0.03     0.00     0.04     2133   <Class::ActiveRecord::DynamicFinderMatch>#match 
+1626.80      0.08     0.03     0.00     0.05     1486   ActiveRecord::Transactions#remember_transaction_record_state 
+1624.44     48.41     0.03     0.00    48.39      744   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__validate__4176206310142971996__callbacks 
+1623.14     10.43     0.03     0.00    10.40     2172   ActiveRecord::Coders::YAMLColumn#load 
+1620.47      0.05     0.03     0.00     0.02     8182   Enumerable#none? 
+1617.46      0.03     0.03     0.00     0.00    14467   String#=== 
+1590.47      0.03     0.03     0.00     0.00    12685   Kernel#object_id 
+1589.17      2.51     0.03     0.00     2.49      744   ActiveRecord::Base#initialize 
+1589.11      0.03     0.03     0.00     0.00    14170   Integer#to_i 
+1585.15      0.04     0.03     0.00     0.01     6696   ActiveModel::Errors#clear 
+1577.34      0.03     0.03     0.00     0.00     8930   ActiveRecord::Reflection::AssociationReflection#has_inverse? 
+1571.42      0.05     0.03     0.00     0.02     1424   <Class::Time>#utc 
+1566.09      0.13     0.03     0.00     0.10     5952   ActiveSupport::Multibyte::Chars#chars 
+1522.54      0.11     0.03     0.00     0.08     2976   ActiveModel::Validations::FormatValidator#validate_each 
+1506.15      1.21     0.03     0.00     1.18     4480   ActiveRecord::Relation#eager_loading? 
+1503.20      0.03     0.03     0.00     0.00     5967   ActiveRecord::Locking::Optimistic::ClassMethods#locking_column 
+1480.47      0.03     0.03     0.00     0.00    11907   Fixnum#zero? 
+1457.34      0.09     0.02     0.00     0.06     2972   #<Module:0x007fb3096c1718>#__temp__ 
+1452.31      0.02     0.02     0.00     0.00     8936   ActiveRecord::Reflection::AssociationReflection#foreign_type 
+1425.21      0.06     0.02     0.00     0.03     2980   ActiveRecord::Associations::JoinHelper#table_alias_for 
+1413.61      0.06     0.02     0.00     0.03     2155   RubyLex#getc 
+1409.29      0.06     0.02     0.00     0.04     2239   ActiveRecord::Locking::Optimistic::ClassMethods#locking_enabled? 
+1409.17      0.03     0.02     0.00     0.01     5962   ActiveRecord::Reflection::MacroReflection#== 
+1406.57      0.66     0.02     0.00     0.64     2232   ActiveRecord::Associations::BelongsToAssociation#replace_keys 
+1401.24      0.36     0.02     0.00     0.34     2232   RedirectUriValidator#test_redirect_uri? 
+1390.24      0.02     0.02     0.00     0.00     4418   Exception#initialize 
+1385.38      0.02     0.02     0.00     0.00     5985   Hash#keys 
+1382.07      0.02     0.02     0.00     0.00    11906   Kernel#frozen? 
+1381.24      0.79     0.02     0.00     0.76      745   ActiveRecord::QueryMethods#build_joins 
+1377.28      0.04     0.02     0.00     0.02     5968   ActiveRecord::Associations::AssociationScope#options 
+1369.94      0.02     0.02     0.00     0.00     9709   PG::Result#nfields 
+1369.53      0.02     0.02     0.00     0.00      787   String#scan 
+1369.05      1.18     0.02     0.00     1.15     2229   ActiveRecord::Associations::JoinDependency#construct 
+1355.92      0.05     0.02     0.00     0.02     5219   <Class::#<Class:0x007fb304ee8680>>#new 
+1343.25      0.04     0.02     0.00     0.02     4472   ActiveRecord::AttributeMethods::Dirty#clone_with_time_zone_conversion_attribute? 
+1341.12      0.08     0.02     0.00     0.06     5952   Arel::Predications#not_eq 
+1316.45      0.34     0.02     0.00     0.32     3471   Psych::Visitors::Visitor#visit 
+1313.20      0.06     0.02     0.00     0.04     5953   ActiveRecord::Reflection::AssociationReflection#check_validity! 
+1309.64      6.58     0.02     0.00     6.56     1496   ActiveRecord::Associations::Association#load_target 
+1306.75      0.07     0.02     0.00     0.05     4467   ActiveRecord::Reflection::AssociationReflection#association_primary_key 
+1301.12      0.05     0.02     0.00     0.03     4476   ActiveRecord::Associations::AssociationScope#chain 
+1299.59      0.08     0.02     0.00     0.05     4465   ActiveRecord::Associations::BelongsToAssociation#invertible_for? 
+1296.69      4.12     0.02     0.00     4.10     4464   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_callback_before_290 
+1283.02      0.02     0.02     0.00     0.00     5957   ActiveRecord::Associations::Association#reset_scope 
+1256.75     32.28     0.02     0.00    32.26     1457   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_run__218580901925583510__validation__4176206310142971996__callbacks 
+1232.96      1.14     0.02     0.00     1.12     1486   ActiveRecord::Relation#references_eager_loaded_tables? 
+1231.01      0.04     0.02     0.00     0.02     3006   #<Module:0x007fb305b8db88>#__temp__ 
+1228.46      0.02     0.02     0.00     0.00    11186   BasicObject#== 
+1217.10      0.69     0.02     0.00     0.67     1496   Array#collect! 
+1216.21      0.49     0.02     0.00     0.47     2980   ActiveRecord::Associations::AliasTracker#aliased_table_for 
+1208.99      0.03     0.02     0.00     0.01     4478   ActiveRecord::Delegation#auto_explain_threshold_in_seconds 
+1202.19      0.21     0.02     0.00     0.19     2972   ActiveRecord::Associations::JoinDependency#remove_duplicate_results! 
+1198.11      0.04     0.02     0.00     0.02     4494   ActiveModel::Dirty#attribute_changed? 
+1196.98      0.02     0.02     0.00     0.00     5982   ActiveRecord::Inheritance::ClassMethods#abstract_class? 
+1195.56      0.02     0.02     0.00     0.00    11176   Array#blank? 
+1186.09      0.74     0.02     0.00     0.72     2978   ActiveRecord::Associations::JoinHelper#construct_tables 
+1183.79      4.20     0.02     0.00     4.18      744   <Class::ConnectionValidator>#validate_cardinality 
+1174.91      8.78     0.02     0.00     8.76      716   ActiveRecord::DynamicMatchers#method_missing 
+1165.86      0.04     0.02     0.00     0.02     4468   ActiveRecord::Reflection::AssociationReflection#primary_key 
+1164.32      0.13     0.02     0.00     0.11     1424   <Class::ActiveRecord::ConnectionAdapters::Column>#fast_string_to_time 
+1144.20      0.14     0.02     0.00     0.12     4464   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_callback_before_286 
+1141.78      0.29     0.02     0.00     0.27     3728   ActiveRecord::Base#_run_initialize_callbacks 
+1141.36      0.06     0.02     0.00     0.04     2232   ActiveModel::Validations::InclusionValidator#validate_each 
+1135.80      0.15     0.02     0.00     0.13     4464   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_callback_before_294 
+1130.36     10.55     0.02     0.00    10.53     4464   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_callback_before_288 
+1129.47      0.95     0.02     0.00     0.93     4464   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_callback_before_296 
+1124.97      0.02     0.02     0.00     0.00     6700   <Class::URI::Generic>#default_port 
+1119.35      0.09     0.02     0.00     0.07     3734   ActiveRecord::AttributeMethods::Write#type_cast_attribute_for_write 
+1119.11      0.02     0.02     0.00     0.01     4468   URI::Generic#set_port 
+1113.96      0.05     0.02     0.00     0.03     3030   Hash#assert_valid_keys 
+1109.53      0.03     0.02     0.00     0.01     2984   Class#allocate 
+1108.52      0.04     0.02     0.00     0.02     3689   ActiveRecord::AutosaveAssociation#validate_collection_association 
+1098.82      0.03     0.02     0.00     0.01     3722   #<Module:0x007fb30798f898>#__temp__ 
+1095.03      0.02     0.02     0.00     0.00     7705   Hash#delete 
+1094.02      0.02     0.02     0.00     0.00     3699   Array#zip 
+1093.25      0.02     0.02     0.00     0.00     5952   ActiveRecord::AutosaveAssociation#marked_for_destruction? 
+1083.49      0.05     0.02     0.00     0.03     4476   ActiveRecord::Associations::AssociationScope#klass 
+1081.24      0.05     0.02     0.00     0.03     1486   ActiveRecord::Associations::JoinDependency#cache_joined_association 
+1075.86      0.02     0.02     0.00     0.00     6705   ActiveRecord::Reflection::AssociationReflection#chain 
+1074.20      0.02     0.02     0.00     0.01     2236   URI::Generic#set_userinfo 
+1071.07     23.21     0.02     0.00    23.20     1457   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__446239950780992892__validation__4176206310142971996__callbacks 
+1069.64      0.09     0.02     0.00     0.08     4469   ActiveRecord::Associations::Association#set_inverse_instance 
+1068.99      0.03     0.02     0.00     0.01     4675   Set#include? 
+1058.52      0.04     0.02     0.00     0.03     2242   ActiveRecord::AttributeMethods::Write#convert_number_column_value 
+1051.54      0.03     0.02     0.00     0.02      385   Module#class_eval 
+1047.40      0.02     0.02     0.00     0.00     5952   Array#slice 
+1044.32      0.03     0.02     0.00     0.02     2976   ActiveModel::Validations::FormatValidator#option_call 
+1023.08      0.03     0.02     0.00     0.01     4467   ActiveRecord::Associations#association_instance_set 
+1022.37      0.05     0.02     0.00     0.04     1492   ActiveRecord::Associations::AssociationScope#table_name_for 
+1019.59      0.23     0.02     0.00     0.21     2979   ActiveRecord::Sanitization::ClassMethods#expand_hash_conditions_for_aggregates 
+1014.79      0.02     0.02     0.00     0.00     8935   Array#push 
+1014.73     12.75     0.02     0.00    12.73     2237   ActiveRecord::FinderMethods#find_first 
+1004.14      0.02     0.02     0.00     0.00     5958   ActiveRecord::Persistence#destroyed? 
+993.37      0.02     0.02     0.00     0.00     3166   String#gsub 
+991.42      0.69     0.02     0.00     0.67     2979   <Class::ActiveRecord::PredicateBuilder>#build_from_hash 
+983.25      0.77     0.02     0.00     0.76     1488   ActiveRecord::Associations::BelongsToPolymorphicAssociation#replace_keys 
+982.60      6.62     0.02     0.00     6.60     1490   ActiveRecord::Associations::Association#reload 
+980.00      0.02     0.02     0.00     0.00     5952   ActiveRecord::ConnectionAdapters::AbstractAdapter#case_sensitive_modifier 
+979.23      0.37     0.02     0.00     0.35     3465   Psych::Visitors::ToRuby#accept 
+975.44      0.02     0.02     0.00     0.01     2984   ActiveRecord::Inheritance::ClassMethods#find_sti_class 
+974.56      0.51     0.02     0.00     0.50     2984   ActiveRecord::Base#_run_find_callbacks 
+971.60      0.02     0.02     0.00     0.00     8222   ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher::AttributeMethodMatch#attr_name 
+970.95      0.18     0.02     0.00     0.17     1483   ActiveRecord::ConnectionAdapters::DatabaseStatements#rollback_transaction_records 
+966.63      0.02     0.02     0.00     0.00     8274   Array#to_ary 
+954.56      0.51     0.02     0.00     0.50      743   ActiveRecord::Associations::JoinDependency#construct_association 
+932.19      0.03     0.02     0.00     0.01     2652   Array#& 
+924.73     10.47     0.02     0.00    10.45     2172   ActiveRecord::AttributeMethods::Serialization::Attribute#unserialize 
+919.76      0.02     0.02     0.00     0.01     3715   ActiveRecord::Associations::JoinDependency::JoinPart#aliased_primary_key 
+918.34      0.15     0.02     0.00     0.14     1492   ActiveRecord::Associations::Association#target_scope 
+896.09     12.78     0.02     0.00    12.76     2237   ActiveRecord::FinderMethods#first 
+895.56      0.02     0.02     0.00     0.01     4423   Psych::TreeBuilder#push 
+891.54      0.02     0.02     0.00     0.00     6765   Hash#clear 
+879.82      1.48     0.01     0.00     1.46     1492   ActiveRecord::Associations::Association#association_scope 
+877.28      0.07     0.01     0.00     0.05     2976   ActiveModel::MassAssignmentSecurity::PermissionSet#include? 
+876.80      0.32     0.01     0.00     0.31     4532   Hash#deep_symbolize_keys 
+863.96      0.04     0.01     0.00     0.03     2977   ActiveModel::Errors#initialize 
+850.06      0.09     0.01     0.00     0.08     1530   Hash#slice 
+849.41      0.01     0.01     0.00     0.00     4472   <Module::URI>#scheme_list 
+847.28      0.11     0.01     0.00     0.10     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_176 
+842.84     11.26     0.01     0.00    11.25      712   ActiveRecord::Base#inspect 
+841.66      0.01     0.01     0.00     0.00     7457   Method#owner 
+840.41      0.02     0.01     0.00     0.01     2988   Psych::TreeBuilder#pop 
+840.06      0.09     0.01     0.00     0.08     1486   ActiveRecord::Relation#tables_in_string 
+832.37      0.01     0.01     0.00     0.00     2239   <Class::ActiveRecord::Base>#lock_optimistically 
+830.53      0.11     0.01     0.00     0.10     2914   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_190 
+828.05      0.02     0.01     0.00     0.01     2881   #<Module:0x007fb306e6a080>#__temp__ 
+825.98      0.18     0.01     0.00     0.17      742   ActiveRecord::Associations::CollectionProxy#method_missing 
+820.18      0.01     0.01     0.00     0.00     4418   Exception#set_backtrace 
+816.75      0.70     0.01     0.00     0.69     1486   ActiveRecord::Associations::JoinDependency::JoinPart#instantiate 
+815.33      0.26     0.01     0.00     0.24     2975   ActiveRecord::Associations::Association#target= 
+806.63      0.03     0.01     0.00     0.02     2976   ActiveModel::MassAssignmentSecurity::PermissionSet#remove_multiparameter_id 
+802.96      1.63     0.01     0.00     1.62     2970   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#execute 
+801.12     15.40     0.01     0.00    15.39     2914   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_194 
+797.04      0.76     0.01     0.00     0.75     3726   ActiveRecord::Base#[]= 
+787.81      0.01     0.01     0.00     0.00     5219   <Class::#<Class:0x007fb304ee8680>>#allocate 
+782.72      0.01     0.01     0.00     0.00     4464   <Module::Doorkeeper>#configuration 
+780.41      0.13     0.01     0.00     0.12     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_180 
+779.53      0.03     0.01     0.00     0.01     1432   Time#strftime 
+776.15      0.04     0.01     0.00     0.03     2232   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#not_credport 
+771.01      0.01     0.01     0.00     0.00     1430   <Class::ActiveRecord::Base>#default_timezone 
+767.51      0.05     0.01     0.00     0.04     1488   ActiveModel::MassAssignmentSecurity::Sanitizer#debug_protected_attribute_removal 
+763.67      7.25     0.01     0.00     7.24     2914   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_188 
+761.60      0.02     0.01     0.00     0.01     4481   Fixnum#== 
+759.94      0.03     0.01     0.00     0.02     2977   ActiveRecord::Associations::Association#inverse_reflection_for 
+758.22     23.84     0.01     0.00    23.83     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_158 
+751.54      0.09     0.01     0.00     0.07     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_178 
+745.80      0.25     0.01     0.00     0.24     1434   ActiveRecord::DynamicMatchers#all_attributes_exists? 
+745.74      0.10     0.01     0.00     0.08     2914   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_186 
+745.09      0.01     0.01     0.00     0.00     4512   ActiveModel::Dirty#changed_attributes 
+744.62     11.59     0.01     0.00    11.57     2018   Proc#call 
+740.59      0.12     0.01     0.00     0.10     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_182 
+737.16      7.42     0.01     0.00     7.41     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_174 
+735.62      0.01     0.01     0.00     0.00     6630   #<Class:0x007fb304ee8680>#state 
+730.12      0.10     0.01     0.00     0.09     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_172 
+727.28      0.06     0.01     0.00     0.05     1487   <Class::ActiveRecord::ConnectionAdapters::Column>#value_to_boolean 
+720.41      0.14     0.01     0.00     0.13     1488   <Class::ConnectionValidator>#validate_connection_context_protocols 
+718.58      0.79     0.01     0.00     0.77     1492   ActiveRecord::Associations::AssociationScope#add_constraints 
+718.11      0.02     0.01     0.00     0.01     2972   ActiveRecord::Associations::JoinDependency#join_base 
+716.80      0.08     0.01     0.00     0.07     2914   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_184 
+712.01      0.16     0.01     0.00     0.15     1492   ActiveRecord::Associations::AssociationScope#initialize 
+711.60      0.02     0.01     0.00     0.01     2977   ActiveRecord::Reflection::AssociationReflection#inverse_of 
+710.53      0.02     0.01     0.00     0.01     2970   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#outside_transaction? 
+696.86      0.18     0.01     0.00     0.17     1542   Psych::Visitors::ToRuby#visit_Psych_Nodes_Mapping_with_class 
+696.15      0.04     0.01     0.00     0.02     2227   ActiveModel::Errors#[] 
+691.78      0.04     0.01     0.00     0.02     1496   ActiveRecord::Sanitization::ClassMethods#sanitize_sql_for_conditions 
+689.11      0.45     0.01     0.00     0.44     1486   ActiveRecord::Associations::JoinDependency#build_join_association 
+684.97      0.01     0.01     0.00     0.00     6630   #<Class:0x007fb304ee8680>#value 
+677.87      0.08     0.01     0.00     0.07     1486   ActiveRecord::Associations::CollectionAssociation#load_target 
+675.38      6.26     0.01     0.00     6.25     1490   ActiveRecord::Associations::SingularAssociation#find_target 
+672.01      8.51     0.01     0.00     8.50      716   ActiveRecord::FinderMethods#find_by_attributes 
+669.70      0.01     0.01     0.00     0.00     4423   Psych::Nodes::Node#initialize 
+663.37      0.02     0.01     0.00     0.01     2229   ActiveRecord::Associations::JoinDependency::JoinBase#== 
+661.12      7.22     0.01     0.00     7.21      743   ActiveRecord::FinderMethods#find_with_associations 
+657.99      0.04     0.01     0.00     0.03     2250   ActiveRecord::ExplainSubscriber#ignore_payload? 
+657.63      0.10     0.01     0.00     0.09      745   Hash#reject 
+656.86      0.01     0.01     0.00     0.00     5738   Hash#empty? 
+655.86     58.56     0.01     0.00    58.55      742   <Class::Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)>#create_with_context 
+653.43      0.02     0.01     0.00     0.01     2232   ActiveRecord::Associations::BelongsToAssociation#update_counters 
+650.12      0.26     0.01     0.00     0.25     2236   URI::HTTP#initialize 
+644.67      0.01     0.01     0.00     0.00     4475   String#upcase 
+644.44      0.73     0.01     0.00     0.72     2991   Enumerable#map 
+639.35      0.02     0.01     0.00     0.00     2972   ActiveRecord::Associations::JoinDependency::JoinPart#reflections 
+637.04      8.49     0.01     0.00     8.48     1487   ActiveRecord::Querying#exists? 
+636.75      0.08     0.01     0.00     0.07     2976   ActiveModel::MassAssignmentSecurity::WhiteList#deny? 
+630.83      0.01     0.01     0.00     0.00     5167   Exception#backtrace 
+616.39      0.35     0.01     0.00     0.34     3471   Psych::Visitors::Visitor#accept 
+615.86      2.12     0.01     0.00     2.11     1492   ActiveRecord::Associations::Association#scoped 
+614.32      0.01     0.01     0.00     0.00     4276   ActiveSupport::TimeWithZone#is_a? 
+613.79      0.01     0.01     0.00     0.00     2232   ActiveRecord::Reflection::AssociationReflection#counter_cache_column 
+606.63      0.25     0.01     0.00     0.24      698   IRB::SLex::Node#match_io 
+604.20      0.01     0.01     0.00     0.00     2234   URI::Generic#path_query 
+603.73      0.18     0.01     0.00     0.17     1496   ActiveRecord::Associations::BelongsToAssociation#find_target? 
+599.17      1.17     0.01     0.00     1.16      743   ActiveRecord::Associations::JoinDependency#instantiate 
+598.58      0.04     0.01     0.00     0.03     2242   <Module::Arel>#star 
+595.62     48.53     0.01     0.00    48.52      744   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__validation__4176206310142971996__callbacks 
+594.14      0.03     0.01     0.00     0.02     2229   ActiveRecord::Associations::JoinDependency::JoinAssociation#parent_table_name 
+587.22      0.01     0.01     0.00     0.00     4439   Array#shift 
+585.09      0.03     0.01     0.00     0.02     1486   ActiveRecord::Associations::JoinDependency#find_join_association 
+584.56      0.11     0.01     0.00     0.10     1490   ActiveRecord::Associations::BelongsToAssociation#foreign_key_present? 
+584.50      0.01     0.01     0.00     0.00     2232   ActiveModel::Validations::InclusionValidator#inclusion_method 
+584.02      0.18     0.01     0.00     0.17      469   ActiveModel::AttributeMethods::ClassMethods#define_optimized_call 
+580.18      0.05     0.01     0.00     0.04      743   ActiveRecord::QueryMethods#includes 
+579.29      0.02     0.01     0.00     0.01      744   <Class::ConnectionValidator>#validate_connection_type 
+579.05      0.43     0.01     0.00     0.42     2236   <Module::URI>#parse 
+576.51     12.68     0.01     0.00    12.67     2239   ActiveRecord::Relation#to_a 
+576.09     10.26     0.01     0.00    10.25     1435   <Module::Psych>#parse_stream 
+573.37      0.02     0.01     0.00     0.01     2235   ActiveRecord::Reflection::AssociationReflection#conditions 
+573.20      0.01     0.01     0.00     0.00     3727   NilClass#duplicable? 
+571.12      0.01     0.01     0.00     0.00        4   <Module::Oj>#load 
+562.60      0.01     0.01     0.00     0.00      174   Module#remove_method 
+561.60      0.01     0.01     0.00     0.00       35   Readline#readline 
+556.69      0.01     0.01     0.00     0.00        8   Kernel#require 
+555.68      0.01     0.01     0.00     0.00     1984   String#gsub! 
+554.20      0.01     0.01     0.00     0.00     1544   Psych::Nodes::Mapping#initialize 
+545.44      0.02     0.01     0.00     0.01     2229   ActiveRecord::Associations::JoinDependency::JoinPart#record_id 
+543.02      8.77     0.01     0.00     8.76      744   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_run__1426109599698765738__validation__4176206310142971996__callbacks 
+540.65      0.02     0.01     0.00     0.01     1521   ActiveRecord::Inheritance::ClassMethods#base_class 
+539.47      0.03     0.01     0.00     0.02     1486   ActiveRecord::Relation#joined_includes_values 
+538.82     65.49     0.01     0.00    65.48     1487   ActiveRecord::Transactions::ClassMethods#transaction 
+537.99      0.02     0.01     0.00     0.01     1488   Enumerable#sort_by 
+532.60      0.04     0.01     0.00     0.03     1544   Psych::TreeBuilder#start_mapping 
+531.12      0.05     0.01     0.00     0.05     1486   ActiveRecord::Associations::JoinDependency::JoinPart#extract_record 
+530.89      0.02     0.01     0.00     0.01     2229   ActiveRecord::Associations::JoinDependency::JoinAssociation#chain 
+527.46      0.01     0.01     0.00     0.00     6096   Fixnum#<=> 
+526.80      0.01     0.01     0.00     0.00     1437   Psych::Nodes::Document#initialize 
+525.62      1.31     0.01     0.00     1.31     2232   ActiveRecord::Associations::SingularAssociation#writer 
+521.18      0.20     0.01     0.00     0.19     2238   ActiveRecord::Delegation#logger 
+518.58      0.20     0.01     0.00     0.19      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#join_to 
+518.34      0.01     0.01     0.00     0.00     2232   URI::Generic#userinfo 
+518.17      0.01     0.01     0.00     0.01     1492   ActiveRecord::QueryMethods#extending 
+515.38      0.03     0.01     0.00     0.02     1488   ActiveRecord::Scoping::Named::ClassMethods#scope_attributes? 
+510.71      0.16     0.01     0.00     0.15     1432   <Class::ActiveRecord::ConnectionAdapters::PostgreSQLColumn>#string_to_time 
+509.94      0.03     0.01     0.00     0.02     1486   ActiveRecord::Associations::CollectionAssociation#reader 
+503.14      0.01     0.01     0.00     0.01     2227   ActiveModel::Errors#get 
+500.89     52.57     0.01     0.00    52.56      742   ActiveRecord::Persistence::ClassMethods#create 
+500.41      0.01     0.01     0.00     0.00     2986   NilClass#blank? 
+493.96      0.04     0.01     0.00     0.03      745   ActiveRecord::QueryMethods#joins 
+493.14      0.04     0.01     0.00     0.03     1495   Kernel#tap 
+492.84      0.14     0.01     0.00     0.14     1424   <Class::ActiveRecord::ConnectionAdapters::Column>#string_to_time 
+492.78      0.01     0.01     0.00     0.00     4197   String#empty? 
+482.25      0.07     0.01     0.00     0.07      852   RubyToken#Token 
+478.52      0.04     0.01     0.00     0.03     1437   Psych::TreeBuilder#start_stream 
+476.63      0.01     0.01     0.00     0.00     2229   ActiveRecord::Associations::JoinDependency::JoinAssociation#table 
+475.15      0.08     0.01     0.00     0.07     1424   <Class::ActiveRecord::ConnectionAdapters::Column>#new_time 
+473.73      0.01     0.01     0.00     0.00     1521   ActiveRecord::Inheritance::ClassMethods#class_of_active_record_descendant 
+472.66      0.01     0.01     0.00     0.00     4296   Fixnum#* 
+468.99      0.01     0.01     0.00     0.00     2235   ActiveRecord::Reflection::AssociationReflection#type 
+467.22      0.04     0.01     0.00     0.03     1428   Time#to_formatted_s 
+467.16      0.01     0.01     0.00     0.00     1435   Psych::Visitors::ToRuby#initialize 
+466.09      0.05     0.01     0.00     0.04     1424   ActiveSupport::TimeWithZone#to_s 
+461.83      0.02     0.01     0.00     0.01     1492   ActiveRecord::Associations::AssociationScope#conditions 
+460.00      0.04     0.01     0.00     0.03       89   RubyLex#identify_identifier 
+458.99     50.03     0.01     0.00    50.03      742   ActiveRecord::Transactions#rollback_active_record_state! 
+457.63      0.04     0.01     0.00     0.03      670   ActiveRecord::AttributeMethods::ClassMethods#instance_method_already_implemented? 
+456.69      0.02     0.01     0.00     0.01     1436   Object#acts_like? 
+455.62      0.04     0.01     0.00     0.03      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#build_constraint 
+445.62      0.01     0.01     0.00     0.00     4292   Fixnum#divmod 
+442.90      0.01     0.01     0.00     0.00      743   ActiveRecord::Transactions#clear_transaction_record_state 
+436.04      0.01     0.01     0.00     0.00     2970   PG::Connection#transaction_status 
+435.38      0.02     0.01     0.00     0.01     1488   ActiveRecord::Associations::BelongsToPolymorphicAssociation#inverse_reflection_for 
+435.21      2.82     0.01     0.00     2.81     1496   ActiveRecord::Querying#find_by_sql 
+433.43      0.01     0.01     0.00     0.00     1494   #<Module:0x007fb303f67f58>#__temp__ 
+432.84      0.06     0.01     0.00     0.05     1424   <Class::Time>#time_with_datetime_fallback 
+432.66      0.03     0.01     0.00     0.02     1428   Time#in_time_zone 
+430.77      0.82     0.01     0.00     0.81     1483   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#rollback_db_transaction 
+429.23      0.01     0.01     0.00     0.00     1488   ActiveRecord::Base#_mass_assignment_sanitizer 
+428.40     20.38     0.01     0.00    20.37     1488   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_callback_before_264 
+427.46      0.15     0.01     0.00     0.14     1542   Psych::Visitors::ToRuby#revive_hash 
+426.51      0.01     0.01     0.00     0.00     1435   <Class::Psych::Parser>#allocate 
+426.51      0.01     0.01     0.00     0.00      776   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_run__2485854360642620732__find__4176206310142971996__callbacks 
+424.26      0.01     0.01     0.00     0.00     2226   ActiveRecord::Associations::CollectionProxy#target 
+422.43      0.01     0.01     0.00     0.00      743   ActiveRecord::Transactions#restore_transaction_record_state 
+420.89      0.09     0.01     0.00     0.08     1486   ActiveRecord::Associations::CollectionProxy#load_target 
+420.77     50.21     0.01     0.00    50.20      744   ActiveRecord::Transactions#with_transaction_returning_status 
+417.63      0.01     0.01     0.00     0.00      743   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__rollback__4176206310142971996__callbacks 
+417.57      0.16     0.01     0.00     0.15     1542   Psych::Visitors::ToRuby#visit_Psych_Nodes_Mapping 
+416.09      0.09     0.01     0.00     0.08     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_212 
+415.09      0.10     0.01     0.00     0.10      743   ActiveRecord::Transactions#rolledback! 
+413.85      0.01     0.01     0.00     0.00      776   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_run__2485854360642620732__initialize__4176206310142971996__callbacks 
+409.70      0.01     0.01     0.00     0.00     2243   Hash#values_at 
+409.29      0.01     0.01     0.00     0.00     3174   Array#reverse 
+408.17      5.38     0.01     0.00     5.38     1488   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_callback_before_270 
+404.20     13.51     0.01     0.00    13.51     1488   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_callback_before_266 
+403.02      0.16     0.01     0.00     0.15      743   ActiveRecord::Associations::JoinDependency#set_target_and_inverse 
+399.53      0.01     0.01     0.00     0.00      745   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_run__2907036350389489085__find__4176206310142971996__callbacks 
+397.63      0.01     0.01     0.00     0.00     1435   Psych::Parser#initialize 
+397.34      0.05     0.01     0.00     0.04     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_216 
+394.73      0.01     0.01     0.00     0.00      744   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__initialize__4176206310142971996__callbacks 
+393.85      0.01     0.01     0.00     0.00     2236   URI::Generic#set_scheme 
+392.19     10.44     0.01     0.00    10.43     1435   <Module::Psych>#load 
+392.07      0.28     0.01     0.00     0.27      745   ActiveRecord::Querying#where 
+390.77      0.01     0.01     0.00     0.00      745   Application(id: integer, name: string, redirect_uri: string, user_id: integer, created_at: datetime, updated_at: datetime, entity_id: integer)#_run__2907036350389489085__initialize__4176206310142971996__callbacks 
+389.47      0.01     0.01     0.00     0.00     2236   URI::Generic#split_userinfo 
+388.64      0.82     0.01     0.00     0.82     1485   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#begin_db_transaction 
+388.40      0.01     0.01     0.00     0.00      712   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__446239950780992892__find__4176206310142971996__callbacks 
+386.27      0.01     0.01     0.00     0.00      712   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_run__218580901925583510__find__4176206310142971996__callbacks 
+384.44     10.26     0.01     0.00    10.26     1435   <Module::Psych>#parse 
+383.20      0.01     0.01     0.00     0.00     2236   URI::Generic#set_opaque 
+382.37      0.03     0.01     0.00     0.03     1435   Psych::Handlers::DocumentStream#start_document 
+380.83      0.01     0.01     0.00     0.00     2343   Hash#[] 
+380.53      0.01     0.01     0.00     0.00     3812   Array#pop 
+378.64      0.09     0.01     0.00     0.09      744   ActiveRecord::Transactions#add_to_transaction 
+378.28      0.02     0.01     0.00     0.02     1435   Psych::Handlers::DocumentStream#end_document 
+377.87      0.01     0.01     0.00     0.00      712   IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__446239950780992892__initialize__4176206310142971996__callbacks 
+377.34     48.59     0.01     0.00    48.58      742   ActiveRecord::AttributeMethods::Dirty#save 
+377.16      0.01     0.01     0.00     0.01      958   Array#extract_options! 
+376.69      0.04     0.01     0.00     0.04      675   ActiveRecord::DynamicMatchers#respond_to? 
+376.39      0.01     0.01     0.00     0.00     2236   URI::Generic#set_registry 
+376.27      0.01     0.01     0.00     0.00      712   Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)#_run__218580901925583510__initialize__4176206310142971996__callbacks 
+376.04      0.01     0.01     0.00     0.00     1437   Psych::Nodes::Stream#initialize 
+375.92      0.01     0.01     0.00     0.00     2246   URI::Generic#set_query 
+375.33      9.12     0.01     0.00     9.11     1488   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_callback_before_268 
+371.95      0.01     0.01     0.00     0.00     2236   URI::Generic#set_fragment 
+370.59      0.01     0.01     0.00     0.00     3680   Exception#exception 
+370.47      0.01     0.01     0.00     0.00     2255   ActiveRecord::Reflection::AssociationReflection#collection? 
+368.76      0.01     0.01     0.00     0.00     2236   URI::Generic#set_host 
+368.46      3.67     0.01     0.00     3.67     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_210 
+366.86      0.01     0.01     0.00     0.00       20   ActiveRecord::AttributeMethods::Serialization::ClassMethods#serialize 
+366.63      0.01     0.01     0.00     0.01     1435   Psych::Handlers::DocumentStream#initialize 
+365.98      0.06     0.01     0.00     0.05     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_214 
+364.44      4.56     0.01     0.00     4.56     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_224 
+363.25      0.01     0.01     0.00     0.00     2236   URI::Generic#set_path 
+362.07      0.01     0.01     0.00     0.00     3043   Hash#blank? 
+360.41      0.59     0.01     0.00     0.58      743   ActiveRecord::Relation#to_sql 
+358.99      5.98     0.01     0.00     5.97      742   <Class::Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)>#create_with_context! 
+357.51     56.48     0.01     0.00    56.47       27   ActiveSupport::Dependencies#load_missing_constant 
+357.16      0.01     0.01     0.00     0.00     3554   NilClass#inspect 
+356.98      9.17     0.01     0.00     9.17      712   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#find_by_uid_and_context 
+355.56      0.05     0.01     0.00     0.05     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_218 
+355.27      0.05     0.01     0.00     0.04     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_208 
+350.95      0.01     0.01     0.00     0.00     1494   ActiveRecord::Associations::AssociationScope#alias_suffix 
+349.76      0.04     0.01     0.00     0.03     1488   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_callback_before_220 
+348.40      0.01     0.01     0.00     0.01      554   RubyLex#ungetc 
+344.79      0.01     0.01     0.00     0.00     2238   Numeric#blank? 
+343.08      0.02     0.01     0.00     0.02     1486   ActiveRecord::Associations::Association#find_target? 
+342.37      0.01     0.01     0.00     0.01      670   ActiveRecord::AttributeMethods::ClassMethods#method_defined_within? 
+339.76      0.01     0.01     0.00     0.00     1488   ActiveModel::MassAssignmentSecurity::ClassMethods#active_authorizers 
+338.52      0.01     0.01     0.00     0.00     2287   Kernel#freeze 
+336.21      0.16     0.01     0.00     0.16      744   ActiveModel::MassAssignmentSecurity#sanitize_for_mass_assignment 
+335.44      0.01     0.01     0.00     0.00     1437   Psych::TreeBuilder#initialize 
+333.61      0.17     0.01     0.00     0.17     1435   Psych::Nodes::Node#to_ruby 
+331.48      0.01     0.01     0.00     0.00     1486   ActiveRecord::Associations::JoinHelper#table_name_for 
+330.30      0.14     0.01     0.00     0.13      744   ActiveModel::MassAssignmentSecurity::Sanitizer#sanitize 
+330.24      0.01     0.01     0.00     0.00     1488   ActiveRecord::Reflection::AssociationReflection#polymorphic_inverse_of 
+328.58      0.01     0.01     0.00     0.00     1428   <Class::Time>#zone 
+320.30      0.01     0.01     0.00     0.00     2970   ActiveRecord::Associations::Association#stale_state 
+320.18      0.01     0.01     0.00     0.00     2238   String#eql? 
+319.94      0.01     0.01     0.00     0.00     1727   Hash#values 
+318.52      0.02     0.01     0.00     0.01     1544   Psych::TreeBuilder#end_mapping 
+318.11      0.01     0.01     0.00     0.00     1428   <Class::Time>#find_zone! 
+316.33      0.01     0.01     0.00     0.00     1428   ActiveSupport::TimeWithZone#initialize 
+315.92      0.01     0.01     0.00     0.00     2174   #<Class:0x007fb304ee8680>#value= 
+315.56      0.01     0.01     0.00     0.00     1486   ActiveRecord::Associations::JoinDependency::JoinAssociation#alias_tracker 
+314.62      9.46     0.01     0.00     9.46      712   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#find_by_uid_and_context_name 
+311.60      0.01     0.01     0.00     0.00     1492   ActiveRecord::Associations::AssociationScope#owner 
+311.54      0.15     0.01     0.00     0.14      743   Arel::Visitors::ToSql#visit_Arel_Nodes_OuterJoin 
+311.01      0.11     0.01     0.00     0.10     1435   Psych::Visitors::ToRuby#visit_Psych_Nodes_Document 
+308.64      0.02     0.01     0.00     0.01      670   ActiveRecord::AttributeMethods::ClassMethods#dangerous_attribute_method? 
+307.04      0.01     0.01     0.00     0.00       24   Module#constants 
+304.56     48.57     0.01     0.00    48.57      742   ActiveRecord::Validations#save 
+299.53      0.01     0.01     0.00     0.00     2174   #<Class:0x007fb304ee8680>#state= 
+292.84      0.00     0.00     0.00     0.00     2268   BasicObject#equal? 
+285.56      0.01     0.00     0.00     0.00      744   ActiveRecord::AttributeAssignment#execute_callstack_for_multiparameter_attributes 
+285.09      0.01     0.00     0.00     0.01      744   ActiveRecord::Inheritance#ensure_proper_type 
+275.80      0.00     0.00     0.00     0.00      717   ActiveRecord::DynamicFinderMatch#initialize 
+272.72      0.13     0.00     0.00     0.13      744   Hash#stringify_keys! 
+271.72      0.01     0.00     0.00     0.00      744   ActiveRecord::ConnectionAdapters::DatabaseStatements#add_transaction_record 
+271.60     48.69     0.00     0.00    48.68      744   ActiveRecord::Validations#perform_validations 
+270.71     11.44     0.00     0.00    11.44       67   Array#inspect 
+268.28      0.00     0.00     0.00     0.00     1485   ActiveRecord::ConnectionAdapters::AbstractAdapter#decrement_open_transactions 
+268.05      0.14     0.00     0.00     0.14     1544   Enumerable#each_slice 
+266.69      0.00     0.00     0.00     0.00     1488   Arel::SelectManager#join_sources 
+265.50      0.00     0.00     0.00     0.00     1485   ActiveRecord::ConnectionAdapters::AbstractAdapter#increment_open_transactions 
+260.95      0.00     0.00     0.00     0.00     1486   ActiveRecord::Reflection::AssociationReflection#table_name 
+260.53      0.01     0.00     0.00     0.00     1435   Psych::Nodes::Document#root 
+260.00      0.02     0.00     0.00     0.02      745   ActiveRecord::Associations::JoinHelper#join 
+258.40      0.14     0.00     0.00     0.14      744   Hash#stringify_keys 
+255.80      0.07     0.00     0.00     0.07      743   ActiveRecord::Base#_run_rollback_callbacks 
+254.85      0.01     0.00     0.00     0.01      744   ActiveModel::MassAssignmentSecurity#mass_assignment_authorizer 
+253.31      0.01     0.00     0.00     0.01     1492   Kernel#inspect 
+252.60      0.11     0.00     0.00     0.10      743   ActiveRecord::Querying#includes 
+248.34      0.17     0.00     0.00     0.17      386   RubyLex#token 
+242.54      0.01     0.00     0.00     0.01      746   <Class::Exception>#exception 
+240.89      0.01     0.00     0.00     0.01      744   ActiveRecord::Associations::Association#raise_on_type_mismatch 
+240.36      0.00     0.00     0.00     0.00     1424   String#to_f 
+240.18      0.01     0.00     0.00     0.00      744   ActiveRecord::AttributeAssignment#extract_callstack_for_multiparameter_attributes 
+239.94      0.03     0.00     0.00     0.03      744   ActiveRecord::Associations::CollectionProxy#to_ary 
+239.35      0.01     0.00     0.00     0.01      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#conditions 
+239.29      0.00     0.00     0.00     0.00     1437   Psych::ScalarScanner#initialize 
+237.99      0.04     0.00     0.00     0.04      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#join_relation 
+237.99      0.01     0.00     0.00     0.00      745   ActiveRecord::QueryMethods#custom_join_ast 
+236.86      0.03     0.00     0.00     0.03      744   ActiveRecord::Scoping#populate_with_current_scope_attributes 
+232.54      0.01     0.00     0.00     0.00      744   ActiveRecord::AttributeAssignment#mass_assignment_role 
+230.00      0.02     0.00     0.00     0.01      744   ActiveRecord::AttributeAssignment#assign_multiparameter_attributes 
+228.64      0.01     0.00     0.00     0.01      743   Array#reject! 
+223.79      0.00     0.00     0.00     0.00      483   Psych::Nodes::Scalar#initialize 
+222.49      0.01     0.00     0.00     0.00      334   Psych::ScalarScanner#tokenize 
+222.37      0.00     0.00     0.00     0.00     1601   IO#getbyte 
+221.36      0.01     0.00     0.00     0.01      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#aliased_table_name 
+220.12      0.00     0.00     0.00     0.00     1281   ActiveModel::AttributeMethods::ClassMethods#generated_attribute_methods 
+220.00      0.00     0.00     0.00     0.00     1485   Array#clear 
+214.02      0.12     0.00     0.00     0.12      745   Arel::Visitors::ToSql#visit_Arel_Nodes_On 
+212.31      0.00     0.00     0.00     0.00     2174   #<Class:0x007fb304ee8680>#coder 
+211.18      0.01     0.00     0.00     0.01      483   Psych::Visitors::ToRuby#visit_Psych_Nodes_Scalar 
+208.11      0.01     0.00     0.00     0.00      758   Array#index 
+205.92      0.00     0.00     0.00     0.00      321   <Class::File>#file? 
+204.67      0.34     0.00     0.00     0.34      745   ActiveRecord::Associations::JoinDependency#graft 
+203.08      0.03     0.00     0.00     0.02      717   ActiveRecord::DynamicMatchers#expand_attribute_names_for_aggregates 
+199.35      0.00     0.00     0.00     0.00     1523   Hash#delete_if 
+198.52      0.01     0.00     0.00     0.00      670   ActiveModel::AttributeMethods::ClassMethods#instance_method_already_implemented? 
+190.53      9.37     0.00     0.00     9.37      712   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#batch_find_or_create 
+189.17      0.00     0.00     0.00     0.00     1579   Module#method_added 
+189.05      0.19     0.00     0.00     0.18      744   #<Module:0x007fb305b8db88>#properties= 
+186.63      0.00     0.00     0.00     0.00     1428   ActiveSupport::TimeWithZone#utc 
+186.33      0.04     0.00     0.00     0.03      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#parent_table 
+184.02      0.00     0.00     0.00     0.00      674   <Class::ActiveRecord::DynamicScopeMatch>#match 
+183.67      0.00     0.00     0.00     0.00      716   ActiveRecord::DynamicFinderMatch#instantiator? 
+182.66     50.04     0.00     0.00    50.03      742   ActiveRecord::Transactions#save 
+180.47      0.00     0.00     0.00     0.00      744   ActiveRecord::ModelSchema::ClassMethods#column_defaults 
+177.75      0.01     0.00     0.00     0.00      743   ActiveRecord::Associations::JoinDependency#remove_uniq_by_reflection 
+175.38      0.00     0.00     0.00     0.00      372   #<Module:0x007fb303f7c098>#__temp__ 
+172.60      0.00     0.00     0.00     0.00      742   ActiveModel::Errors#set 
+168.28      0.01     0.00     0.00     0.01      745   Arel::FactoryMethods#create_on 
+168.05      0.01     0.00     0.00     0.01      483   Psych::TreeBuilder#scalar 
+167.99      8.66     0.00     0.00     8.66      711   ActiveRecord::Delegation#find_by_uid 
+167.22      0.00     0.00     0.00     0.00      334   Module#define_method 
+162.96      0.00     0.00     0.00     0.00     1424   Float#to_i 
+162.60      0.01     0.00     0.00     0.01      133   ActiveSupport::Callbacks::Callback#_compile_filter 
+161.54      0.01     0.00     0.00     0.01      743   ActiveRecord::Associations::JoinDependency::JoinAssociation#find_parent_in 
+159.88      0.01     0.00     0.00     0.01      745   Arel::FactoryMethods#create_join 
+158.82      0.00     0.00     0.00     0.00     1488   ActiveRecord::Associations::BelongsToPolymorphicAssociation#raise_on_type_mismatch 
+156.15      0.02     0.00     0.00     0.02      670   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#dangerous_attribute_method? 
+154.38      0.00     0.00     0.00     0.00      560   Module#ancestors 
+153.31      0.02     0.00     0.00     0.02      745   Enumerable#group_by 
+151.78      0.01     0.00     0.00     0.00      670   ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher#method_name 
+146.63      0.00     0.00     0.00     0.00     1455   ActiveRecord::Base#to_ary 
+145.92      0.00     0.00     0.00     0.00     1424   Time#year 
+144.79      0.02     0.00     0.00     0.01      717   ActiveRecord::ModelSchema::ClassMethods#column_methods_hash 
+143.91      0.00     0.00     0.00     0.00      744   ActiveRecord::AttributeAssignment#mass_assignment_options 
+142.54      0.00     0.00     0.00     0.00     1424   Float#* 
+142.13      0.01     0.00     0.00     0.00       47   ActiveSupport::Inflector#underscore 
+141.72      0.00     0.00     0.00     0.00     1440   BasicObject#initialize 
+141.54      0.00     0.00     0.00     0.00     1002   <Class::RubyLex>#debug? 
+139.53      0.17     0.00     0.00     0.17      386   IRB::SLex#match 
+138.11      0.00     0.00     0.00     0.00     1428   Time#utc? 
+130.95      0.00     0.00     0.00     0.00      174   Class#singleton_class? 
+129.64      0.64     0.00     0.00     0.63       62   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__3962261706612184175__validate__4176206310142971996__callbacks 
+129.41      0.00     0.00     0.00     0.00      231   Object#in? 
+127.57      0.00     0.00     0.00     0.00      536   Regexp#=~ 
+125.74      0.00     0.00     0.00     0.00      716   ActiveRecord::DynamicFinderMatch#bang? 
+125.44      0.00     0.00     0.00     0.00     1434   Bignum#<=> 
+123.61      0.83     0.00     0.00     0.83       31   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_run__2485854360642620732__validate__4176206310142971996__callbacks 
+123.31      0.00     0.00     0.00     0.00      716   ActiveRecord::DynamicFinderMatch#finder? 
+121.24      0.00     0.00     0.00     0.00      713   FalseClass#blank? 
+120.65      0.00     0.00     0.00     0.00      744   Object#duplicable? 
+120.30      0.00     0.00     0.00     0.00      611   Array#unshift 
+116.75      0.00     0.00     0.00     0.00      749   Array#delete 
+114.20      0.01     0.00     0.00     0.01      290   Module#remove_possible_method 
+111.42      0.06     0.00     0.00     0.06      174   ActiveSupport::Callbacks::ClassMethods#__update_callbacks 
+110.89     83.45     0.00     0.00    83.45       28   Kernel#eval 
+110.65      0.00     0.00     0.00     0.00      562   <Class::File>#join 
+110.53      0.02     0.00     0.00     0.02       13   RubyLex#identify_string 
+109.82      0.00     0.00     0.00     0.00      789   Module#private_method_defined? 
+106.27      0.00     0.00     0.00     0.00      420   ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher#plain? 
+105.62      0.01     0.00     0.00     0.00      248   ActiveRecord::AttributeMethods::TimeZoneConversion::ClassMethods#create_time_zone_conversion_attribute? 
+105.38      0.00     0.00     0.00     0.00      743   Symbol#empty? 
+104.73      0.01     0.00     0.00     0.00      174   ActiveSupport::Callbacks::Callback#_compile_options 
+103.73      0.00     0.00     0.00     0.00      386   RubyToken::Token#initialize 
+103.37      0.00     0.00     0.00     0.00      744   Kernel#remove_instance_variable 
+102.84      0.00     0.00     0.00     0.00        4   URI::Parser#make_regexp 
+101.89      0.00     0.00     0.00     0.00      744   Hash#== 
+101.66      0.17     0.00     0.00     0.17       15   RubyLex#lex 
+ 98.05      0.03     0.00     0.00     0.02       87   ActiveSupport::Callbacks::Callback#initialize 
+ 93.67      0.03     0.00     0.00     0.03       67   ActiveRecord::AttributeMethods::Read::ClassMethods#define_method_attribute 
+ 93.37      0.00     0.00     0.00     0.00      804   String#concat 
+ 89.35      0.01     0.00     0.00     0.01      312   RubyLex#getc_of_rests 
+ 88.70      0.00     0.00     0.00     0.00       87   ActiveSupport::Callbacks::Callback#normalize_options! 
+ 84.62      0.00     0.00     0.00     0.00      213   ActiveSupport::Inflector#inflections 
+ 84.32      0.00     0.00     0.00     0.00      386   IRB::Notifier::LeveledNotifier#notify? 
+ 81.30      0.00     0.00     0.00     0.00      344   ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher#match 
+ 80.47      0.00     0.00     0.00     0.00      141   String#sub 
+ 77.69      0.00     0.00     0.00     0.00      386   IRB::Notifier::LeveledNotifier#<=> 
+ 77.04      0.01     0.00     0.00     0.00      386   IRB::Notifier::AbstractNotifier#printf 
+ 73.85      0.00     0.00     0.00     0.00       16   Kernel#caller 
+ 71.78      0.07     0.00     0.00     0.07       14   Kernel#printf 
+ 71.54      0.00     0.00     0.00     0.00        2   TCPSocket#initialize 
+ 70.30      0.00     0.00     0.00     0.00      240   <Class::File>#directory? 
+ 69.35      0.00     0.00     0.00     0.00      387   Comparable#>= 
+ 68.52      0.01     0.00     0.00     0.01       87   ActiveSupport::Callbacks::Callback#_compile_per_key_options 
+ 68.11      0.00     0.00     0.00     0.00      338   RubyLex#peek 
+ 67.28      0.01     0.00     0.00     0.00       67   ActiveRecord::AttributeMethods::Read::ClassMethods#internal_attribute_access_code 
+ 66.86      0.01     0.00     0.00     0.01       69   ActiveRecord::ConnectionAdapters::Column#initialize 
+ 65.98      0.07     0.00     0.00     0.07       92   ActiveSupport::Inflector#constantize 
+ 65.68      0.00     0.00     0.00     0.00      522   Symbol#to_proc 
+ 59.88    163.67     0.00     0.00   163.66       49   IRB::Irb#signal_status 
+ 59.29      0.00     0.00     0.00     0.00      124   #<Module:0x007fb309541ca8>#__temp__ 
+ 58.46      0.00     0.00     0.00     0.00      228   <Class::File>#expand_path 
+ 58.28      0.00     0.00     0.00     0.00       19   PG::Connection#block 
+ 56.45      0.01     0.00     0.00     0.01      144   IRB::Irb#prompt 
+ 53.49      0.00     0.00     0.00     0.00      144   Kernel#format 
+ 53.08      0.00     0.00     0.00     0.00       87   <Module::ActiveSupport::DescendantsTracker>#descendants 
+ 52.25      0.00     0.00     0.00     0.00      107   IRB::Context#verbose? 
+ 50.83    202.26     0.00     0.00   202.26       27   ActiveSupport::Dependencies::ModuleConstMissing#const_missing 
+ 50.65      0.77     0.00     0.00     0.77       62   ActiveRecord::FinderMethods#find 
+ 49.88      0.00     0.00     0.00     0.00      220   ActiveSupport::Callbacks::Callback#next_id 
+ 49.29      0.00     0.00     0.00     0.00        6   IO#read_nonblock 
+ 48.40      0.01     0.00     0.00     0.01       67   ActiveRecord::AttributeMethods::TimeZoneConversion::ClassMethods#define_method_attribute= 
+ 48.17      0.00     0.00     0.00     0.00       87   ActiveSupport::Callbacks::ClassMethods#__reset_runner 
+ 47.99      0.00     0.00     0.00     0.00       70   String#chars 
+ 47.51      0.00     0.00     0.00     0.00        7   File#initialize 
+ 47.51      0.00     0.00     0.00     0.00      237   Module#undef_method 
+ 47.10      0.31     0.00     0.00     0.31      134   ActiveModel::AttributeMethods::ClassMethods#define_attribute_method 
+ 47.04      0.00     0.00     0.00     0.00      205   Module#const_defined? 
+ 46.69      0.00     0.00     0.00     0.00      124   <Class::ActiveRecord::Base>#time_zone_aware_attributes 
+ 46.69      0.00     0.00     0.00     0.00       51   ActiveSupport::Callbacks::Callback#start 
+ 46.04      0.00     0.00     0.00     0.00      192   <Class::Regexp>#escape 
+ 45.86      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::PostgreSQLColumn#simplified_type 
+ 45.80      0.00     0.00     0.00     0.00       66   IO#set_encoding 
+ 44.97      0.01     0.00     0.00     0.00       57   ActiveRecord::AttributeMethods::TimeZoneConversion::ClassMethods#attribute_cast_code 
+ 44.91      0.00     0.00     0.00     0.00      134   ActiveRecord::AttributeMethods::Read::ClassMethods#cache_attribute? 
+ 44.50      0.00     0.00     0.00     0.00      166   ActiveSupport::Callbacks::Callback#matches? 
+ 44.38      0.01     0.00     0.00     0.01       34   ActiveSupport::Callbacks::CallbackChain#compile 
+ 43.91      0.00     0.00     0.00     0.00      311   BasicObject#singleton_method_added 
+ 43.37      0.00     0.00     0.00     0.00      213   <Class::ActiveSupport::Inflector::Inflections>#instance 
+ 42.84      0.00     0.00     0.00     0.00      192   Module#const_get 
+ 41.72      0.00     0.00     0.00     0.00       38   PG::Connection#get_last_result 
+ 41.66      0.00     0.00     0.00     0.00      373   String#starts_with? 
+ 41.42      0.00     0.00     0.00     0.00       72   IRB::Context#prompting? 
+ 40.89      0.03     0.00     0.00     0.03       20   ActiveRecord::AutosaveAssociation::ClassMethods#add_autosave_association_callbacks 
+ 40.77      0.00     0.00     0.00     0.00        2   <Class::IO>#read 
+ 40.53      0.02     0.00     0.00     0.02       49   ActiveSupport::Inflector#apply_inflections 
+ 39.94      0.00     0.00     0.00     0.00      138   Set#add 
+ 39.82      0.01     0.00     0.00     0.01      134   ActiveRecord::AttributeMethods::Serialization::ClassMethods#attribute_cast_code 
+ 39.23      0.01     0.00     0.00     0.01       54   ActiveSupport::JSON::Encoding::Encoder#check_for_circular_references 
+ 38.88      0.00     0.00     0.00     0.00      139   Module#alias_method 
+ 38.64      0.01     0.00     0.00     0.01       24   ActiveRecord::Associations::Builder::CollectionAssociation#define_callback 
+ 38.46      0.01     0.00     0.00     0.01       35   IRB::ReadlineInputMethod#gets 
+ 38.22      0.00     0.00     0.00     0.00      247   String#initialize_copy 
+ 37.69      0.00     0.00     0.00     0.00       45   <Class::ActiveRecord::Base>#_validate_callbacks= 
+ 37.63      0.00     0.00     0.00     0.00      124   #<Module:0x007fb3059f3390>#__temp__ 
+ 37.40      0.00     0.00     0.00     0.00       51   ActiveRecord::AttributeMethods::Write::ClassMethods#define_method_attribute= 
+ 36.69      0.01     0.00     0.00     0.01       37   Hash#each_pair 
+ 34.56      0.00     0.00     0.00     0.00       95   Hash#merge 
+ 34.44      0.29     0.00     0.00     0.29       12   ActiveSupport::Dependencies#require_or_load 
+ 33.31      0.00     0.00     0.00     0.00      135   Hash#extractable_options? 
+ 33.08      0.00     0.00     0.00     0.00       57   ActiveRecord::ConnectionAdapters::Column#type_cast_code 
+ 32.96      0.03     0.00     0.00     0.03       67   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#define_method_attribute 
+ 32.96      0.06     0.00     0.00     0.06       87   ActiveSupport::Callbacks::ClassMethods#set_callback 
+ 32.54      0.00     0.00     0.00     0.00       87   Array#delete_if 
+ 31.54      3.46     0.00     0.00     3.46       31   <Class::Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)>#find_or_create 
+ 31.48      0.00     0.00     0.00     0.00      174   Kernel#singleton_class 
+ 30.95      0.00     0.00     0.00     0.00       67   ActiveRecord::AttributeMethods::Read::ClassMethods#external_attribute_access_code 
+ 30.71      0.00     0.00     0.00     0.00       51   Module#qualified_const_defined? 
+ 29.23      0.00     0.00     0.00     0.00       89   Module#redefine_method 
+ 29.17      0.00     0.00     0.00     0.00       46   ActiveSupport::Inflector#camelize 
+ 29.17      0.00     0.00     0.00     0.00       40   ActiveModel::EachValidator#initialize 
+ 27.87      0.00     0.00     0.00     0.00       19   PG::Connection#send_query_prepared 
+ 27.87      0.00     0.00     0.00     0.00      134   ActiveRecord::AttributeMethods::Read::ClassMethods#cached_attributes 
+ 27.75      0.03     0.00     0.00     0.03       45   ActiveModel::Validations::ClassMethods#validate 
+ 27.69      0.00     0.00     0.00     0.00       93   #<Module:0x007fb303f67d00>#__temp__ 
+ 27.40      0.00     0.00     0.00     0.00       38   Hash#slice! 
+ 26.92      0.00     0.00     0.00     0.00       99   ActiveSupport::Dependencies#log_activity? 
+ 26.86      0.01     0.00     0.00     0.01       33   ActiveRecord::ConnectionAdapters::Quoting#type_cast 
+ 26.80      0.00     0.00     0.00     0.00       14   IRB::Context#set_last_value 
+ 26.51      0.02     0.00     0.00     0.02       35   RubyLex#buf_input 
+ 26.27      0.00     0.00     0.00     0.00       97   <Class::ActiveRecord::Base>#generated_feature_methods 
+ 26.21      0.03     0.00     0.00     0.02       36   ActiveSupport::Dependencies::WatchStack#new_constants 
+ 25.80      0.00     0.00     0.00     0.00       89   RubyToken::TkId#initialize 
+ 25.50      0.00     0.00     0.00     0.00       39   ActiveSupport::Dependencies#to_constant_name 
+ 24.97      0.84     0.00     0.00     0.84       31   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_run__2485854360642620732__validation__4176206310142971996__callbacks 
+ 24.26      0.01     0.00     0.00     0.01       72   RubyLex#prompt 
+ 23.85      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::PostgreSQLColumn#extract_limit 
+ 23.73      0.64     0.00     0.00     0.64       31   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__3962261706612184175__validation__4176206310142971996__callbacks 
+ 23.43      0.00     0.00     0.00     0.00      237   Module#method_undefined 
+ 23.37      0.00     0.00     0.00     0.00        4   Regexp#inspect 
+ 22.78      0.00     0.00     0.00     0.00       69   <Class::ActiveRecord::ConnectionAdapters::PostgreSQLColumn>#extract_value_from_default 
+ 22.66      0.00     0.00     0.00     0.00       51   ActiveSupport::Dependencies#qualified_const_defined? 
+ 22.60      0.00     0.00     0.00     0.00      161   Kernel#instance_of? 
+ 22.49      0.00     0.00     0.00     0.00       89   ActiveRecord::Associations::Builder::Association#mixin 
+ 21.89      0.00     0.00     0.00     0.00       22   <Module::ActiveSupport::JSON::Encoding>#escape 
+ 21.83      0.00     0.00     0.00     0.00       46   String#camelize 
+ 21.78      0.01     0.00     0.00     0.01       40   ActiveRecord::Reflection::ClassMethods#create_reflection 
+ 21.66      0.01     0.00     0.00     0.01       33   ActiveModel::MassAssignmentSecurity::ClassMethods#attr_accessible 
+ 21.60      0.01     0.00     0.00     0.01       40   ActiveRecord::Reflection::MacroReflection#initialize 
+ 21.36      0.02     0.00     0.00     0.02       40   ActiveRecord::Associations::Builder::Association#build 
+ 21.30      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::PostgreSQLColumn#extract_scale 
+ 21.01      0.00     0.00     0.00     0.00       57   ActiveRecord::AttributeMethods::Read::ClassMethods#attribute_cast_code 
+ 21.01      0.28     0.00     0.00     0.28       12   ActiveSupport::Dependencies#new_constants_in 
+ 20.95      0.03     0.00     0.00     0.03       19   ActiveModel::Validations::ClassMethods#validates 
+ 20.89      0.00     0.00     0.00     0.00       72   IO#tty? 
+ 20.77      0.00     0.00     0.00     0.00       67   ActiveRecord::AttributeMethods::Read::ClassMethods#cacheable_column? 
+ 20.71      0.01     0.00     0.00     0.01       76   Arel::Visitors::DepthFirst#visit 
+ 20.59      0.04     0.00     0.00     0.04       82   ActiveModel::Validations::ClassMethods#validates_with 
+ 20.47      0.00     0.00     0.00     0.00       75   NameError#initialize 
+ 20.06      0.01     0.00     0.00     0.01       69   ActiveRecord::ConnectionAdapters::PostgreSQLColumn#initialize 
+ 20.00      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::Column#extract_limit 
+ 19.70      0.00     0.00     0.00     0.00       20   <Class::ActiveRecord::Base>#reflections= 
+ 19.64      0.00     0.00     0.00     0.00       67   <Class::ActiveRecord::Base>#attribute_types_cached_by_default 
+ 19.64    163.34     0.00     0.00   163.34       28   IRB::WorkSpace#evaluate 
+ 19.64      0.00     0.00     0.00     0.00       99   <Module::ActiveSupport::Dependencies>#logger 
+ 19.47      0.01     0.00     0.00     0.01       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#exec_cache 
+ 19.47      0.00     0.00     0.00     0.00        6   <Class::ActiveRecord::Base>#inspect 
+ 19.47      0.28     0.00     0.00     0.28       12   ActiveSupport::Dependencies#load_file 
+ 19.23      0.05     0.00     0.00     0.05       12   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__save__4176206310142971996__callbacks 
+ 18.99      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_326 
+ 18.88      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_330 
+ 18.70      0.00     0.00     0.00     0.00      169   Symbol#=== 
+ 18.58      0.41     0.00     0.00     0.41       31   <Class::Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)>#find_by_uid_and_context 
+ 18.52      0.00     0.00     0.00     0.00       54   Object#presence 
+ 18.40      0.00     0.00     0.00     0.00       22   <Class::ActiveRecord::Base>#_save_callbacks= 
+ 18.34      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::Column#extract_precision 
+ 18.28      0.00     0.00     0.00     0.00       10   ActiveRecord::AutosaveAssociation#save_belongs_to_association 
+ 18.17      0.00     0.00     0.00     0.00       62   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_340 
+ 18.05      0.00     0.00     0.00     0.00       31   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__3962261706612184175__find__4176206310142971996__callbacks 
+ 18.05      0.48     0.00     0.00     0.48       62   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_344 
+ 17.75      0.00     0.00     0.00     0.00       62   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_336 
+ 17.63      0.00     0.00     0.00     0.00        3   PG::Connection#prepare 
+ 17.57      0.00     0.00     0.00     0.00       54   Set#add? 
+ 17.51      0.66     0.00     0.00     0.65       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_320 
+ 17.40      0.16     0.00     0.00     0.16       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_324 
+ 17.34      0.00     0.00     0.00     0.00       31   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_run__3962261706612184175__initialize__4176206310142971996__callbacks 
+ 17.34      0.00     0.00     0.00     0.00       41   ActiveSupport::Callbacks::Callback#_normalize_legacy_filter 
+ 17.16      0.00     0.00     0.00     0.00       47   Module#parent_name 
+ 17.16      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::PostgreSQLColumn#extract_precision 
+ 17.04      0.00     0.00     0.00     0.00       63   ActiveSupport::Dependencies#log_call 
+ 17.04      0.15     0.00     0.00     0.15       62   EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)#_callback_before_338 
+ 16.98      0.00     0.00     0.00     0.00       51   <Module::QualifiedConstUtils>#raise_if_absolute 
+ 16.98      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_332 
+ 16.75      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_328 
+ 16.45      0.00     0.00     0.00     0.00        4   RubyLex#identify_comment 
+ 16.45      0.44     0.00     0.00     0.44       31   <Class::Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)>#find_by_uid_and_context_name 
+ 16.09      0.00     0.00     0.00     0.00       38   ActiveRecord::Associations::Builder::Association#validate_options 
+ 16.04      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_334 
+ 16.04      0.00     0.00     0.00     0.00       51   Regexp#to_s 
+ 15.86      0.00     0.00     0.00     0.00       28   Module#attr_writer 
+ 15.80      0.00     0.00     0.00     0.00       19   Set#merge 
+ 15.80      0.00     0.00     0.00     0.00       62   Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)#_callback_before_322 
+ 15.68      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::Column#extract_scale 
+ 15.50      0.01     0.00     0.00     0.00       16   ActiveRecord::ModelSchema::ClassMethods#compute_table_name 
+ 15.50      0.01     0.00     0.00     0.01       32   String#pluralize 
+ 15.38      0.01     0.00     0.00     0.01       11   <Class::ActiveRecord::Base>#after_create 
+ 15.38      0.00     0.00     0.00     0.00       54   ActiveSupport::Dependencies#local_const_defined? 
+ 15.27      0.06     0.00     0.00     0.06       20   ActiveRecord::AutosaveAssociation::AssociationBuilderExtension#build 
+ 15.15      0.00     0.00     0.00     0.00       24   Module#parents 
+ 15.03      0.00     0.00     0.00     0.00      104   BasicObject#singleton_method_removed 
+ 14.97      0.01     0.00     0.00     0.01       33   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#type_cast 
+ 14.97      0.00     0.00     0.00     0.00       54   Set#delete 
+ 14.79      0.01     0.00     0.00     0.00       40   String#underscore 
+ 14.62      0.01     0.00     0.00     0.01       34   ActiveSupport::Inflector#pluralize 
+ 14.56      0.00     0.00     0.00     0.00       78   String#capitalize 
+ 14.56      0.01     0.00     0.00     0.01       11   Module#delegate 
+ 14.38      0.00     0.00     0.00     0.00        8   <Class::ActiveRecord::Base>#initialize_generated_modules 
+ 14.08      0.00     0.00     0.00     0.00       26   Module#append_features 
+ 14.02      0.00     0.00     0.00     0.00       51   <Module::QualifiedConstUtils>#names 
+ 14.02      0.00     0.00     0.00     0.00       14   IO#read 
+ 13.91      0.00     0.00     0.00     0.00       27   ActiveSupport::Dependencies#qualified_name_for 
+ 13.91      0.01     0.00     0.00     0.01       27   Class#class_attribute 
+ 13.91      0.00     0.00     0.00     0.00       59   String#insert 
+ 13.79      0.00     0.00     0.00     0.00       42   <Class::ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher::AttributeMethodMatch>#new 
+ 13.61      0.01     0.00     0.00     0.01        8   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#get_primary_key 
+ 13.55      0.00     0.00     0.00     0.00       20   ActiveRecord::Reflection::AssociationReflection#validate? 
+ 13.49      0.00     0.00     0.00     0.00       34   Array#reverse_each 
+ 13.49      0.01     0.00     0.00     0.01       27   ActiveSupport::Dependencies#search_for_file 
+ 13.49      0.00     0.00     0.00     0.00       12   ActiveRecord::Associations::Builder::SingularAssociation#define_constructors 
+ 13.25      0.00     0.00     0.00     0.00       69   ActiveRecord::ConnectionAdapters::Column#extract_default 
+ 13.02      0.00     0.00     0.00     0.00      108   BasicObject#__id__ 
+ 12.66      0.01     0.00     0.00     0.01       12   ActiveSupport::Dependencies#loadable_constants_for_path 
+ 12.66      0.32     0.00     0.00     0.32        8   Mutex#synchronize 
+ 12.60      0.00     0.00     0.00     0.00        2   <Class::Net::HTTPResponse>#each_response_header 
+ 12.60      0.00     0.00     0.00     0.00       23   Module#parent 
+ 12.54      0.00     0.00     0.00     0.00       47   String#tr! 
+ 12.37      0.00     0.00     0.00     0.00       44   ActiveModel::MassAssignmentSecurity::ClassMethods#accessible_attributes_configs 
+ 12.37      0.00     0.00     0.00     0.00       32   ActiveRecord::ConnectionAdapters::Column#simplified_type 
+ 12.31      0.02     0.00     0.00     0.02       33   ActiveRecord::ModelSchema::ClassMethods#columns 
+ 12.13      0.01     0.00     0.00     0.01       29   Module#include 
+ 12.13      0.00     0.00     0.00     0.00       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#prepare_statement 
+ 12.01      0.01     0.00     0.00     0.01       20   ActiveRecord::Reflection::AssociationReflection#initialize 
+ 11.95      0.00     0.00     0.00     0.00       30   ActiveSupport::JSON::Encoding::Encoder#options_for 
+ 11.95      0.00     0.00     0.00     0.00        8   Array#select 
+ 11.89      0.00     0.00     0.00     0.00       42   Enumerable#partition 
+ 11.83      0.00     0.00     0.00     0.00       51   ActiveSupport::Callbacks::Callback#end 
+ 11.83      0.00     0.00     0.00     0.00       54   <Module::ActiveSupport::Dependencies>#autoload_paths 
+ 11.78      0.00     0.00     0.00     0.00       41   ActiveModel::Validator#initialize 
+ 11.78     80.68     0.00     0.00    80.68        1   RubyLex#each_top_level_statement 
+ 11.66      0.00     0.00     0.00     0.00       11   <Class::ActiveRecord::Base>#_active_authorizer= 
+ 11.54      0.01     0.00     0.00     0.01       37   Hash#deep_merge! 
+ 11.48      0.07     0.00     0.00     0.07       12   Kernel#catch 
+ 11.30      0.00     0.00     0.00     0.00       16   ActiveModel::Validations::ClassMethods#inherited 
+ 11.24      0.00     0.00     0.00     0.00       44   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool#cache 
+ 10.95      0.00     0.00     0.00     0.00       36   ActiveSupport::Dependencies#log 
+ 10.95      0.01     0.00     0.00     0.01       24   ActiveRecord::ModelSchema::ClassMethods#undecorated_table_name 
+ 10.65      0.00     0.00     0.00     0.00       11   <Class::ActiveRecord::Base>#_accessible_attributes= 
+ 10.47      0.00     0.00     0.00     0.00       20   ActiveRecord::Associations::Builder::Association#define_writers 
+ 10.41      0.00     0.00     0.00     0.00       16   ActiveModel::Dirty#attribute_change 
+ 10.41      0.00     0.00     0.00     0.00       28   ActiveModel::Validations::ClassMethods#_parse_validates_options 
+ 10.36      0.00     0.00     0.00     0.00       11   <Class::ActiveRecord::Base>#_create_callbacks= 
+ 10.30      0.44     0.00     0.00     0.44       31   <Class::Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)>#find_or_create! 
+ 10.30      0.01     0.00     0.00     0.01       30   Hash#deep_merge 
+ 10.30      0.01     0.00     0.00     0.01       14   ActiveRecord::ModelSchema::ClassMethods#table_exists? 
+ 10.18      0.00     0.00     0.00     0.00        9   IO#close 
+ 10.06      0.03     0.00     0.00     0.03       24   Module#local_constant_names 
+ 10.06      0.00     0.00     0.00     0.00       10   <Class::ActiveRecord::Base>#serialized_attributes= 
+  9.94      0.01     0.00     0.00     0.01        8   ActiveRecord::ModelSchema::ClassMethods#reset_table_name 
+  9.76      0.00     0.00     0.00     0.00       51   Array#[]= 
+  9.76      0.00     0.00     0.00     0.00        8   <Class::ActiveRecord::Base>#_validators= 
+  9.70      0.00     0.00     0.00     0.00       19   Set#do_with_enum 
+  9.59      0.00     0.00     0.00     0.00       15   RubyLex#get_readed 
+  9.59      0.00     0.00     0.00     0.00       14   Module#attr_reader 
+  9.53      0.00     0.00     0.00     0.00       20   ActiveRecord::Associations::Builder::Association#define_readers 
+  9.41      0.00     0.00     0.00     0.00        1   TZInfo::InfoTimezone#setup 
+  9.35      0.06     0.00     0.00     0.06        7   I18n::Backend::Base#load_file 
+  9.35      0.00     0.00     0.00     0.00       34   Array#* 
+  9.35      0.00     0.00     0.00     0.00       47   String#downcase! 
+  9.29      0.00     0.00     0.00     0.00       28   <Object::Object>#push 
+  9.23      0.01     0.00     0.00     0.01        9   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#table_exists? 
+  9.17      0.02     0.00     0.00     0.02       13   ActiveRecord::Associations::Builder::BelongsTo#build 
+  9.17      0.07     0.00     0.00     0.07       16   ActiveSupport::Dependencies::ClassCache#get 
+  9.11      0.02     0.00     0.00     0.02        2   ActiveRecord::Persistence#create 
+  8.82      0.01     0.00     0.00     0.01        8   ActiveSupport::Dependencies::Loadable#load_dependency 
+  8.70      0.00     0.00     0.00     0.00       23   ActiveRecord::AutosaveAssociation::ClassMethods#define_non_cyclic_method 
+  8.70      0.00     0.00     0.00     0.00       20   ActiveSupport::Dependencies#load? 
+  8.52      0.00     0.00     0.00     0.00       20   ActiveSupport::TimeWithZone#respond_to? 
+  8.46      0.00     0.00     0.00     0.00       36   Enumerator#each 
+  8.40      0.00     0.00     0.00     0.00       12   #<Module:0x007fb303a18598>#normalize_key 
+  8.40      0.00     0.00     0.00     0.00       31   Class#inherited 
+  8.40      0.00     0.00     0.00     0.00        7   <Class::ActiveRecord::Base>#after_update 
+  8.40      0.00     0.00     0.00     0.00       24   Array#uniq! 
+  8.34      0.00     0.00     0.00     0.00       12   Set#initialize 
+  8.28      0.00     0.00     0.00     0.00       67   ActiveRecord::AttributeMethods::DeprecatedUnderscoreRead::ClassMethods#define_method__attribute 
+  8.28      0.01     0.00     0.00     0.01        8   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#reset_primary_key 
+  8.22      0.00     0.00     0.00     0.00       10   HTTParty::Request#uri 
+  8.22     11.53     0.00     0.00    11.53       14   IRB::Irb#output_value 
+  8.17      0.00     0.00     0.00     0.00       36   Module#protected 
+  8.11      0.00     0.00     0.00     0.00       16   Struct#hash 
+  8.11      0.01     0.00     0.00     0.01       20   ActiveRecord::Associations::Builder::Association#define_accessors 
+  8.05      0.00     0.00     0.00     0.00       36   <Module::ActiveSupport::Dependencies>#loaded 
+  8.05      0.01     0.00     0.00     0.01       24   Module#local_constants 
+  8.05      0.00     0.00     0.00     0.00       10   HTTParty::Request#query_string 
+  7.99    163.34     0.00     0.00   163.34       14   IRB::Context#evaluate 
+  7.93      0.00     0.00     0.00     0.00       42   <Class::ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher::AttributeMethodMatch>#allocate 
+  7.93      0.00     0.00     0.00     0.00       14   <Module::IRB>#CurrentContext 
+  7.87      0.00     0.00     0.00     0.00       26   Module#initialize 
+  7.87      0.00     0.00     0.00     0.00        8   ActiveSupport::DescendantsTracker#inherited 
+  7.81      0.07     0.00     0.00     0.07        8   ActiveRecord::Inheritance::ClassMethods#compute_type 
+  7.69      0.00     0.00     0.00     0.00       41   ActiveSupport::Callbacks::Callback#name 
+  7.63      0.01     0.00     0.00     0.01       20   <Class::ActiveRecord::Base>#before_save 
+  7.63      0.00     0.00     0.00     0.00       32   <Module::ActiveSupport::Dependencies>#constant_watch_stack 
+  7.57      0.00     0.00     0.00     0.00       17   ActiveSupport::Inflector#demodulize 
+  7.40      0.00     0.00     0.00     0.00       20   Net::HTTPHeader#[] 
+  7.40      0.06     0.00     0.00     0.06        4   #<Module:0x007fb303a18598>#translate 
+  7.34      0.00     0.00     0.00     0.00       14   Net::BufferedIO#readuntil 
+  7.22      0.02     0.00     0.00     0.02        2   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__create_neo4j_edge__4176206310142971996__callbacks 
+  7.10      0.00     0.00     0.00     0.00       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#sql_key 
+  7.04      0.00     0.00     0.00     0.00       12   ActiveModel::Validations::HelperMethods#_merge_attributes 
+  7.04      0.01     0.00     0.00     0.01       30   ActiveSupport::JSON::Encoding::Encoder#encode 
+  6.98      0.00     0.00     0.00     0.00       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool#key? 
+  6.98      0.00     0.00     0.00     0.00        2   Neography::Rest#initialize 
+  6.98      0.00     0.00     0.00     0.00       16   ActiveRecord::ModelSchema::ClassMethods#full_table_name_prefix 
+  6.98      0.05     0.00     0.00     0.05        9   <Class::IO>#open 
+  6.92      0.01     0.00     0.00     0.01        2   <Module::NeoNode>#included 
+  6.86      0.06     0.00     0.00     0.06        4   I18n::Backend::Base#translate 
+  6.86      0.00     0.00     0.00     0.00       35   <Module::Readline>#input= 
+  6.80      0.00     0.00     0.00     0.00       14   ActiveRecord::Associations::Builder::SingularAssociation#define_accessors 
+  6.75      0.00     0.00     0.00     0.00       67   Kernel#initialize_copy 
+  6.69      0.00     0.00     0.00     0.00        2   <Class::IO>#select 
+  6.57      0.00     0.00     0.00     0.00       24   String#encode 
+  6.45      0.00     0.00     0.00     0.00       16   Net::BufferedIO#rbuf_consume 
+  6.45      0.00     0.00     0.00     0.00       54   Hash#fetch 
+  6.39      0.00     0.00     0.00     0.00       11   ActiveModel::MassAssignmentSecurity::PermissionSet#+ 
+  6.39      0.01     0.00     0.00     0.01       10   ActiveRecord::Store::ClassMethods#store 
+  6.27      0.00     0.00     0.00     0.00       36   String#as_json 
+  6.27      0.00     0.00     0.00     0.00        8   ActiveRecord::ModelSchema::ClassMethods#table_name= 
+  6.21      0.01     0.00     0.00     0.01        2   ActiveRecord::Relation#insert 
+  6.15      0.00     0.00     0.00     0.00       30   Kernel#=== 
+  6.15      0.00     0.00     0.00     0.00        1   ActiveModel::Name#initialize 
+  6.15      0.00     0.00     0.00     0.00       26   <Class::Module>#allocate 
+  6.04      0.01     0.00     0.00     0.01        7   I18n::Backend::Simple::Implementation#store_translations 
+  6.04      0.00     0.00     0.00     0.00       32   Hash#merge! 
+  6.04      0.03     0.00     0.00     0.03       13   ActiveRecord::Associations::ClassMethods#belongs_to 
+  6.04      0.00     0.00     0.00     0.00       13   Kernel#extend 
+  5.92      0.00     0.00     0.00     0.00       15   ActiveSupport::Dependencies#autoload_module! 
+  5.92      0.00     0.00     0.00     0.00        8   <Module::ActiveSupport::DescendantsTracker>#direct_descendants 
+  5.92      0.00     0.00     0.00     0.00       20   ActiveRecord::Associations::Builder::Association#initialize 
+  5.92      0.00     0.00     0.00     0.00        1   Module#instance_methods 
+  5.86      0.00     0.00     0.00     0.00       11   Set#initialize_copy 
+  5.86      0.00     0.00     0.00     0.00       11   Set#| 
+  5.80      0.01     0.00     0.00     0.01        8   <Class::ActiveRecord::Base>#inherited 
+  5.80      0.01     0.00     0.00     0.01       15   ActiveSupport::Inflector#singularize 
+  5.68      0.00     0.00     0.00     0.00       19   Enumerable#each_entry 
+  5.68      0.00     0.00     0.00     0.00        8   ActiveRecord::Reflection::AssociationReflection#derive_foreign_key 
+  5.68      0.00     0.00     0.00     0.00       14   ActiveRecord::Base#_validate_callbacks 
+  5.62      0.00     0.00     0.00     0.00       18   ActiveRecord::AttributeMethods#arel_attributes_values 
+  5.62      0.00     0.00     0.00     0.00       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool#[] 
+  5.62      0.00     0.00     0.00     0.00       12   ActiveRecord::Reflection::MacroReflection#class_name 
+  5.62      0.00     0.00     0.00     0.00       24   ActiveSupport::JSON::Encoding::Encoder#as_json 
+  5.62      0.00     0.00     0.00     0.00       16   ActiveRecord::Base#_initialize_callbacks 
+  5.56      0.00     0.00     0.00     0.00        5   Psych::Visitors::ToRuby#visit_Psych_Nodes_Sequence 
+  5.56      0.01     0.00     0.00     0.01        8   ActiveSupport::Dependencies::Loadable#require 
+  5.56      0.00     0.00     0.00     0.00       14   ActiveRecord::Base#_validation_callbacks 
+  5.56      0.00     0.00     0.00     0.00        7   <Class::ActiveRecord::Base>#_update_callbacks= 
+  5.50     11.45     0.00     0.00    11.45       14   IRB::Context#inspect_last_value 
+  5.44      0.00     0.00     0.00     0.00       22   ActiveSupport::JSON::Encoding::Encoder#escape 
+  5.44      0.01     0.00     0.00     0.00        1   Kernel#loop 
+  5.44      0.00     0.00     0.00     0.00       14   <Module::IRB>#conf 
+  5.44      0.00     0.00     0.00     0.00        8   ActiveModel::Observing::ClassMethods#inherited 
+  5.38      0.00     0.00     0.00     0.00       10   Net::HTTPHeader#add_field 
+  5.38      0.00     0.00     0.00     0.00        4   Net::BufferedIO#rbuf_fill 
+  5.38      0.00     0.00     0.00     0.00       20   <Module::ActiveSupport::Dependencies>#mechanism 
+  5.38      0.00     0.00     0.00     0.00       15   ActiveSupport::Dependencies#autoloadable_module? 
+  5.38      0.00     0.00     0.00     0.00       13   Module#extend_object 
+  5.33      0.00     0.00     0.00     0.00       31   TrueClass#blank? 
+  5.27      0.03     0.00     0.00     0.03       14   <Class::ActiveRecord::Associations::Builder::Association>#build 
+  5.27      0.02     0.00     0.00     0.02        4   <Module::MultiJson>#load 
+  5.21      0.00     0.00     0.00     0.00       16   <Class::Range>#allocate 
+  5.21      0.00     0.00     0.00     0.00       11   Module#< 
+  5.15      0.01     0.00     0.00     0.01        9   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#column_definitions 
+  5.15      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#accept 
+  5.15      0.00     0.00     0.00     0.00       28   String#strip 
+  5.15      0.00     0.00     0.00     0.00       16   ActiveSupport::TimeWithZone#time 
+  5.09      0.00     0.00     0.00     0.00       12   #<Module:0x007fb303a18598>#config 
+  5.09      0.00     0.00     0.00     0.00       12   ActiveSupport::Dependencies#load_once_path? 
+  5.09      0.00     0.00     0.00     0.00        6   Hash#as_json 
+  5.09      0.01     0.00     0.00     0.01        8   ActiveRecord::Validations::ClassMethods#validates_associated 
+  5.03      0.00     0.00     0.00     0.00        8   <Class::ActiveRecord::Base>#primary_key_prefix_type 
+  5.03      0.00     0.00     0.00     0.00        4   <Class::TZInfo::TimeOrDateTime>#wrap 
+  5.03      0.00     0.00     0.00     0.00       20   ActiveRecord::Delegation#primary_key 
+  4.97      0.02     0.00     0.00     0.02       12   ActiveSupport::Dependencies::WatchStack#watch_namespaces 
+  4.91      0.00     0.00     0.00     0.00       35   <Module::Readline>#output= 
+  4.85      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Builder::CollectionAssociation#define_readers 
+  4.79      0.07     0.00     0.00     0.07       16   ActiveSupport::Dependencies#constantize 
+  4.79      0.00     0.00     0.00     0.00       14   ActiveRecord::Base#_find_callbacks 
+  4.79      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Builder::CollectionAssociation#define_writers 
+  4.79      0.00     0.00     0.00     0.00       22   String#encode_json 
+  4.73      0.00     0.00     0.00     0.00       16   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#substitute_at 
+  4.73      0.00     0.00     0.00     0.00       21   IO#external_encoding 
+  4.73      0.00     0.00     0.00     0.00       14   String#singularize 
+  4.73      0.00     0.00     0.00     0.00       11   ActiveModel::MassAssignmentSecurity::ClassMethods#accessible_attributes 
+  4.67      0.00     0.00     0.00     0.00       13   RubyToken::TkVal#initialize 
+  4.67      0.00     0.00     0.00     0.00        9   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::Utils#extract_schema_and_table 
+  4.67      0.00     0.00     0.00     0.00        4   Regexp#initialize 
+  4.67      0.00     0.00     0.00     0.00        8   ActiveSupport::Dependencies::WatchStack#watching? 
+  4.67      0.00     0.00     0.00     0.00        4   Net::BufferedIO#writing 
+  4.62      0.00     0.00     0.00     0.00        1   <Class::TZInfo::Timezone>#get 
+  4.62      0.00     0.00     0.00     0.00        4   ActiveRecord::ConnectionAdapters::Quoting#quoted_date 
+  4.56     11.45     0.00     0.00    11.45       14   IRB::Inspector#inspect_value 
+  4.56      0.00     0.00     0.00     0.00       24   <Module::ActiveSupport::Dependencies>#autoloaded_constants 
+  4.50      0.00     0.00     0.00     0.00       10   URI::Generic#query= 
+  4.50      0.00     0.00     0.00     0.00       13   ActiveRecord::Associations::Builder::BelongsTo#constructable? 
+  4.44      0.00     0.00     0.00     0.00       16   String#slice! 
+  4.44      0.00     0.00     0.00     0.00        8   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#primary_key 
+  4.44      0.00     0.00     0.00     0.00       26   Module#included 
+  4.44      0.00     0.00     0.00     0.00       12   String#demodulize 
+  4.38      0.00     0.00     0.00     0.00        2   Net::HTTP#connect 
+  4.38      0.00     0.00     0.00     0.00        3   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool#[]= 
+  4.26      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::Builder::HasAndBelongsToMany#check_validity 
+  4.26      0.00     0.00     0.00     0.00        4   #<Module:0x007fb303a18598>#normalize_keys 
+  4.20      0.00     0.00     0.00     0.00       19   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#schema_search_path 
+  4.20      0.15     0.00     0.00     0.15        4   ActiveRecord::Delegation#method_missing 
+  4.14      0.00     0.00     0.00     0.00        2   Net::HTTP#initialize 
+  4.14      0.00     0.00     0.00     0.00        3   ActiveSupport::Callbacks::ClassMethods#__define_runner 
+  4.14      0.00     0.00     0.00     0.00        3   ActiveSupport::Inflector#humanize 
+  4.08      0.00     0.00     0.00     0.00        8   Net::HTTPResponse#read_body 
+  4.08      0.02     0.00     0.00     0.02        8   NeoEdge#save_to_neo 
+  4.08      0.00     0.00     0.00     0.00        8   ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods#primary_key= 
+  4.08      0.01     0.00     0.00     0.01        4   <Module::MultiJson>#current_adapter 
+  4.02      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#push 
+  4.02      0.00     0.00     0.00     0.00       22   String#* 
+  4.02      0.00     0.00     0.00     0.00        8   ActiveRecord::Inheritance::ClassMethods#descends_from_active_record? 
+  4.02      0.01     0.00     0.00     0.01        4   Net::HTTP#request 
+  3.96      0.00     0.00     0.00     0.00       33   ActiveModel::EachValidator#check_validity! 
+  3.96      0.00     0.00     0.00     0.00        3   ActiveSupport::Concern#append_features 
+  3.96      0.00     0.00     0.00     0.00        8   ActiveRecord::Locking::Optimistic::ClassMethods#locking_column= 
+  3.96      0.00     0.00     0.00     0.00       18   I18n::Backend::Simple::Implementation#translations 
+  3.96      0.00     0.00     0.00     0.00       19   Hash#replace 
+  3.91      0.00     0.00     0.00     0.00       12   ActiveSupport::TimeWithZone#period 
+  3.91      0.00     0.00     0.00     0.00       38   String#<=> 
+  3.91      0.00     0.00     0.00     0.00        4   Module#attr_accessor 
+  3.91      0.02     0.00     0.00     0.02        6   ActiveRecord::Associations::Builder::CollectionAssociation#build 
+  3.91      0.32     0.00     0.00     0.32        8   ActiveRecord::AttributeMethods::ClassMethods#define_attribute_methods 
+  3.85      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#inspect 
+  3.79      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#initialize 
+  3.79      0.00     0.00     0.00     0.00        6   ActiveRecord::Reflection::AssociationReflection#derive_class_name 
+  3.79      0.00     0.00     0.00     0.00       14   IRB::ReadlineInputMethod#encoding 
+  3.79      0.00     0.00     0.00     0.00       17   String#rindex 
+  3.73      0.00     0.00     0.00     0.00        8   ActiveRecord::Locking::Optimistic::ClassMethods#reset_locking_column 
+  3.67      0.00     0.00     0.00     0.00        4   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#quoted_date 
+  3.67      0.00     0.00     0.00     0.00       12   ActiveSupport::Dependencies::WatchStack#pop_modules 
+  3.67      0.00     0.00     0.00     0.00        4   NeoNode#neo_id 
+  3.67      0.00     0.00     0.00     0.00       19   ActiveModel::Validations::ClassMethods#_validates_default_keys 
+  3.67      0.01     0.00     0.00     0.01        2   Net::HTTP#start 
+  3.61      0.00     0.00     0.00     0.00        8   ActiveModel::Observing::ClassMethods#notify_observers 
+  3.61      0.00     0.00     0.00     0.00        2   <Class::Psych::Emitter>#allocate 
+  3.61      0.00     0.00     0.00     0.00        4   <Class::Regexp>#union 
+  3.61      0.00     0.00     0.00     0.00        5   Psych::TreeBuilder#start_sequence 
+  3.55      0.00     0.00     0.00     0.00       12   Net::HTTPHeader#capitalize 
+  3.55      0.07     0.00     0.00     0.07        1   ActiveModel::Errors#full_message 
+  3.55      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Builder::CollectionAssociation#wrap_block_extension 
+  3.55      0.00     0.00     0.00     0.00        2   Neography::Connection#save_local_configuration 
+  3.49      0.23     0.00     0.00     0.23        2   ActiveRecord::Validations#save! 
+  3.49      0.00     0.00     0.00     0.00        3   ActiveSupport::Concern#included 
+  3.49      0.07     0.00     0.00     0.07        1   ActiveModel::Translation#human_attribute_name 
+  3.49      0.02     0.00     0.00     0.02        9   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#columns 
+  3.49      0.00     0.00     0.00     0.00        8   ActiveSupport::DescendantsTracker#direct_descendants 
+  3.43      0.00     0.00     0.00     0.00       32   Arel::Visitors::DepthFirst#terminal 
+  3.43      0.24     0.00     0.00     0.24        2   ActiveRecord::Validations::ClassMethods#create! 
+  3.43      0.00     0.00     0.00     0.00       16   String#index 
+  3.37      0.00     0.00     0.00     0.00       12   #<Module:0x007fb303a18598>#normalized_key_cache 
+  3.37      0.04     0.00     0.00     0.04        2   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__create__4176206310142971996__callbacks 
+  3.37      0.00     0.00     0.00     0.00       15   Kernel#untaint 
+  3.31      0.00     0.00     0.00     0.00        4   <Class::ActiveSupport::TimeZone>#seconds_to_utc_offset 
+  3.31      0.02     0.00     0.00     0.02        2   ActiveRecord::Timestamp#create 
+  3.25      0.00     0.00     0.00     0.00       12   <Module::ActiveSupport::Dependencies>#warnings_on_first_load 
+  3.25      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#initialize 
+  3.25      0.01     0.00     0.00     0.01        2   ActiveRecord::Calculations#perform_calculation 
+  3.25      0.00     0.00     0.00     0.00        3   <Module::ActiveRecord::Delegation>#delegate_to_scoped_klass 
+  3.20      0.00     0.00     0.00     0.00        4   TZInfo::TimeOrDateTime#initialize 
+  3.20      0.00     0.00     0.00     0.00        3   ActiveModel::Callbacks#define_model_callbacks 
+  3.20      0.00     0.00     0.00     0.00        6   Array#map! 
+  3.20      0.00     0.00     0.00     0.00        6   Hash#except 
+  3.14      0.00     0.00     0.00     0.00        2   HTTParty::Request#validate 
+  3.14      0.00     0.00     0.00     0.00        5   I18n::Backend::Base#resolve 
+  3.14      0.00     0.00     0.00     0.00        5   Psych::Nodes::Sequence#initialize 
+  3.14      0.00     0.00     0.00     0.00        8   Net::HTTPHeader#[]= 
+  3.08      0.00     0.00     0.00     0.00        8   Net::BufferedIO#closed? 
+  3.08      0.00     0.00     0.00     0.00        4   ActiveModel::Validations::FormatValidator#check_validity! 
+  3.08      0.00     0.00     0.00     0.00        2   Net::BufferedIO#read_all 
+  3.08      0.00     0.00     0.00     0.00       12   <Module::ActiveSupport::Dependencies>#history 
+  3.08      0.00     0.00     0.00     0.00        2   <Module::Psych>#dump 
+  3.08      0.00     0.00     0.00     0.00        8   Enumerable#to_set 
+  3.08      0.00     0.00     0.00     0.00        8   Arel::Visitors::DepthFirst#visit_Arel_Attribute 
+  3.02      0.00     0.00     0.00     0.00        8   ActiveModel::Validations::FormatValidator#check_options_validity 
+  3.02      0.06     0.00     0.00     0.06        4   I18n::Backend::Simple::Implementation#lookup 
+  3.02      0.04     0.00     0.00     0.04        2   ActiveRecord::Persistence#create_or_update 
+  2.96      0.00     0.00     0.00     0.00        6   ActiveRecord::Validations::UniquenessValidator#initialize 
+  2.96      0.00     0.00     0.00     0.00       10   URI::Generic#relative? 
+  2.96      0.01     0.00     0.00     0.01        1   <Module::MultiJson>#load_adapter 
+  2.96      0.00     0.00     0.00     0.00       15   Module#private 
+  2.96      0.00     0.00     0.00     0.00        4   ActiveModel::Validations::HelperMethods#validates_format_of 
+  2.90      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#visit_Hash 
+  2.90      0.00     0.00     0.00     0.00        4   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_run__1426109599698765738__find__4176206310142971996__callbacks 
+  2.90      0.00     0.00     0.00     0.00        1   ActiveRecord::Translation#lookup_ancestors 
+  2.90      0.00     0.00     0.00     0.00        8   String#tr 
+  2.90      0.00     0.00     0.00     0.00        7   <Class::File>#extname 
+  2.90      0.00     0.00     0.00     0.00        8   Net::HTTPHeader#key? 
+  2.90      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#execute_simple_calculation 
+  2.84      0.00     0.00     0.00     0.00        2   Neography::Connection#parse_string_options 
+  2.84      0.00     0.00     0.00     0.00        3   ActiveSupport::Callbacks::ClassMethods#define_callbacks 
+  2.84      0.00     0.00     0.00     0.00        1   <Module::Oj>#default_options= 
+  2.78      0.00     0.00     0.00     0.00        2   SystemCallError#initialize 
+  2.78      0.00     0.00     0.00     0.00       10   URI::Generic#absolute? 
+  2.78      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Builder::HasAndBelongsToMany#join_table_name 
+  2.78      0.00     0.00     0.00     0.00        3   ActiveModel::Callbacks#_define_before_model_callback 
+  2.78      0.00     0.00     0.00     0.00       13   ActiveRecord::Associations::Builder::BelongsTo#configure_dependency 
+  2.78      0.00     0.00     0.00     0.00        2   Net::HTTPResponse#reading_body 
+  2.78      0.00     0.00     0.00     0.00       12   <Module::ActiveSupport::Dependencies>#autoload_once_paths 
+  2.72      0.00     0.00     0.00     0.00        2   StringIO#write 
+  2.72      0.00     0.00     0.00     0.00        2   HTTParty::Request#http 
+  2.72      0.01     0.00     0.00     0.01        2   HTTParty::Request#perform 
+  2.66      0.00     0.00     0.00     0.00        8   ActiveRecord::Reflection::AssociationReflection#belongs_to? 
+  2.66      0.01     0.00     0.00     0.01        4   <Class::MultiJson::Adapters::Oj>#load 
+  2.66      0.00     0.00     0.00     0.00        8   Net::HTTPResponse#body 
+  2.66      0.00     0.00     0.00     0.00        3   ActiveModel::Callbacks#_define_after_model_callback 
+  2.66      0.00     0.00     0.00     0.00        4   Net::HTTPHeader#main_type 
+  2.66      0.00     0.00     0.00     0.00        8   Arel::Visitors::DepthFirst#binary 
+  2.60      0.00     0.00     0.00     0.00        4   Net::HTTPHeader#sub_type 
+  2.60      0.04     0.00     0.00     0.04        6   <Class::ActiveRecord::Associations::Builder::CollectionAssociation>#build 
+  2.60      0.05     0.00     0.00     0.05        7   I18n::Backend::Base#load_yml 
+  2.54      0.00     0.00     0.00     0.00        2   HTTParty::Request#setup_raw_request 
+  2.54      0.00     0.00     0.00     0.00        3   ActiveModel::Callbacks#_define_around_model_callback 
+  2.54      0.00     0.00     0.00     0.00        4   TZInfo::TimezonePeriod#initialize 
+  2.54      0.00     0.00     0.00     0.00        4   ActiveSupport::Inflector#foreign_key 
+  2.54      0.00     0.00     0.00     0.00       12   Arel::Visitors::DepthFirst#visit_Array 
+  2.49      0.00     0.00     0.00     0.00        6   Hash#except! 
+  2.49      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#send_request_with_body 
+  2.49      0.32     0.00     0.00     0.32        8   ActiveModel::AttributeMethods::ClassMethods#define_attribute_methods 
+  2.49      0.00     0.00     0.00     0.00        4   ActiveRecord::Base#record_timestamps 
+  2.49      0.00     0.00     0.00     0.00        4   Net::BufferedIO#write0 
+  2.49      0.01     0.00     0.00     0.01        4   <Module::MultiJson>#adapter 
+  2.49      0.00     0.00     0.00     0.00        4   <Class::Time>#=== 
+  2.49      0.00     0.00     0.00     0.00       10   Arel::Visitors::DepthFirst#visit_Arel_Table 
+  2.43      0.00     0.00     0.00     0.00        6   Net::HTTPHeader#initialize_http_header 
+  2.43      0.00     0.00     0.00     0.00        3   ActiveSupport::Callbacks::CallbackChain#initialize 
+  2.43      0.00     0.00     0.00     0.00        1   Neography::Config#set_defaults 
+  2.43      0.00     0.00     0.00     0.00       10   ActiveRecord::Coders::YAMLColumn#initialize 
+  2.43      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Builder::CollectionAssociation#initialize 
+  2.37      0.00     0.00     0.00     0.00       10   Module#extended 
+  2.37      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::Builder::HasAndBelongsToMany#define_destroy_hook 
+  2.37      0.00     0.00     0.00     0.00        2   <Class::Net::HTTPResponse>#read_new 
+  2.31      0.00     0.00     0.00     0.00        2   Arel::Visitors::ToSql#visit_Arel_Nodes_InsertStatement 
+  2.31      0.00     0.00     0.00     0.00        8   Module#const_set 
+  2.31      0.00     0.00     0.00     0.00       12   Numeric#as_json 
+  2.31      0.00     0.00     0.00     0.00        4   TZInfo::DataTimezoneInfo#period_for_utc 
+  2.31      0.00     0.00     0.00     0.00        2   <Class::ActiveRecord::Base>#after_save 
+  2.31      0.00     0.00     0.00     0.00        9   Module#public_method_defined? 
+  2.31      0.00     0.00     0.00     0.00        4   ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)#_run__2214566950964378641__find__4176206310142971996__callbacks 
+  2.25      0.00     0.00     0.00     0.00        2   AwesomePrint::Formatter#colorize 
+  2.25      0.00     0.00     0.00     0.00        2   Net::HTTP#end_transport 
+  2.25      0.00     0.00     0.00     0.00        4   #<Module:0x007fb303a18598>#default_separator 
+  2.25      0.00     0.00     0.00     0.00        2   Neography::Connection#merge_configuration 
+  2.25      0.02     0.00     0.00     0.02        4   ActiveRecord::Associations::Builder::HasMany#build 
+  2.25      0.00     0.00     0.00     0.00        8   ActiveModel::Observing::ClassMethods#observer_instances 
+  2.25      0.00     0.00     0.00     0.00        4   ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)#_run__1426109599698765738__initialize__4176206310142971996__callbacks 
+  2.25      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#initialize 
+  2.19      0.05     0.00     0.00     0.05        7   <Module::Psych>#load_file 
+  2.19      0.01     0.00     0.00     0.01        2   ActiveRecord::ConnectionAdapters::DatabaseStatements#insert 
+  2.19      0.00     0.00     0.00     0.00        2   ActiveRecord::AttributeMethods::Serialization::Attribute#serialize 
+  2.19      0.00     0.00     0.00     0.00        2   Timeout#timeout 
+  2.19      0.00     0.00     0.00     0.00        4   <Module::URI>#regexp 
+  2.19      0.00     0.00     0.00     0.00        8   Mutex#initialize 
+  2.19      0.00     0.00     0.00     0.00       10   URI::Generic#check_query 
+  2.13      0.01     0.00     0.00     0.01        2   ActiveRecord::Calculations#calculate 
+  2.13      0.00     0.00     0.00     0.00        2   ActiveRecord::Timestamp#current_time_from_proper_timezone 
+  2.13      0.00     0.00     0.00     0.00        5   Psych::TreeBuilder#end_sequence 
+  2.13      0.00     0.00     0.00     0.00        8   <Class::Mutex>#allocate 
+  2.13      0.00     0.00     0.00     0.00        4   ActiveRecord::Base#hash 
+  2.13      0.00     0.00     0.00     0.00        1   <Class::File>#readable? 
+  2.07      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::Association#options 
+  2.07      0.00     0.00     0.00     0.00        9   Array#[] 
+  2.07      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#zone 
+  2.07      0.01     0.00     0.00     0.01        1   <Module::MultiJson>#use 
+  2.07      0.01     0.00     0.00     0.01        2   HTTParty::ClassMethods#perform_request 
+  2.07      0.00     0.00     0.00     0.00        4   TZInfo::TimezoneProxy#period_for_utc 
+  2.07      0.02     0.00     0.00     0.01        2   Neography::Rest::Cypher#query 
+  2.07      0.00     0.00     0.00     0.00        2   Arel::Visitors::DepthFirst#visit_Arel_Nodes_SelectCore 
+  2.07      0.00     0.00     0.00     0.00        2   Psych::TreeBuilder#start_document 
+  2.01      0.00     0.00     0.00     0.00        3   <Module::I18n>#interpolate 
+  2.01      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#column_for 
+  2.01      0.05     0.00     0.00     0.05        2   ActiveRecord::Base#_run_save_callbacks 
+  2.01      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#awesome 
+  2.01      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#formatted_offset 
+  2.01      0.00     0.00     0.00     0.00        6   Hash#reverse_merge 
+  2.01      0.23     0.00     0.00     0.23        2   ActiveRecord::AttributeMethods::Dirty#save! 
+  1.95      0.00     0.00     0.00     0.00        2   HTTParty::Request#initialize 
+  1.95      0.07     0.00     0.00     0.07        1   ActiveRecord::RecordInvalid#initialize 
+  1.95      0.00     0.00     0.00     0.00        4   ActiveSupport::JSON::Encoding::Encoder#initialize 
+  1.95      0.00     0.00     0.00     0.00        2   Net::HTTP#addr_port 
+  1.95      0.00     0.00     0.00     0.00        4   Net::BufferedIO#write 
+  1.95      0.01     0.00     0.00     0.01        1   RubyLex#identify_string_dvar 
+  1.95      0.02     0.00     0.00     0.02        4   ActiveRecord::Associations::ClassMethods#has_many 
+  1.95      0.02     0.00     0.00     0.02        2   ActiveRecord::Associations::Builder::HasAndBelongsToMany#build 
+  1.95      0.00     0.00     0.00     0.00        6   <Class::HTTParty::Parser>#formats 
+  1.95      0.00     0.00     0.00     0.00        4   Neography::Rest::Indexes#initialize 
+  1.95      0.00     0.00     0.00     0.00        8   Net::HTTP#use_ssl? 
+  1.95      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeZone#period_for_utc 
+  1.89      0.00     0.00     0.00     0.00        5   Psych::Visitors::ToRuby#register 
+  1.89      3.08     0.00     0.00     3.08        1   <Class::ConnectionHandler>#build_user_object_connections 
+  1.89      0.00     0.00     0.00     0.00        4   ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)#_run__2214566950964378641__initialize__4176206310142971996__callbacks 
+  1.89      0.00     0.00     0.00     0.00        2   Psych::Emitter#start_stream 
+  1.89      0.00     0.00     0.00     0.00        4   #<Module:0x007fb305b8db88>#id= 
+  1.89      0.00     0.00     0.00     0.00        2   Net::HTTP#begin_transport 
+  1.89      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#usec 
+  1.83      0.00     0.00     0.00     0.00        2   HTTParty::Response#initialize 
+  1.83      0.00     0.00     0.00     0.00        2   Time#utc 
+  1.83      0.00     0.00     0.00     0.00        2   Psych::Nodes::Node#yaml 
+  1.83      0.00     0.00     0.00     0.00        3   <Module::ActiveModel::Callbacks>#extended 
+  1.83      0.00     0.00     0.00     0.00        6   Net::HTTP#D 
+  1.83      0.00     0.00     0.00     0.00        2   HTTParty::Parser#parse 
+  1.83      0.01     0.00     0.00     0.01        2   Neography::Connection#post 
+  1.83      0.00     0.00     0.00     0.00        4   HTTParty::Request#body 
+  1.83      0.00     0.00     0.00     0.00        4   TZInfo::TimezoneProxy#real_timezone 
+  1.83      0.00     0.00     0.00     0.00        2   HTTParty::Request#response_redirects? 
+  1.78      0.00     0.00     0.00     0.00        4   String#foreign_key 
+  1.78      0.00     0.00     0.00     0.00        2   Net::BufferedIO#initialize 
+  1.78      0.02     0.00     0.00     0.02        2   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run_create_neo4j_edge_callbacks 
+  1.78      0.00     0.00     0.00     0.00        2   Psych::Emitter#start_mapping 
+  1.78      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#_create_neo4j_node_callbacks= 
+  1.78      0.01     0.00     0.00     0.01        4   Hash#encode_json 
+  1.72      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#aggregate_column 
+  1.72      0.00     0.00     0.00     0.00        4   TZInfo::DataTimezone#period_for_utc 
+  1.72      0.03     0.00     0.00     0.03        1   ActiveRecord::Persistence#save! 
+  1.72      0.00     0.00     0.00     0.00        4   Time#zone 
+  1.72      0.00     0.00     0.00     0.00        8   IO#closed? 
+  1.72      0.04     0.00     0.00     0.04        2   ActiveRecord::Associations::CollectionAssociation#find_target 
+  1.72      0.00     0.00     0.00     0.00        4   Kernel#sprintf 
+  1.72      0.00     0.00     0.00     0.00        2   Net::HTTPResponse#read_body_0 
+  1.66      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#printable 
+  1.66      0.00     0.00     0.00     0.00        6   HTTParty::Request#parser 
+  1.66      0.00     0.00     0.00     0.00        2   Arel::InsertManager#insert 
+  1.66      0.00     0.00     0.00     0.00        2   ActiveRecord::ConnectionAdapters::DatabaseStatements#commit_transaction_records 
+  1.66      0.01     0.00     0.00     0.01        2   ActiveRecord::Calculations#count 
+  1.60      0.00     0.00     0.00     0.00        3   I18n::Config#locale 
+  1.60      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#start 
+  1.60      0.04     0.00     0.00     0.04        2   ActiveRecord::Callbacks#create 
+  1.60      0.00     0.00     0.00     0.00        2   <Class::Net::HTTPResponse>#response_class 
+  1.60      0.00     0.00     0.00     0.00        4   TZInfo::TimezoneOffsetInfo#to_local 
+  1.60      0.00     0.00     0.00     0.00        4   <Class::Regexp>#allocate 
+  1.60      0.00     0.00     0.00     0.00        4   ActiveRecord::Associations::Builder::HasMany#configure_dependency 
+  1.60      0.00     0.00     0.00     0.00        1   ActiveRecord::Associations::Builder::BelongsTo#add_touch_callbacks 
+  1.60      0.00     0.00     0.00     0.00        2   Net::HTTP#transport_request 
+  1.60      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#utc_offset 
+  1.60      0.00     0.00     0.00     0.00        2   HTTParty::Request#format_from_mimetype 
+  1.60      0.00     0.00     0.00     0.00        2   Arel::Visitors::DepthFirst#visit_Arel_Nodes_SelectStatement 
+  1.60      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#merge_custom_defaults! 
+  1.60      0.00     0.00     0.00     0.00        2   Net::HTTPResponse#initialize 
+  1.60      0.05     0.00     0.00     0.05        2   ActiveRecord::Callbacks#create_or_update 
+  1.54      0.00     0.00     0.00     0.00        6   Net::HTTP#started? 
+  1.54      0.00     0.00     0.00     0.00        4   ActiveRecord::Reflection::AssociationReflection#association_foreign_key 
+  1.54      0.00     0.00     0.00     0.00        7   TrueClass#to_s 
+  1.54      0.00     0.00     0.00     0.00        2   Net::HTTPRequest#initialize 
+  1.54      0.00     0.00     0.00     0.00        1   IRB::Irb#eval_input 
+  1.54      0.04     0.00     0.00     0.04        2   ActiveRecord::Base#_run_create_callbacks 
+  1.54      0.00     0.00     0.00     0.00        2   ActiveModel::Dirty#changes 
+  1.54      0.00     0.00     0.00     0.00        2   Neography::Connection#evaluate_response 
+  1.54      0.00     0.00     0.00     0.00        2   <Class::Net::HTTPResponse>#read_status_line 
+  1.54      0.00     0.00     0.00     0.00        1   AwesomePrint::ActiveRecord#cast_with_active_record 
+  1.48      0.00     0.00     0.00     0.00        2   <Class::HTTParty::Parser>#format_from_mimetype 
+  1.48      0.00     0.00     0.00     0.00        3   <Object::Object>#[] 
+  1.48      0.00     0.00     0.00     0.00        2   Net::HTTP#do_finish 
+  1.48      0.00     0.00     0.00     0.00        2   ActiveRecord::Coders::YAMLColumn#dump 
+  1.48      0.00     0.00     0.00     0.00        6   ActiveRecord::Validations::UniquenessValidator#setup 
+  1.48      0.00     0.00     0.00     0.00        1   TZInfo::DataTimezoneInfo#offset 
+  1.48      0.00     0.00     0.00     0.00        1   <Module::TZInfo::TimezoneDefinition>#append_features 
+  1.48      0.00     0.00     0.00     0.00        9   <Class::IO>#allocate 
+  1.48      0.00     0.00     0.00     0.00        4   I18n::Config#backend 
+  1.48      0.00     0.00     0.00     0.00        4   I18n::Config#default_separator 
+  1.48      0.00     0.00     0.00     0.00        1   ActiveModel::Naming#model_name 
+  1.48      0.00     0.00     0.00     0.00        4   TZInfo::TimezonePeriod#abbreviation 
+  1.48      0.00     0.00     0.00     0.00        1   <Module::MultiJson>#default_adapter 
+  1.42      0.00     0.00     0.00     0.00        1   Kernel#ap 
+  1.42      0.00     0.00     0.00     0.00        2   URI::HTTP#request_uri 
+  1.42      0.00     0.00     0.00     0.00        4   Net::HTTPGenericRequest#response_body_permitted? 
+  1.42      0.00     0.00     0.00     0.00        2   Psych::Visitors::Emitter#visit_Psych_Nodes_Mapping 
+  1.42      0.00     0.00     0.00     0.00        4   TZInfo::TimeOrDateTime#to_time 
+  1.42      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#write_header 
+  1.42      0.00     0.00     0.00     0.00        2   Net::BufferedIO#readline 
+  1.42      0.00     0.00     0.00     0.00        2   HTTParty::Request#parse_response 
+  1.42      0.00     0.00     0.00     0.00        2   ActiveRecord::Timestamp#all_timestamp_attributes 
+  1.42      0.00     0.00     0.00     0.00        1   AwesomePrint::ActiveSupport#cast_with_active_support 
+  1.42      0.00     0.00     0.00     0.00        2   Psych::Visitors::Emitter#visit_Psych_Nodes_Document 
+  1.42      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#tokens 
+  1.42      0.00     0.00     0.00     0.00        2   ActiveRecord::QueryMethods#reorder 
+  1.36      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#content_type 
+  1.36      0.00     0.00     0.00     0.00        1   <Module::NeoEdge>#included 
+  1.36      0.00     0.00     0.00     0.00        2   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#commit_db_transaction 
+  1.36      0.00     0.00     0.00     0.00        3   ActiveModel::Validations::InclusionValidator#check_validity! 
+  1.36      0.02     0.00     0.00     0.02        1   ActiveRecord::Persistence#save 
+  1.36      0.00     0.00     0.00     0.00        1   <Class::ActiveRecord::Base>#after_destroy 
+  1.36      0.00     0.00     0.00     0.00        4   ActiveSupport::TimeWithZone#utc? 
+  1.36      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::HasAndBelongsToManyAssociation#initialize 
+  1.36      0.00     0.00     0.00     0.00        2   Arel::Nodes::Node#each 
+  1.30      0.00     0.00     0.00     0.00        2   HTTParty::Request#ssl_implied? 
+  1.30      0.00     0.00     0.00     0.00        4   Time#usec 
+  1.30      0.00     0.00     0.00     0.00        2   HTTParty::Request#handle_deflation 
+  1.30      0.00     0.00     0.00     0.00        2   Net::HTTP#use_ssl= 
+  1.30     76.69     0.00     0.00    76.69        1   <Class::ConnectionHandler>#build_user_user_connections 
+  1.30      0.00     0.00     0.00     0.00        3   I18n::Backend::Base#interpolate 
+  1.30      0.00     0.00     0.00     0.00        2   <Class::Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)>#neo 
+  1.30      0.00     0.00     0.00     0.00        2   Arel::Nodes::Function#initialize 
+  1.30      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#register 
+  1.30      0.01     0.00     0.00     0.01        2   ActiveRecord::ConnectionAdapters::AbstractAdapter#insert 
+  1.30      0.00     0.00     0.00     0.00        1   I18n::MissingTranslation::Base#initialize 
+  1.30      0.00     0.00     0.00     0.00        1   I18n::Backend::Base#default 
+  1.30      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#content_length= 
+  1.24      0.00     0.00     0.00     0.00        6   ActiveRecord::Associations::BelongsToAssociation#updated? 
+  1.24      0.00     0.00     0.00     0.00        4   URI::Generic#user 
+  1.24      0.01     0.00     0.00     0.01        2   <Module::HTTParty>#post 
+  1.24      0.00     0.00     0.00     0.00        2   String#humanize 
+  1.24      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#connection_close? 
+  1.24      0.00     0.00     0.00     0.00        4   I18n::Backend::Simple::Implementation#initialized? 
+  1.24      0.00     0.00     0.00     0.00        2   Arel::InsertManager#initialize 
+  1.24      0.01     0.00     0.00     0.01        2   HTTParty::ClassMethods#post 
+  1.24      0.00     0.00     0.00     0.00        2   Psych::Visitors::Emitter#initialize 
+  1.24      0.00     0.00     0.00     0.00        2   Neography::Connection#merge_options 
+  1.24      0.00     0.00     0.00     0.00        2   Neography::Config#to_hash 
+  1.24      0.00     0.00     0.00     0.00        2   Kernel#throw 
+  1.24      0.00     0.00     0.00     0.00        2   HTTParty::Request#format 
+  1.24      0.00     0.00     0.00     0.00        2   HTTParty::Request#handle_response 
+  1.18      0.00     0.00     0.00     0.00        4   Numeric#encode_json 
+  1.18      0.00     0.00     0.00     0.00        2   Neography::Connection#initialize 
+  1.18      0.00     0.00     0.00     0.00        2   <Module::ActiveSupport::JSON>#encode 
+  1.18      0.00     0.00     0.00     0.00        1   <Class::Entity(id: integer, uid: string, url: string, image: string, credentials: text, properties: text, context_id: integer, name: string, created_at: datetime, updated_at: datetime)>#_create_neo4j_node_callbacks= 
+  1.18      0.00     0.00     0.00     0.00        2   ActiveRecord::AttributeMethods::Serialization::Attribute#serialized_value 
+  1.18      0.00     0.00     0.00     0.00        2   Hash#to_json 
+  1.18      0.00     0.00     0.00     0.00        4   TZInfo::TimeOrDateTime#+ 
+  1.18      0.00     0.00     0.00     0.00        2   ActiveRecord::Reflection::AssociationReflection#active_record_primary_key 
+  1.18      0.00     0.00     0.00     0.00        2   ActiveRecord::ConnectionAdapters::DatabaseStatements#last_inserted_id 
+  1.18      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#each_capitalized 
+  1.18      0.23     0.00     0.00     0.23        2   ActiveRecord::Transactions#save! 
+  1.18      0.00     0.00     0.00     0.00        2   ActiveModel::Dirty#changed 
+  1.12      0.00     0.00     0.00     0.00        2   Arel::Visitors::ToSql#visit_Arel_Nodes_Count 
+  1.12      0.00     0.00     0.00     0.00        2   Arel::Visitors::ToSql#visit_Arel_Nodes_Values 
+  1.12      0.00     0.00     0.00     0.00        2   <Module::Neography>#configuration 
+  1.12      0.00     0.00     0.00     0.00        2   ActiveRecord::Base#_commit_callbacks 
+  1.12      0.00     0.00     0.00     0.00        2   MultiJsonParser#json 
+  1.12      0.00     0.00     0.00     0.00        1   Time#inspect 
+  1.12      0.00     0.00     0.00     0.00        2   Net::HTTP#proxy_user 
+  1.12      0.00     0.00     0.00     0.00        1   <Class::ActiveRecord::Base>#_destroy_callbacks= 
+  1.12      0.00     0.00     0.00     0.00        1   <Class::ActiveRecord::Base>#_touch_callbacks= 
+  1.12      0.00     0.00     0.00     0.00        2   Psych::Emitter#end_document 
+  1.12      0.00     0.00     0.00     0.00        2   Arel::Nodes::InsertStatement#initialize 
+  1.12      0.00     0.00     0.00     0.00        1   TZInfo::TimezoneDefinition::ClassMethods#timezone 
+  1.12      0.00     0.00     0.00     0.00        2   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#sql_for_insert 
+  1.12      0.00     0.00     0.00     0.00        1   ActiveSupport::Inflector#tableize 
+  1.12      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#body= 
+  1.12      0.00     0.00     0.00     0.00        2   <Class::Net::HTTP>#new 
+  1.12      0.00     0.00     0.00     0.00        1   Kernel#ai 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::CollectionProxy#initialize 
+  1.07      0.00     0.00     0.00     0.00        2   NeoEdge#neo 
+  1.07      0.00     0.00     0.00     0.00        4   TZInfo::TimezonePeriod#to_local 
+  1.07      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#exec 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Base#_save_callbacks 
+  1.07      0.00     0.00     0.00     0.00        2   Psych::Visitors::Emitter#visit_Psych_Nodes_Stream 
+  1.07      0.00     0.00     0.00     0.00        2   Neography::Connection#configuration 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::CollectionAssociation#initialize 
+  1.07      0.06     0.00     0.00     0.06        1   I18n::Backend::Simple::Implementation#init_translations 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Base#_create_callbacks 
+  1.07      0.00     0.00     0.00     0.00        1   AwesomePrint::Formatter#format 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Base#readonly? 
+  1.07      0.00     0.00     0.00     0.00        1   AwesomePrint::Formatter#initialize 
+  1.07      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::Builder::HasOne#validate_options 
+  1.07      0.00     0.00     0.00     0.00        4   Net::HTTP#conn_address 
+  1.07      0.02     0.00     0.00     0.02        2   Neography::Rest#execute_query 
+  1.07      0.00     0.00     0.00     0.00        2   HTTParty::Request#path= 
+  1.01      0.06     0.00     0.00     0.06        1   I18n::Backend::Base#load_translations 
+  1.01      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#merge_options! 
+  1.01      0.00     0.00     0.00     0.00        4   Net::BufferedIO#LOG 
+  1.01      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#after_remove_for_connections= 
+  1.01      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#after_add_for_connections= 
+  1.01      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#after_add_for_connection_context_protocols= 
+  1.01      0.00     0.00     0.00     0.00        1   Class#instance_methods 
+  1.01      0.00     0.00     0.00     0.00        1   <Class::ActiveRecord::Base>#after_touch 
+  1.01      0.00     0.00     0.00     0.00        2   Arel::Crud#create_insert 
+  1.01      0.00     0.00     0.00     0.00        2   HTTParty::ClassMethods#process_cookies 
+  1.01      0.00     0.00     0.00     0.00        2   HTTParty::Response#code 
+  1.01      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#delete 
+  1.01      0.00     0.00     0.00     0.00        1   TZInfo::DataTimezoneInfo#initialize 
+  1.01      0.00     0.00     0.00     0.00        1   ActiveRecord::Associations::ClassMethods#has_one 
+  1.01      0.00     0.00     0.00     0.00        2   ActiveRecord::Base#_rollback_callbacks 
+  1.01      0.00     0.00     0.00     0.00        1   TZInfo::TimezoneOffsetInfo#initialize 
+  1.01      0.00     0.00     0.00     0.00        2   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_create_neo4j_edge_callbacks 
+  1.01      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#before_remove_for_connections= 
+  1.01      0.00     0.00     0.00     0.00        4   Neography::Rest::Properties#initialize 
+  1.01      0.00     0.00     0.00     0.00        2   Net::HTTP#keep_alive? 
+  1.01      0.00     0.00     0.00     0.00        2   Psych::Emitter#start_document 
+  1.01      0.02     0.00     0.00     0.02        2   ActiveRecord::Associations::ClassMethods#has_and_belongs_to_many 
+  1.01      0.00     0.00     0.00     0.00        2   Net::HTTPResponse#procdest 
+  1.01      0.00     0.00     0.00     0.00        2   HTTParty::Parser#supports_format? 
+  1.01      0.00     0.00     0.00     0.00        2   HTTParty::Request#post? 
+  0.95      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#type_cast_calculated_value 
+  0.95      0.00     0.00     0.00     0.00        2   HTTParty::Request#attach_ssl_certificates 
+  0.95      0.00     0.00     0.00     0.00        2   <Class::HTTParty::Parser>#call 
+  0.95      0.00     0.00     0.00     0.00        2   Object#timeout 
+  0.95      0.00     0.00     0.00     0.00        1   ActiveRecord::Base#_run_commit_callbacks 
+  0.95      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#before_add_for_connections= 
+  0.95      0.00     0.00     0.00     0.00        3   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool#next_key 
+  0.95      0.00     0.00     0.00     0.00        2   Net::HTTPResponse#stream_check 
+  0.95      0.00     0.00     0.00     0.00        1   #<Module:0x007fb303a18598>#load_path 
+  0.95      0.00     0.00     0.00     0.00        1   AwesomePrint::Formatter#awesome_self 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#before_add_for_entities= 
+  0.89      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#finish 
+  0.89      0.00     0.00     0.00     0.00        4   TZInfo::TimezonePeriod#utc_total_offset 
+  0.89      0.00     0.00     0.00     0.00        2   Arel::SelectManager#order 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::TZInfo::InfoTimezone>#new 
+  0.89      0.00     0.00     0.00     0.00        1   Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)#_run__2270565039768141427__commit__4176206310142971996__callbacks 
+  0.89      0.00     0.00     0.00     0.00        2   Neography::Rest::NodeIndexes#initialize 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#before_remove_for_connection_context_protocols= 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#before_add_for_identities= 
+  0.89      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#chunked? 
+  0.89      0.00     0.00     0.00     0.00        4   Neography::Rest::AutoIndexes#initialize 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#after_remove_for_connection_context_protocols= 
+  0.89      0.00     0.00     0.00     0.00        1   <Class::ConnectionContext(id: integer, name: string, async: boolean, cardinality: string, connection_type: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime)>#before_add_for_connection_context_protocols= 
+  0.89      0.00     0.00     0.00     0.00        2   Net::HTTP#sspi_auth? 
+  0.89      0.00     0.00     0.00     0.00        3   <Module::I18n>#interpolate_hash 
+  0.89      0.00     0.00     0.00     0.00        2   <Class::HTTParty::Parser>#supported_formats 
+  0.89      0.00     0.00     0.00     0.00        2   Arel::Visitors::ToSql#visit_Arel_Nodes_InnerJoin 
+  0.83      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#content_length 
+  0.83      0.00     0.00     0.00     0.00        2   Net::HTTP#do_start 
+  0.83      0.00     0.00     0.00     0.00        2   Arel::InsertManager#create_values 
+  0.83      0.00     0.00     0.00     0.00        2   Psych::Visitors::YAMLTree#tree 
+  0.83      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#after_add_for_to_edges= 
+  0.83      0.00     0.00     0.00     0.00        2   Arel::InsertManager#into 
+  0.83      0.00     0.00     0.00     0.00        2   Psych::TreeBuilder#end_document 
+  0.83      0.00     0.00     0.00     0.00        1   <Class::ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)>#after_add_for_connection_contexts= 
+  0.83      0.00     0.00     0.00     0.00        1   <Class::ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)>#after_remove_for_connection_contexts= 
+  0.83      0.00     0.00     0.00     0.00        3   Comparable#< 
+  0.83      0.00     0.00     0.00     0.00        1   Kernel#to_s 
+  0.83      0.00     0.00     0.00     0.00        2   Neography::Rest::Helpers#json_content_type 
+  0.83      0.00     0.00     0.00     0.00        2   Psych::Emitter#end_stream 
+  0.83      0.00     0.00     0.00     0.00        2   Psych::Emitter#initialize 
+  0.83      0.00     0.00     0.00     0.00        2   <Class::Net::HTTP>#newobj 
+  0.83      0.00     0.00     0.00     0.00        2   Psych::Emitter#end_mapping 
+  0.83      0.03     0.00     0.00     0.03        2   ActiveRecord::FinderMethods#all 
+  0.83      0.00     0.00     0.00     0.00        1   <Class::EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#after_remove_for_entities= 
+  0.83      0.00     0.00     0.00     0.00        1   <Class::EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#before_remove_for_entities= 
+  0.83      0.00     0.00     0.00     0.00        3   Kernel#Integer 
+  0.83      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#colorize? 
+  0.83      0.00     0.00     0.00     0.00        1   Hash#reverse_merge! 
+  0.83      0.00     0.00     0.00     0.00        2   Symbol#=~ 
+  0.77      0.00     0.00     0.00     0.00        2   <Class::HTTParty::Parser>#supports_format? 
+  0.77      0.00     0.00     0.00     0.00        2   Net::BufferedIO#close 
+  0.77      0.00     0.00     0.00     0.00        1   <Class::EntityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#after_add_for_entities= 
+  0.77      0.00     0.00     0.00     0.00        4   TZInfo::InfoTimezone#info 
+  0.77      0.00     0.00     0.00     0.00        1   I18n::Config#default_locale 
+  0.77      0.00     0.00     0.00     0.00        2   ActiveRecord::Timestamp#timestamp_attributes_for_update 
+  0.77      0.00     0.00     0.00     0.00        2   HTTParty::Parser#parse_supported_format 
+  0.77      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#after_remove_for_to_edges= 
+  0.77      0.00     0.00     0.00     0.00        1   <Class::IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#after_add_for_identities= 
+  0.77      0.00     0.00     0.00     0.00        3   Module#autoload 
+  0.77      0.00     0.00     0.00     0.00        1   <Class::IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#before_remove_for_identities= 
+  0.77      0.00     0.00     0.00     0.00        2   HTTParty::Parser#initialize 
+  0.77      0.01     0.00     0.00     0.01        2   ActiveRecord::ConnectionAdapters::DatabaseStatements#exec_insert 
+  0.77      0.00     0.00     0.00     0.00        2   URI::Generic#password 
+  0.77      0.00     0.00     0.00     0.00        2   StringIO#initialize 
+  0.77      0.00     0.00     0.00     0.00        2   Net::HTTP#conn_port 
+  0.77      0.00     0.00     0.00     0.00        2   Arel::Expressions#count 
+  0.77      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#supply_default_content_type 
+  0.71      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#range_length 
+  0.71      0.00     0.00     0.00     0.00        1   ActiveModel::Name#_singularize 
+  0.71      0.00     0.00     0.00     0.00        2   MatchData#captures 
+  0.71      0.00     0.00     0.00     0.00        2   HTTParty::Response::Headers#initialize 
+  0.71      0.00     0.00     0.00     0.00        1   <Class::Connection(id: integer, from_id: integer, from_type: string, to_id: integer, to_type: string, context_id: integer, properties: text, created_at: datetime, updated_at: datetime)>#_create_neo4j_edge_callbacks= 
+  0.71      0.00     0.00     0.00     0.00        1   ActiveRecord::Associations::Builder::HasOne#build 
+  0.71      0.00     0.00     0.00     0.00        1   <Class::IdentityContext(id: integer, name: string, properties: text, application_id: integer, created_at: datetime, updated_at: datetime, title: string)>#after_remove_for_identities= 
+  0.71      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#before_remove_for_to_edges= 
+  0.71      0.00     0.00     0.00     0.00        2   Arel::Nodes::Count#initialize 
+  0.71      0.00     0.00     0.00     0.00        1   <Class::ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)>#before_add_for_connection_contexts= 
+  0.71      0.00     0.00     0.00     0.00        4   TrueClass#^ 
+  0.71      0.00     0.00     0.00     0.00        2   Psych::Handler#streaming? 
+  0.71      0.00     0.00     0.00     0.00        1   <Class::ConnectionContextProtocol(id: integer, name: string, attribute_constraints: text, context_constraints: text, created_at: datetime, updated_at: datetime)>#before_remove_for_connection_contexts= 
+  0.71      0.00     0.00     0.00     0.00        2   Psych::TreeBuilder#end_stream 
+  0.71      0.00     0.00     0.00     0.00        1   AwesomePrint::Inspector#unnested 
+  0.71      0.00     0.00     0.00     0.00        1   AwesomePrint::Formatter#cast 
+  0.65      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#operation_over_aggregate_column 
+  0.65      0.00     0.00     0.00     0.00        1   #<Module:0x007fb303a18598>#handle_exception 
+  0.65      0.00     0.00     0.00     0.00        1   Float#to_s 
+  0.65      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#before_add_for_to_edges= 
+  0.65      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::CollectionAssociation#reset 
+  0.65      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#to_hash 
+  0.65      0.00     0.00     0.00     0.00        2   ActiveRecord::Calculations#select_for_count 
+  0.65      0.23     0.00     0.00     0.23        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#find_or_create! 
+  0.65      0.00     0.00     0.00     0.00        2   Neography::Rest::Nodes#initialize 
+  0.65      0.00     0.00     0.00     0.00        2   Neography::Rest::Clean#initialize 
+  0.65      0.00     0.00     0.00     0.00        2   String#chop 
+  0.65      0.00     0.00     0.00     0.00        2   Neography::Rest::Gremlin#initialize 
+  0.59      0.00     0.00     0.00     0.00        2   Arel::Nodes::Values#initialize 
+  0.59      0.00     0.00     0.00     0.00        2   Enumerable#find 
+  0.59      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::JoinHelper#join_type 
+  0.59      0.00     0.00     0.00     0.00        2   <Class::Net::HTTP>#Proxy 
+  0.59      0.00     0.00     0.00     0.00        1   <Class::Identity(id: integer, uid: string, url: string, image: string, name: string, subtitle: string, credentials: text, properties: text, user_id: integer, context_id: integer, created_at: datetime, updated_at: datetime)>#batch_create_neo4j_nodes 
+  0.59      0.00     0.00     0.00     0.00        3   String#count 
+  0.59      0.00     0.00     0.00     0.00        2   Enumerable#grep 
+  0.59      0.00     0.00     0.00     0.00        2   <Class::Net::HTTPResponse>#body_permitted? 
+  0.59      0.00     0.00     0.00     0.00        4   ActiveRecord::Associations::HasAndBelongsToManyAssociation#invertible_for? 
+  0.59      0.00     0.00     0.00     0.00        2   ActiveRecord::Timestamp#timestamp_attributes_for_create 
+  0.59      0.00     0.00     0.00     0.00        2   Neography::Rest::RelationshipIndexes#initialize 
+  0.59      0.00     0.00     0.00     0.00        2   Arel::Visitors::DepthFirst#nary 
+  0.59      0.00     0.00     0.00     0.00        2   <Module::ActiveSupport::Multibyte::Unicode>#codepoints_to_pattern 
+  0.59      0.00     0.00     0.00     0.00        2   Neography::Rest::NodePaths#initialize 
+  0.59      0.07     0.00     0.00     0.07        1   ActiveModel::Errors#full_messages 
+  0.59      0.00     0.00     0.00     0.00        1   <Module::AwesomePrint>#console? 
+  0.59      0.00     0.00     0.00     0.00        1   Neography::Config#initialize 
+  0.59      0.00     0.00     0.00     0.00        2   Neography::Rest::NodeRelationships#initialize 
+  0.59      0.00     0.00     0.00     0.00        1   <Class::TZInfo::Timezone>#new 
+  0.59      0.00     0.00     0.00     0.00        2   Neography::Rest::Relationships#initialize 
+  0.59      0.00     0.00     0.00     0.00        2   Net::HTTPHeader#content_range 
+  0.59      0.00     0.00     0.00     0.00        2   Neography::Rest::Cypher#initialize 
+  0.53      0.00     0.00     0.00     0.00        2   Net::HTTPGenericRequest#set_body_internal 
+  0.53      0.00     0.00     0.00     0.00        2   Range#each 
+  0.53      0.00     0.00     0.00     0.00        2   Neography::Rest::Batch#initialize 
+  0.53      0.00     0.00     0.00     0.00        2   Method#source_location 
+  0.53      0.00     0.00     0.00     0.00        1   TZInfo::TimezoneInfo#initialize 
+  0.53      0.00     0.00     0.00     0.00        2   Neography::Rest::NodeTraversal#initialize 
+  0.53      0.00     0.00     0.00     0.00        2   Net::HTTP#edit_path 
+  0.53      0.00     0.00     0.00     0.00        1   ActiveRecord::Transactions#committed! 
+  0.47      0.00     0.00     0.00     0.00        1   TZInfo::TimezoneDefinition::ClassMethods#get 
+  0.47      0.00     0.00     0.00     0.00        2   String#bytesize 
+  0.47      0.00     0.00     0.00     0.00        1   TZInfo::InfoTimezone#identifier 
+  0.47      0.00     0.00     0.00     0.00        1   I18n::Config#load_path 
+  0.47      0.00     0.00     0.00     0.00        2   <Class::Net::HTTP>#http_default_port 
+  0.47      0.00     0.00     0.00     0.00        2   Kernel#proc 
+  0.47      0.00     0.00     0.00     0.00        2   ActiveRecord::Associations::CollectionAssociation#merge_target_lists 
+  0.41      0.00     0.00     0.00     0.00        2   ActiveRecord::ConnectionAdapters::AbstractAdapter#prefetch_primary_key? 
+  0.41      0.00     0.00     0.00     0.00        2   Net::HTTP#on_connect 
+  0.41      0.00     0.00     0.00     0.00        2   <Class::StringIO>#allocate 
+  0.41      0.00     0.00     0.00     0.00        1   ActiveRecord::Associations::Builder::HasOne#constructable? 
+  0.41      0.00     0.00     0.00     0.00        2   Fixnum#< 
+  0.41      0.00     0.00     0.00     0.00        1   IO#puts 
+  0.41      0.00     0.00     0.00     0.00        2   Arel::Visitors::DepthFirst#initialize 
+  0.41      0.00     0.00     0.00     0.00        1   Method#arity 
+  0.41      0.00     0.00     0.00     0.00        1   ActiveRecord::Translation#i18n_scope 
+  0.41      0.00     0.00     0.00     0.00        1   Kernel#puts 
+  0.36      0.00     0.00     0.00     0.00        1   ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#query 
+  0.36      0.00     0.00     0.00     0.00        2   Fixnum#=== 
+  0.36      0.00     0.00     0.00     0.00        1   ActiveRecord::Associations::Builder::HasOne#configure_dependency 
+  0.30      0.00     0.00     0.00     0.00        1   I18n::Backend::Base#pluralize 
+  0.30      0.00     0.00     0.00     0.00        1   Numeric#duplicable? 
+  0.30      0.00     0.00     0.00     0.00        2   StringIO#string 
+  0.24      0.00     0.00     0.00     0.00        2   ActiveRecord::Reflection::AssociationReflection#source_reflection 
+  0.18      0.00     0.00     0.00     0.00        1   FalseClass#to_s 
+  0.18      0.00     0.00     0.00     0.00        1   Integer#round 
+
+* indicates recursively called methods

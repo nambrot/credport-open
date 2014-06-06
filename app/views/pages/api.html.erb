@@ -1,0 +1,189 @@
+<% set_meta_tags({
+      :title => "Credport - API Documentation",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'documentation', 'api', 'badge'],
+      :canonical => 'https://www.credport.org/docs/api',
+      :open_graph => {
+        :title => "Credport API Documentation",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/docs/api",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+
+<nav class='three columns mobile-three' id='docsidebar'>
+  <ul class="vertical tabs">
+    <li class="header">
+      <a href="/marketplaces"><b>Credport for Marketplaces</b></a>
+    </li>
+    <li class="">
+      <a href="/docs/ux">User Experience</a>
+    </li>
+    <li class="active">
+      <a href="/docs/api">API Documentation</a>
+      <ul>
+        <li><a href="/docs/api#badge">Badge Display</a></li>
+        <li><a href="/docs/api#fullapi">Full API</a></li>
+        <li><a href="/docs/api#postidentity">Post an Identity</a></li>
+        <li><a href="/docs/api#postreview">Post a Review</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="mailto:info@credport.org" target="_blank">Email Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="show-for-small" id='docsidebartrigger'>
+  <a href="#docsidebar" class="button">Show Navigation</a>
+</div>  
+  
+<article class='nine columns'>
+  <header class='header-1' style="background-image: url(<%= asset_path 'car.jpg' %>)">
+    <div class="gradient">
+      <h2>API Documentation</h2>
+      <h4>Full Credport Integration</h4>
+    </div>
+    
+  </header>
+
+  <section class='white-card' id='badge'>
+    <header>
+      <h2>Display the badge</h2>
+    </header>
+    <p>
+      The display of the badge is very straightforward. We offer an optimized, super small snippet of code that allows a small and very fleixble badge to be displayed on profile pages. You can configure certain parameters using the window.credport object. Here is the code:
+    </p>
+      <script src="https://gist.github.com/4140555.js"></script>
+    <p>
+      What the badge does is try to fetch the user, specified by the user hash inside window.credport. If none-available it will display the buttontext, although this behavior can be modified to for example hide the badge completely. If available, the badge will be rendered into the element with the id "#credport-button" (although this will be customizable). The badge will offer the user to view the full profile in a popup. See the badge in action here: <a href="http://credport-demo.herokuapp.com/users/1">http://credport-demo.herokuapp.com/users/1</a>
+    </p>
+    <h5>window.credport Options:</h5>
+    <ul>
+      <li>
+        <header>  
+          <h6>window.credport.user</h6>
+        </header>
+          <p><b>Hash</b>, specifying how to find the user. That can be the plain email (email), the md5 hash of the email (md5_email) or the uid of Facebook, Twitter or Linkedin (or any other network we will support)</p>
+      </li>
+      <li>
+        <header>
+          <h6>window.credport.buttontext</h6>
+        </header>
+          <p><b>String</b>, will be the text that will be rendered, either while loading the user, or in the absence of him/her.</p>
+          <p><b>Default:</b> "We have partnered with Credport to help you build a portable trustworthy profile. Credport increases your chance of a transaction (like a good eBay rating) and lets you bring your reputation anywhere"</p>
+          
+      </li>
+      <li>
+        <header>
+          <h6>window.credport.baseUrl</h6>
+        </header>
+          <p><b>String</b>, specifying the base URL of where to ask, use this to point to our staging environment at <a href="https://credport-staging.herokuapp.com">https://credport-staging.herokuapp.com</a></p>
+          <p><b>Default:</b> "https://www.credport.org"</p>
+      </li>
+      <li>
+        <header>
+          <h6>window.credport.locale</h6>
+        </header>
+          <p><b>String</b>, specifying the language to be used. English (en) and German (de) are currently supported.</p>
+          <p><b>Default:</b> "en"</p>
+      </li>
+    </ul>
+  </section>
+  <section class="white-card" id="fullapi">
+    <header>
+      <h2>Full API</h2>
+    </header>
+      <p>If you want full control, you might want to take a look at our awesome full API. We use the exact same API to power our frontend profile, so you can decide what information is most relevant to your marketplace. We offer our API cross-origin via JSONP to allow you to make calls from within your site.</p>
+      
+        
+      <h4>Finding an User</h4>
+      <p>You can identify an user just like above by various identifying information on our /api/v1/users/:user_id endpoint.</p>
+      <h6>Examples:</h6>
+      
+      <ul>
+        <li><b>By ID:</b> <a href="https://www.credport.org/api/v1/users/2a681">https://www.credport.org/api/v1/users/2a681</a></li>
+        <li><b>By Email:</b> <a href="https://www.credport.org/api/v1/users/1?email=nambrot@googlemail.com">https://www.credport.org/api/v1/users/1?email=nambrot@googlemail.com</a> (Note the placeholder for the user id, can really be anything)</li>
+        <li><b>By Facebook ID:</b> <a href="https://www.credport.org/api/v1/users/1?facebook=1503035709">https://www.credport.org/api/v1/users/1?facebook=1503035709</a> (Analogous for Twitter, Linkedin, etc)</li>
+      </ul>
+        
+      <h4>Getting User Information</h4>
+      <p>We currently return full data, but expect this to be protected on user request very soon. As you can see from the links hash of the /api/v1/users/:user_id endpoint, you can access the subresources like education/work/verifications/identities/stats/commonconnections/commoninterests/reviews. You can also use the include parameter to avoid multiple calls.</p>
+      <h6>Examples:</h6>
+      <ul>
+        <li><b>Get Work History: </b><a href="https://www.credport.org/api/v1/users/2a681/work">https://www.credport.org/api/v1/users/2a681/work</a></li>
+        <li><b>Get Common Connections: </b><a href="https://www.credport.org/api/v1/users/2a681/commonconnections">https://www.credport.org/api/v1/users/2a681/commonconnections</a> (Only works if the request has access to the cookies of our origin)</li>
+        <li><b>Include Subresources: </b><a href="https://www.credport.org/api/v1/users/2a681?include=reviews">https://www.credport.org/api/v1/users/2a681?include=reviews</a></li>
+      </ul>
+  </section>
+  <section class='white-card' id='postidentity'>
+    <header>
+      <h2>Posting an Identity</h2>
+    </header>
+      <p>
+        Posting an Identity to Credport has to benefits: 1. It increases your brand awareness by allowing the user to show that he is on your platform. 2. Increases the trustworthiness of the user, which benefits everyone. Posting an identity is easy. A simple POST request to our endpoint "/api/v1/users/:user_id/identities". See an example request: <a href="http://hackst.com/#M7y1L">http://hackst.com/#M7y1L</a>
+      </p>
+      <h5>Request Parameters:</h5>
+      <ul>
+        <li><b>uid:</b> The unique identifier on your platform.</li>
+        <li><b>context_name:</b> The unique identifier for the context of the Identity. We will allow our partners to create/customize their contexts for maximum impact.</li>
+        <li><b>name:</b> The name to displayed in e.g. Common Connection situations</li>
+        <li><b>url:</b> The url to the profile/identity on your platform</li>
+        <li><b>image:</b> An image representing the identity</li>
+        <li><b>subtitle:</b> The text to displayed on Credports Verification pane as the second line</li>
+      </ul>  
+      
+      <h5>Response:</h5>
+      <ul>
+        <li><b>201:</b> Identity successfuly posted.</li>
+        <li><b>200:</b> Nothing went wrong, identity most likely already there.</li>
+        <li><b>406:</b> Identity could not be created. An Error hash gets returned (typical Rails format)</li>
+      </ul>
+        
+      <h5>Notes:</h5>
+      <ul>
+        <li>We currently do not authenticate the requests, but for obvious reasons we will once we are live. Expect to ali your API key as a parameter</li>
+      </ul>
+  </section>
+  
+  <section class='white-card' id='postreview'>
+    <header>
+      <h2>Posting a Review</h2>
+    </header>
+      <p>
+        Posting a Review to Credport has to benefits: 1. It increases your brand awareness by allowing the user to show that he is on your platform. 2. Increases the trustworthiness of the user, which benefits everyone. Posting a review is easy. A simple POST request to our endpoint "/api/v1/users/:user_id/reviews". See an example request: <a href="http://hackst.com/#3ZLpe">http://hackst.com/#3ZLpe</a>
+      </p>
+      <h5>Request Parameters:</h5>
+      <ul>
+        <h6>Params for the identity from/to:</h6>
+        <li><b>from[uid]:</b> The unique identifier on your platform.</li>
+        <li><b>from[context_name]:</b> The unique identifier for the context of the Identity. We will allow our partners to create/customize their contexts for maximum impact.</li>
+        <li><b>from[name]:</b> The name to displayed in e.g. Common Connection situations</li>
+        <li><b>from[url]:</b> The url to the profile/identity on your platform</li>
+        <li><b>from[image]:</b> An image representing the identity</li>
+        <li><b>from[subtitle]:</b> The text to displayed on Credports Verification pane as the second line</li>
+          
+        <h6>Params for the connection itself</h6>
+        <li><b>connection[context_name]: </b> The unique identifier for the context of this type of connection. We will allow our partners to create/customize their contexts for maximum impact.</li>
+        <li><b>connection[properties][text]: </b> For reviews to be displayed on Credport, the connection context must implement our text-protocol, which currently requires a string to be set on the key 'text'</li>
+    
+        
+      </ul>  
+      
+      <h5>Response:</h5>
+      <ul>
+        <li><b>201:</b> Review successfuly posted.</li>
+        <li><b>200:</b> Review likely to be there already.</li>
+        <li><b>406:</b> Review could not be created. An Error hash gets returned (typical Rails format)</li>
+      </ul>
+        
+      <h5>Notes:</h5>
+      <ul>
+        <li>We currently do not authenticate the requests, but for obvious reasons we will once we are live. Expect to all your API key as a parameter</li>
+      </ul>
+  </section>
+</article>
+<% end -%>
+

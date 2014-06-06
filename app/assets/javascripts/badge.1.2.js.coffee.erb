@@ -1,0 +1,46 @@
+texts = {
+  buttontext: {
+    de: "Wir haben uns mit Credport zusammen geschlossen um dir zu helfen ein vertraunswürdiges Profil zu erstellen. Credport erhöht deine Chancen eine Traksaktion abzuschlissen indem es deine Reputation in einem Ort zusammenfasst.",
+    en: "We have partnered with Credport to help you build a portable trustworthy profile. Credport increases your chance of a transaction (like a good eBay rating) and lets you bring your reputation anywhere"
+  },
+  register: {
+    de: "Registriere dich auf Credport für dein vertraunswürdiges Profil",
+    en: "Register at Credport to get a trustworthy profile"
+  },
+  footer: {
+    de: "Vertrauen online mit Credport",
+    en: "Trust delievered by Credport"
+  }
+}
+# load stylesheets
+head  = document.getElementsByTagName('head')[0];
+link  = document.createElement('link');
+link.rel  = 'stylesheet';
+link.type = 'text/css';
+link.href = "<%= asset_path 'badge.1.2.css', :digest => true %>";
+link.media = 'all';
+head.appendChild(link);
+# load js
+script = document.createElement('script');
+script.src   = "<%= asset_path 'badgelib.1.2.js', :digest => true %>";
+script.async = true;
+entry = document.getElementsByTagName('script')[0];
+entry.parentNode.insertBefore(script, entry);
+# populate the initial badge only after css ready
+do poll = ->
+  node = document.getElementById 'credport-button'
+  value = null
+  if window.getComputedStyle
+    value = document.defaultView.getComputedStyle(node, null).getPropertyValue('max-width')
+  else
+    if node.currentStyle
+      value = node.currentStyle.maxWidth
+  if value && value == '300px' || value == '300px'
+    badge = document.getElementById('credport-button')
+    lang = window.credport.locale || 'en'
+    buttontext = window.credport.buttontext if window.credport? and window.credport.buttontext?
+    buttontext = texts.buttontext[lang] if !buttontext?
+    badge.innerHTML = "<p class='credport-button-padded not-connected'>#{buttontext}</p><p class='credport-button-padded' id='credport-signup-p'><a href='https://www.credport.org/signup' target='_blank' id='credport-signup'>#{texts.register[lang]}</p><p id='credport-button-footer'><a href='https://www.credport.org' target='_blank'>#{texts.footer[lang]}</a></p>"
+  else
+    setTimeout poll, 500
+

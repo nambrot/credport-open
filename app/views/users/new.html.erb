@@ -1,0 +1,98 @@
+ <style type="text/css">
+ body {
+	max-width: 100%;
+	margin: 0;
+
+ }
+body> #container
+{
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e5e5 0%, #f6f6f6 30%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(30%,#f6f6f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e5e5e5 0%,#f6f6f6 30%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+	
+	max-width: 100%;
+}
+
+ </style>
+      <div class="tagline row">
+	  <h2>Getting Started Is Easy</h2>
+	  </div>
+
+  <div class="row signup-login buttons padded-column">
+      <div class="four columns" >
+	  <h3>Sign up with your E-mail</h3>
+      <%= form_for @user, :html => {:class => 'nice'} do |f| %> 
+      <%= f.label :name, :class => (@user.errors.has_key?(:name) ? 'red' : '') %>
+      <%= f.text_field :name, :class => (@user.errors.has_key?(:name) ? 'red input-text ' : 'input-text')%>
+      <% if @user.errors.has_key?(:name) %>
+        <small class="error"><%= @user.errors.get(:name).join(', ')  %></small>
+      <% end %>
+      <%= label_tag :email, nil, :class => (@email.errors.has_key?(:email) ? 'red' : '') %>
+      <%= text_field_tag :email, @email.email, :class => (@email.errors.has_key?(:email) ? 'red input-text ' : 'input-text') %>  
+      <% if @email.errors.has_key?(:email) %>
+        <small class="error"><%= @email.errors.get(:email).join(', ')  %></small>
+      <% end %>
+      <%= f.label :password, :class => (@user.errors.has_key?(:email) ? 'red' : '') %>
+      <%= f.password_field :password, :class => (@user.errors.has_key?(:email) ? 'red input-text ' : 'input-text')%>
+      <% if @user.errors.has_key?(:password) %>
+        <small class="error"><%= @user.errors.get(:password).join(', ')  %></small>
+      <% end %>
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, :class => (@user.errors.has_key?(:email) ? 'red input-text ' : 'input-text') %>  
+      <% if @user.errors.has_key?(:password) %>
+        <small class="error"><%= @user.errors.get(:password).join(', ')  %></small>
+      <% end %>
+      <%= f.submit 'Signup', :class => 'button' %>
+      <% if @user.errors.any? or @email.errors.any? %>  
+        <script type="text/javascript">
+          $.gritter.add({title: 'Error', text: 'Form is invalid'})
+        </script>
+      <% end %>
+    </div>
+    <div class="four columns ">
+	  <h3>One Click Signup</h3>
+      <a href="/auth/facebook?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class="button facebook rounded" id='facebook-signup'>
+        <div class="icon-button facebook-icon"></div>
+        <span>Sign up with Facebook</span>
+      </a>
+      <a href="/auth/linkedin?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class="button linkedin rounded" id='linkedin-signup'>
+        <div class="icon-button linkedin-icon"></div>
+        <span>Sign up with LinkedIn</span>
+      </a>
+      <a href="/auth/twitter?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}"  %>" class="button twitter rounded" id='twitter-signup'>
+        <div class="icon-button twitter-icon"></div>
+        <span>Sign up with Twitter</span>
+      </a>
+     <p> <i>We will never post from any of your accounts. </i></p>
+	  </div>
+    <div class="four columns explanation">
+    <p>You can delete your account at any time.</p> 
+    <p>By signing up you agree to our <a href="/tos">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</p>
+    <img alt="TRUSTe Certified Privacy Seal" src="https://privacy-policy.truste.com/privacy-seal/credport.org/TRUSTe-Certified-Privacy-Seal.png"></a>
+    
+      <%#<h3>Why Credport?</h3>%>
+      <%#<p>Credport lets your build a trustworthy profile to use anywhere. Combine your reputation and reviews from around the web, and see other trustworthy people in your network.</p>%>
+      </div>
+
+
+    <div class="two columns"></div>
+
+  </div>
+
+  <script type="text/javascript">
+    mixpanel.track("Sign Up Page", {referrer: document.referrer});
+    mixpanel.track_links('#facebook-signup', 'Sign Up Init', {provider: 'facebook'});
+    mixpanel.track_links('#twitter-signup', 'Sign Up Init', {provider: 'twitter'});
+    mixpanel.track_links('#linkedin-signup', 'Sign Up Init', {provider: 'linkedin'});
+    mixpanel.track_forms("form.nice", "Sign Up Init", {provider: 'email'});
+  </script>
+
+
+  <% end %>
+  
+  

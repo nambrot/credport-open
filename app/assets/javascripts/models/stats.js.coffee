@@ -1,0 +1,1 @@
+class @Stats extends Backbone.Model

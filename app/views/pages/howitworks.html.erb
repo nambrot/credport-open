@@ -1,0 +1,122 @@
+<% set_meta_tags({
+      :title => "Credport - How It Works",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'verify', 'aggregate', 'connect'],
+      :canonical => 'https://www.credport.org/howitworks',
+      :open_graph => {
+        :title => "Credport How It Works",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/howitworks",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<article class="landingpage">
+  <section class="white-layer">
+    <div class="row tagline">
+        <h2>How Credport Works</h2>
+        <h4>Building Trust and Credibility</h4>
+     </div>
+    <div class='row about-info'>
+      <div class='four columns'>
+        <h2>1. Verify</h2>
+        <img class='small' src="<%= asset_path 'data_verify.png' %>">
+        <p>The beginning of trust online is proving that you're a real person. By verifying pieces of real data, as well as connecting your social networks and accounts from around the web, you can prove you are who you say you are.</p>
+      </div>
+      <div class='four columns'>
+        <h2>2. Aggregate</h2>
+        <img class='small' src="<%= asset_path 'data_aggregate.png' %>">
+        <p>Reviews, recommendations, and ratings are key to showing you're trustworthy wherever you go on the web. Credport allows you to combine all the positive information you've earned in one place.</p>
+      </div>
+      <div class='four columns'>
+        <h2>3. Connect</h2>
+        <img class='small' src="<%= asset_path 'data_connect.png' %>">
+        <p>Using your social, professional, and transaction-based networks is the easiest and fastest way to build trust. We all trust people we're connected to, whether it's a friend of a friend or someone you've met before on another site. Credport shows you how connected you are to anyone.</p>
+      </div>
+    </div> 
+  </section> 
+  <section class="white-layer">
+    <div class="row tagline">
+        <h2>Data We Use</h2>
+        <h4>What does Credport pull from your accounts?</h4>
+     </div>
+    <div class='row about-info'>
+      <div class='four columns'>
+        <h3>Facebook
+        <img class='small' src="<%= asset_path 'data_facebook.png' %>">
+        </h3>
+        
+        <h6>Verifications:</h6>
+        <p>Account, Email, Education, Work</p>
+        
+        <h6>Aggregation:</h6>
+        <p>Work, Education, Picture</p>
+        
+        <h6>Connections:</h6>
+        <p>Friends, Likes</p>
+      </div>
+      <div class='four columns'>
+        <h3>LinkedIn
+        <img class='small' src="<%= asset_path 'data_linkedin.png' %>">
+        </h3>
+        
+        <h6>Verifications:</h6>
+        <p>Account, Email, Education, Work</p>
+        
+        <h6>Aggregation:</h6>
+        <p>Recommendations, Work, Education, Picture</p>
+        
+        <h6>Connections:</h6>
+        <p>Connections, Recommenders</p>
+      </div>
+      <div class='four columns'>
+        <h3>Twitter
+        <img class='small' src="<%= asset_path 'data_twitter.png' %>">
+        </h3>
+        
+        <h6>Verifications:</h6>
+        <p>Account</p>
+        
+        <h6>Aggregation:</h6>
+        <p>Number of followers, Picture</p>
+        
+        <h6>Connections:</h6>
+        <p>Followers, People you follow</p>
+      </div>
+    </div>  
+    <div class='row about-info'>
+      <div class='four columns'>
+        <h3>eBay
+        <img class='small' src="<%= asset_path 'data_ebay.png' %>">
+        </h3>
+        
+        <h6>Verifications:</h6>
+        <p>Account, Feedback Score</p>
+        
+        <h6>Aggregation:</h6>
+        <p>Reviews, Feeback</p>
+        
+        <h6>Connections:</h6>
+        <p>People you've transacted with.</p>
+      </div>
+      <div class='four columns'>
+        <h3>Tamyca
+        <img class='small' src="<%= asset_path 'data_tamyca.png' %>">
+        </h3>
+        
+        <h6>Verifications:</h6>
+        <p>Account</p>
+
+        <h6>Aggregation:</h6>
+        <p>Reviews</p>
+
+        <h6>Connections:</h6>
+        <p>People you've transacted with.</p>
+      </div>
+      <div class="four columns"></div>
+    </div>  
+  </section>
+</article>
+<% end -%>

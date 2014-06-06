@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  password_salt: MyString
+  password_hash: MyString
+  neo_id: 1
+
+two:
+  password_salt: MyString
+  password_hash: MyString
+  neo_id: 1

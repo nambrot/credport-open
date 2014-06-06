@@ -1,0 +1,31 @@
+@import "_variables.css.scss";
+html{
+ background: url(<%= asset_path 'pattern.png' %>);
+ background-repeat: repeat;
+}
+article {
+  header {
+    h2 {
+      font-weight: 200;
+    }
+
+    h5 {
+      font-weight: 500;
+    }
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 15px;
+  }
+  @include clearfix;
+  max-width: 828px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 40px;
+  background: white;
+  background-repeat: repeat;
+  -webkit-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+}

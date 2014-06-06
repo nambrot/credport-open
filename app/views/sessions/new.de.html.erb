@@ -1,0 +1,62 @@
+<style type="text/css">
+ body > footer { 
+ 	margin-top: 10%;
+ }
+ body >#container{
+	/* Minor Gradient */	
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e5e5 0%, #f6f6f6 30%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(30%,#f6f6f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e5e5e5 0%,#f6f6f6 30%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e5e5e5 0%,#f6f6f6 30%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+	
+}
+ </style>
+  <div class="tagline row">
+	<h2>Anmelden</h2>
+  </div>
+  <div class="row signup-login padded-column">
+    <div class="three columns offset-by-one">
+      <a href="/auth/facebook" class='button facebook rounded' id='facebook-login'>
+        <div class="icon-button facebook-icon"></div>
+        <span>Einloggen mit Facebook</span>
+      </a><a class='button linkedin rounded' id='linkedin-login'>
+				<div class="icon-button linkedin-icon"></div>
+				<span>Einloggen mit Linkedin</span>
+			</a>
+      <a href="/auth/twitter" class='button twitter rounded' id='twitter-login'>
+        <div class="icon-button twitter-icon"></div>
+        <span>Einloggen mit Twitter</span>
+      </a>
+	  </div>
+    <div class="four columns ">
+      <%= form_tag sessions_path, :class => 'nice' do %>  
+        <%= label_tag :email %>
+        <%= text_field_tag :email, params[:email], :class => 'input-text' %>  
+        <%= label_tag :password %>
+        <%= password_field_tag :password, nil, :class => 'input-text' %>   
+      <%= submit_tag 'Login', :class => 'button'%> 
+        <% end %>
+    </div>
+   <div class="three columns">
+      <h3>Kein Konto?</h3>
+      <p> Registriere dich bei Credport und nehme dein vertrauenswürdiges Profil überall hin mit. Es ist wie dein soziales eBay Profil für das gesamte Web. <a style="margin:0; padding:0; display:inline;" href="/u/new">Registrieren</a> </p>
+      
+    </div>
+    <div class="two columns"></div>
+
+  <script type="text/javascript">
+    mixpanel.track("Login Page");
+    mixpanel.track_links('#facebook-login', 'Login Init', {provider: 'facebook'});
+    mixpanel.track_links('#twitter-login', 'Login Init', {provider: 'twitter'});
+    mixpanel.track_links('#linkedin-login', 'Login Init', {provider: 'linkedin'});
+    mixpanel.track_forms("form.nice", "Login Init", {provider: 'email'});
+  </script>
+
+  </div>
+
+
+ 

@@ -1,0 +1,90 @@
+<% set_meta_tags({
+      :title => "Credport - UX Documentation",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'documentation', 'ux'],
+      :canonical => 'https://www.credport.org/docs/ux',
+      :open_graph => {
+        :title => "Credport UX Documentation",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/docs/ux",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<nav class='three columns mobile-three' id='docsidebar'>
+  <ul class="vertical tabs">
+    <li class="header">
+      <a href="/marketplaces"><b>Credport for Marketplaces</b></a>
+    </li>
+    <li class="active">
+      <a href="/docs/ux">User Experience</a>
+    </li>
+    <li class="">
+      <a href="/docs/api">API Documentation</a>
+      <ul>
+        <li><a href="/docs/api#badge">Badge Display</a></li>
+        <li><a href="/docs/api#fullapi">Full API</a></li>
+        <li><a href="/docs/api#postidentity">Post an Identity</a></li>
+        <li><a href="/docs/api#postreview">Post a Review</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="mailto:info@credport.org" target="_blank">Email Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="show-for-small" id='docsidebartrigger'>
+  <a href="#docsidebar" class="button">Show Navigation</a>
+</div> 
+<article class="nine columns">
+  <header class="header-1" style="background-image: url(<%= asset_path 'car.jpg' %>)">
+    <div class="gradient">
+        <h2>How It Works</h2>
+        <h4>Credport for Marketplaces Integration</h4>
+     </div>
+  </header>
+  <section class='white-card' id='walkthrough'>
+    
+      <h2>Credport User Experience</h2>
+      <p>See how Credport would work on your site. These screenshots are taken from one of our partners, Tamyca.</p>
+    <div class='row'>
+      <div class='six columns'>
+        <h3>1. Sign up on your site</h3>
+        <p>A new user to your site signs up through your normal sign up process.<br/><br /></p>
+        <img  src="<%= asset_path 'walkthrough_1.png' %>">
+      </div>
+      <div class='six columns'>
+        <h3>2. Edit profile on your site</h3>
+        <p>After completing the sign up process, users are given the option to build their reputation with reviews from other sites by signing up for Credport.</p>
+        <img  src="<%= asset_path 'walkthrough_2.png' %>">
+      </div>
+    </div>
+    <div class='row'>
+      <div class='six columns'>
+        <h3>3. Credport Sign up</h3>
+        <p>A pop-up appears for the user to create their Credport.<br /><br /></p>
+        <img  src="<%= asset_path 'walkthrough_3.png' %>">
+      </div>
+      <div class='six columns'>
+        <h3>4. Add networks and return</h3>
+        <p>The user can add networks and verifications (see which ones <a href="https://www.credport.org/howitworks">here</a>), and then sees a reminder in the right corner to return to your site.</p>
+        <img  src="<%= asset_path 'walkthrough_4.png' %>">
+      </div>
+    </div> 
+
+    <div class='row'>
+      <div class='six columns'>
+        <h3>5. Finished!</h3>
+        <p>Whenever anyone views that user's profile on your site, they see the Credport badge.</p>
+        <img  src="<%= asset_path 'walkthrough_5.png' %>">
+      </div>
+      <div class='six columns'>
+        <h3>Want to see more?</h3>
+        <p>We're happy to give you a more in depth idea with mockups - just ask!</p>
+      </div>
+    </div> 
+  </section> 
+</article>
+<% end -%>

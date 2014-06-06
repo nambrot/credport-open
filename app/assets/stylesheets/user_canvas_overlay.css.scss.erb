@@ -1,0 +1,799 @@
+@import "_variables.css.scss";
+#user-canvas-overlay {
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -ms-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  background-color: rgba(0,72,121,0.95);/*rgba(0, 60, 100, 0.95);*/
+  position: fixed;
+  left: 350px;
+  top: 3%;
+  height: 94%;
+  bottom: 3%;
+  @media only screen and (max-width: 830px) {
+    left: 0px;
+    width: 100%;
+  }
+  
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3),0 0px 0 lighten(#005485, 10%),0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  max-width: 800px;
+  margin-bottom: 30px;
+  z-index: 100;
+  color: white;
+  font-family: $secondary_font;
+
+  #user-canvas-overlay-header {
+    h2 {
+      font-weight: normal; 
+    }
+    /*box-shadow: 0px 14px 23px -16px #000;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px; 
+
+    @include clearfix;
+  }
+  #user-canvas-overlay-canvas {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  &:after {
+    content: '';
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    <%#background: -moz-linear-gradient(top,  rgba(0,60,100,0.01) 0%, rgba(0,60,100,0.5) 12%, rgba(0,60,100,1) 59%, rgba(0,60,100,1) 66%); /* FF3.6+ */%>
+    <%#background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,60,100,0.01)), color-stop(12%,rgba(0,60,100,0.5)), color-stop(59%,rgba(0,60,100,1)), color-stop(66%,rgba(0,60,100,1))); /* Chrome,Safari4+ */%>
+    <%#background: -webkit-linear-gradient(top,  rgba(0,60,100,0.01) 0%,rgba(0,60,100,0.5) 12%,rgba(0,60,100,1) 59%,rgba(0,60,100,1) 66%); /* Chrome10+,Safari5.1+ */%>
+    <%#background: -o-linear-gradient(top,  rgba(0,60,100,0.01) 0%,rgba(0,60,100,0.5) 12%,rgba(0,60,100,1) 59%,rgba(0,60,100,1) 66%); /* Opera 11.10+ */%>
+    <%#background: -ms-linear-gradient(top,  rgba(0,60,100,0.01) 0%,rgba(0,60,100,0.5) 12%,rgba(0,60,100,1) 59%,rgba(0,60,100,1) 66%); /* IE10+ */%>
+    <%#background: linear-gradient(to bottom,  rgba(0,60,100,0.01) 0%,rgba(0,60,100,0.5) 12%,rgba(0,60,100,1) 59%,rgba(0,60,100,1) 66%); /* W3C */%>
+    <%#filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03003c64', endColorstr='#003c64',GradientType=0 ); /* IE6-9 */%>
+  }
+  #profilepicoverlay {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    form {
+      text-align: center;
+    }
+    #uploader {
+      .dropzone {
+        line-height: 200px;
+        &:after {
+          line-height: 200px;
+          text-align: center;
+          display: block;
+          content: "Drag your images here";
+        }
+        &.show {
+          &:after {
+            line-height: 200px;
+            text-align: center;
+            display: block;
+            content: "Drop it like it's hot";
+          }
+          background-color: red ;
+        }
+      }
+    }
+    #backgrounduploader {
+      .dropzone {
+        position: relative;
+        &:after {
+          left: 0px;
+          padding-top: 60px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%); /* W3C */ 
+          content: "Drag your new background picture in here";
+        }
+        &.show {
+          &:after {
+            left: 0px;
+            padding-top: 60px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%); /* W3C */ 
+            content: "Drop it like it's hot";
+          }
+          background: none !important;
+          background-color: red !important;
+        }
+      }
+    }
+    
+    .dropzone {
+
+      display: inline-block;
+      margin: 0 auto;
+      width: 400px;
+      height: 200px;
+      border: 1px solid #AAA;
+      text-align: center;
+      h3 {
+        text-align: center;
+        line-height: 200px;
+      }
+      
+    }
+    .gallery {
+      .picture {
+        margin: 10px;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        .delete {
+          position: relative;
+          left: 140px;
+          top: -10px;
+          cursor: pointer;
+          display: block;
+          height: 20px;
+          width: 20px;
+          background: url(<%= asset_path 'delete.png' %>);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+         -o-background-size: cover;
+          background-size: cover; 
+
+          &:hover:after {
+            content: 'Click to delete';
+            position: absolute;
+            top: -40px;
+            z-index: 10;
+            width: 90px;
+            position: absolute;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.7);
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+          }
+        }
+      }
+    }
+    .progress {
+      @include transition(all, 0.3s, ease-in-out);
+      height: 0px;
+      opacity: 0;
+
+      &.show {
+        opacity: 1;
+        height: 25px;
+      }
+    }
+  }
+  .verification-adding-view {
+    a {
+      font-weight: bold;
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    & > h3, & > p {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    h3, h4 {
+
+      font-family: $primary_font;
+      font-weight: normal;
+    }
+    section {
+      @include clearfix;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      h5 {
+        font-weight: 200;
+      }
+      button {
+        font-size: 12px;
+      }
+    }
+    section:not(#emailsection):not(#phonesection):not(#websitesection) {
+      padding-left: 30px;
+      padding-right: 70px;
+    }
+  
+    #textarea {
+	  	padding-right:13%;
+	  }
+
+    #emailsection, #phonesection, #websitesection {
+      position: relative;
+      max-height: 80px;
+      @include transition(all, 0.4s, ease-in-out);
+      
+      h4, p, form {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .large-textarea{
+		     padding-right:40%;
+	    }
+  		h4:before {
+        @include transition(all, 0.4s, ease-in-out);
+        left: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #fce8e8;
+        border-width: 8px 8px 8px 16px;
+        top: 33px;
+        margin-top: -15px;
+        left: 5px;
+      }
+      
+      &.show {
+        max-height: 999px;
+        cursor: auto;
+        h4:before {
+          border-color: rgba(255, 255, 255, 0);
+          border-top-color: #fce8e8;
+          border-width: 16px 8px 8px 8px;
+          top: 33px;
+        }
+        #email {
+          height: 100px;
+        }
+        #phone {
+          height: 160px;
+        }
+
+        #website {
+          height: 120px;
+        }
+      }
+    }
+
+    #emailsection {
+      h4 {
+        cursor: pointer;
+      }
+      #email {
+        @include transition(all, 0.4s, ease-in-out);
+        height: 0;
+        display: inline-block;
+        width: 300px;
+        overflow: hidden;
+        
+      }
+      #emailstoverify {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 25px;
+      }
+    }
+
+    #phonesection {
+      h4{
+           cursor: pointer;
+        }
+      #phone {
+        
+        @include transition(all, 0.4s, ease-in-out);
+        height: 0px;
+        display: inline-block;
+        width: 300px;
+        overflow: hidden;
+        label {
+          color: white;
+        }
+
+        select {
+          margin-bottom: 12px;
+        }
+
+        #phone_input_container {
+          div {
+            display: inline-block;
+            width: 15%;
+            text-align: center;
+            border: 1px solid #AAA;
+            height: 32px;
+            vertical-align: top;
+            line-height: 32px;
+
+            background: #EEE;
+            background: -webkit-gradient(linear, center top, center bottom, from(white), to(#EEE));
+            background: -moz-linear-gradient(top, white, #EEE);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+            -o-box-shadow: inset 0 0 1px rgba(255,255,255,0.8);
+            -moz-box-shadow: inset 0 0 1px rgba(255,255,255,0.8);
+            -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+            box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+            
+            border-radius: 3px 0 0 3px;
+            color: #252525;
+          }
+
+          input {
+            display: inline-block;
+            width: 79%;
+          }
+        }
+      
+      }
+      #phonestoverify {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 25px;
+      }
+    }
+
+    #websitestoverify {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 25px;
+      li {
+        margin: 15px 0px;
+      }
+      .title {
+        margin-right: 5px;
+      }
+
+      .url {
+        margin-right: 5px;
+      }
+
+      .check {
+        padding: 5px 20px;
+      }
+    }
+    #websitesection {
+      h4 {
+        cursor: pointer;
+      }
+      #website {
+        @include transition(all, 0.4s, ease-in-out);
+        height: 0px;
+        display: inline-block;
+        width: 300px;
+        overflow: hidden;
+      }
+    }
+  }
+  .education-detail-view, .work-detail-view, .common-connections-detail-view, .common-interests-detail-view, .reviews-detail-view {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    header {
+      h2 {
+        font-weight: 200;
+      }
+      margin-bottom: 30px;
+    }     
+    .timeline-entry {
+      margin-bottom: 35px;
+      margin-top: 15px;
+      .date {
+        // float: left;
+        // width: 100px;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 6px;
+      }
+      .timeline-entry-canvas {
+        // margin-left: 120px;
+        
+        section {
+          margin-bottom: 20px;
+        }
+        .timeline-entry-canvas-attributes {
+          .kvs {
+            margin-top: 6px;
+            .key {
+              float: left;
+              font-weight: bold;
+              display: inline-block;
+              min-width: 55px;
+              max-width: 100px;
+              margin-right: 5px;
+            }
+            .value {
+              margin-left: 110px;
+            }
+          }
+        }
+        h5 {
+          font-size: 20px;
+          font-weight: 200;
+          margin-top: 0px;
+          margin-bottom: 12px;
+        }
+      }
+      a {
+        color: white;
+      
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .review-detail-view {
+    margin-bottom: 35px;
+    header {
+      font-size: 15px;
+      margin-left: -15px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      max-width: 500px;
+    }
+  }
+  .signup-overlay-view {
+    
+  }
+  #recommendation-write-overlay {
+    padding: 0 20px;
+    form {
+      label {
+        color: white;
+        margin-bottom: 15px;
+      }
+      select {
+        option {
+          display: float;
+        }
+        font-weight: 200;
+        font-size: 15px;
+        padding: 3px;
+        color: white;
+        width: auto;
+        display: inline-block;
+        margin: 0px 5px;
+        &:hover {
+          font-weight: 200;
+        }
+      }
+      textarea#recommendation_text {
+        height: 200px;
+        max-height: 50%;
+        font-family: $secondary_font;
+        font-weight: 200;
+        font-size: 16px;
+        padding: 10px;
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: white;
+        background-color: rgba(255,255,255,0.2);
+        &:hover {
+          background-color: rgba(255,255,255,0.8);
+          color: #252525;
+          &:focus {
+            color: white;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  #recommendation-request-overlay {
+    padding: 0 20px;
+    label {
+      color: white;
+    }
+
+  }
+  #edit-overlay-view-header-tabs {
+    height: 50px;
+    dd {
+      position: relative;
+      margin-top: 10px;
+      border-left: 1px solid rgba(200,200,200, 0.5);
+      
+      &:hover {
+        border-top: 3px solid #2ba6cb; 
+        margin-top: 0px;
+        a {
+          height: 47px;
+        }
+      }
+
+      a {
+        border-bottom: 1px solid white;
+        box-shadow: inset 0px -14px 15px -14px black;
+      }
+
+      .number {
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        background-color: red;
+        border: 1px solid rgba(255,255,255,0.5);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      &.active {
+        margin-top: 0px;
+        a {
+          box-shadow: none;
+          height: 47px;
+          font-size: 20px;
+        }
+        box-shadow: -1px 0px 10px -3px #252525, 1px 0px 10px -3px #252525;
+        z-index: 1;
+        position: relative;
+        &:first-child {
+          box-shadow:  1px 0px 10px -3px #252525;
+        }
+        &:last-child {
+          box-shadow: -1px 0px 10px -3px #252525;
+        }
+      }
+    }
+  }
+  .edit-overlay-view {
+    width: 1000px;
+    max-width: 100%;
+
+    .accordion {
+      .title {
+        background-color: #FFF;
+        color: #252525;
+        li {
+          border: none;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    #uploader {
+      .dropzone {
+        line-height: 200px;
+        &:after {
+          line-height: 200px;
+          text-align: center;
+          display: block;
+          content: "Drag your images here";
+        }
+        &.show {
+          &:after {
+            line-height: 200px;
+            text-align: center;
+            display: block;
+            content: "Drop it like it's hot";
+          }
+          background-color: red ;
+        }
+      }
+    }
+    #backgrounduploader {
+      .dropzone {
+        position: relative;
+        &:after {
+          left: 0px;
+          padding-top: 60px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%); /* W3C */ 
+          content: "Drag your new background picture in here";
+        }
+        &.show {
+          &:after {
+            left: 0px;
+            padding-top: 60px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%,rgba(0,0,0,1) 100%); /* W3C */ 
+            content: "Drop it like it's hot";
+          }
+          background: none !important;
+          background-color: red !important;
+        }
+      }
+    }
+    .dropzone {
+
+      display: inline-block;
+      margin: 0 auto;
+      width: 400px;
+      height: 200px;
+      border: 1px solid #AAA;
+      text-align: center;
+      h3 {
+        text-align: center;
+        line-height: 200px;
+      }
+    }
+    .gallery {
+      .picture {
+        margin: 10px;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        .delete {
+          position: relative;
+          left: 140px;
+          top: -10px;
+          cursor: pointer;
+          display: block;
+          height: 20px;
+          width: 20px;
+          background: url(<%= asset_path 'delete.png' %>);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+         -o-background-size: cover;
+          background-size: cover; 
+
+          &:hover:after {
+            content: 'Click to delete';
+            position: absolute;
+            top: -40px;
+            z-index: 10;
+            width: 90px;
+            position: absolute;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.7);
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+          }
+        }
+      }
+    }
+    .progress {
+      @include transition(all, 0.3s, ease-in-out);
+      height: 0px;
+      opacity: 0;
+
+      &.show {
+        opacity: 1;
+        height: 25px;
+      }
+    }
+    ul.tabs-content {
+      margin: 0px 45px;
+      label {
+        color: white;
+      }
+    }
+    #phone_prefix {
+      color: #252525;
+    }
+
+  }
+
+  .common-connection-detail-view, .common-interest-detail-view {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    margin: 10px;
+    .object-box {
+      // margin-left: 20px;
+    }
+    .object-box .content-box a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url(<%= asset_path 'delete.png' %>);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover; 
+
+    &:hover:after {
+      content: 'Click to close';
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      z-index: 10;
+      width: 90px;
+      position: absolute;
+      padding: 10px;
+      background-color: rgba(0,0,0,0.7);
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+          }
+  }
+}
+
+#user-canvas-overlay.verification-canvas { 	
+	background-color: rgba(116,116,116,0.95);
+	#user-canvas-overlay-header {
+		border-bottom: 2px solid #a6a6a6; box-shadow:none; 
+	}
+}
+
+#user-canvas-overlay-dimmer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+}
+

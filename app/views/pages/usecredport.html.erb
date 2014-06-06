@@ -1,0 +1,173 @@
+<% set_meta_tags({
+      :title => "Credport - Use Credport",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'trust', 'marketplaces', 'reputation', 'reviews', 'use'],
+      :canonical => 'https://www.credport.org/usecredport',
+      :open_graph => {
+        :title => "Credport Marketplaces",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/usecredport",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<article class="landingpage">
+  <header class="white-layer">
+    <div class="row tagline">
+        <h2>Use Credport</h2>
+        <h4>Show you're trustworthy</h4>
+     </div>
+  </header>
+  <section class='white-layer'>
+    <div class="row">
+      <div class="white-card-list">
+          <div class='white-card width-600 height-421 centered use-image'>
+              <h2>Share your Credport</h2>
+              <p>You can show people you're trustworthy by sharing a link to your Credport:</p>
+              <% if current_user %>
+                <input readonly="true" style="height:30px; width:350px; margin:20px;" value='<%= user_url(current_user) %>' />
+                  
+
+                <a href="http://twitter.com/share?url=<%= URI.encode user_url(current_user) %>&related=credport&text=Check%20out%20my%20%40credport%20to%20see%20how%20trustworthy%20I%20am%3A%20" class='button twitter rounded' target="_blank" style="margin:20px;">
+                  <div class="icon-button twitter-icon"></div>
+                  <span>Tweet your Credport</span>
+                </a>
+
+                <a href="https://www.facebook.com/dialog/feed?app_id=339403882822622&link=https%3A%2F%2Fwww.credport.org<%= user_path(current_user) %>&picture=https://s3.amazonaws.com/credport-assets/assets/credport_logo_email.png&name=My%20Credport&redirect_uri=https%3A%2F%2Fwww.credport.org<%= user_path(current_user) %>" class='button facebook rounded' target="_blank" style="margin:20px;">
+                  <div class="icon-button facebook-icon"></div>
+                  <span>Post your Credport to Facebook</span>
+                </a>
+
+              <% else %>
+                <p>You're not signed in - sign up/log in <a href="/signup">here</a></p>
+
+                <a href="http://twitter.com/share?url=https%3A%2F%2Fwww.credport.org&related=credport&text=Check%20out%20%40credport%20to%20see%20how%20trustworthy%20people%20are%3A%20" class='button twitter rounded' class='button twitter rounded'  target="_blank">
+                  <div class="icon-button twitter-icon"></div>
+                  <span>Tweet about Credport</span>
+                </a>
+
+                <a href="https://www.facebook.com/dialog/feed?app_id=339403882822622&link=https%3A%2F%2Fwww.credport.org&picture=https://s3.amazonaws.com/credport-assets/assets/credport_logo_email.png&name=Check%20Out%20Credport&redirect_uri=https%3A%2F%2Fwww.credport.org" class='button facebook rounded' target="_blank">
+                  <div class="icon-button facebook-icon"></div>
+                  <span>Post about Credport to Facebook</span>
+                </a>
+
+              <% end %>
+          </div> 
+         
+          <div class='white-card width-600 centered use-image'>   
+              <img  src="<%= asset_path 'nam_credport.png' %>">
+          </div> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="white-card-list">
+          <div class='white-card width-600 height-370 centered use-image'>
+            <div id="credport-button">
+            </div>
+              <script type="text/javascript">
+                window.credport = {
+                  user: {
+                    id: "<%= current_user ? current_user.to_param : '3a681' %>"
+                  },
+                  baseUrl: "http://www.credport.org",
+                  buttontext: "We have partnered with Credport to help you build a portable trustworthy profile. Credport increases your chance of a transaction (like a good eBay rating) and lets you bring your reputation anywhere"
+                };
+                (function() {
+                    var script = document.createElement('script');
+                    script.src   = 'https://s3.amazonaws.com/credport-assets/assets/badge.1.1.js';
+                    script.async = true;
+                    var entry = document.getElementsByTagName('script')[0];
+                    entry.parentNode.insertBefore(script, entry);
+                  })();
+              </script>
+          </div> 
+         
+          <div class='white-card width-600 height-370 centered use-image'>   
+              <h2>Embed the badge</h2>
+              <p>You can use Credport on a blog or any site you own to show people who you are. Copy and paste the following code onto your site to embed Credport.</p>
+              <% if current_user %>
+<textarea readonly="true" style="height:150px; width:500px;">
+  <div id="credport-button"></div>
+    <script type="text/javascript">
+      window.credport = { user: { id: "<%= current_user.to_param %>" }};
+      (function(){var script=document.createElement('script');script.src='https://s3.amazonaws.com/credport-assets/assets/badge.1.1.js'; script.async=true;var entry=document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script,entry);})();</script>
+                </textarea>
+              <% else %>
+                <p>You're not signed in - sign up/log in <a href="/signup">here</a></p>
+              <% end %>
+          </div> 
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="white-card-list">
+          <div class='white-card width-600 height-333 centered use-image'>
+              <h2>See how connected you are</h2>
+              <p>Invite friends and people you know to Credport to see how many social connections and interests you share with them.</p>
+              <% if current_user %>
+                <a href="http://twitter.com/share?url=https%3A%2F%2Fwww.credport.org<%= user_path(current_user) %>&related=credport&text=Check%20out%20my%20%40credport%20to%20see%20how%20many%20people%20we%20both%20know%20and%20interests%20we%20share%3A" class='button twitter rounded' target="_blank">
+                  <div class="icon-button twitter-icon"></div>
+                  <span>Tweet your Credport</span>
+                </a>
+
+                <a href="https://www.facebook.com/dialog/feed?app_id=339403882822622&link=https%3A%2F%2Fwww.credport.org<%= user_path(current_user) %>&picture=https://s3.amazonaws.com/credport-assets/assets/credport_logo_email.png&name=My%20Credport&redirect_uri=https%3A%2F%2Fwww.credport.org<%= user_path(current_user) %>" class="button facebook rounded" target="_blank">
+                  <div class="icon-button facebook-icon"></div>
+                  <span>Post your Credport to Facebook</span>
+                </a>
+
+              <% else %>
+                <p>You're not signed in - sign up/log in <a href="/signup">here</a></p>
+
+                <a href="http://twitter.com/share?url=https%3A%2F%2Fwww.credport.org&related=credport&text=Check%20out%20%40credport%20to%20see%20how%20trustworthy%20people%20are%3A%20" class='button twitter rounded' class='button twitter rounded' target="_blank">
+                  <div class="icon-button twitter-icon"></div>
+                  <span>Tweet your Credport</span>
+                </a>
+
+                <a href="https://www.facebook.com/dialog/feed?app_id=339403882822622&link=https%3A%2F%2Fwww.credport.org&picture=https://s3.amazonaws.com/credport-assets/assets/credport_logo_email.png&name=Check%20Out%20Credport&redirect_uri=https%3A%2F%2Fwww.credport.org" class='button facebook rounded' target="_blank">
+                  <div class="icon-button facebook-icon"></div>
+                  <span>Post about Credport to Facebook</span>
+                </a>
+
+              <% end %>
+          </div> 
+         
+          <div class='white-card width-600 centered use-image'>   
+              <img  src="<%= asset_path 'data_connect.png' %>">
+          </div> 
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="white-card-list">
+          <div class='white-card width-600 centered use-image'>
+              <a href="http://tamyca.de"><img  src="<%= asset_path 'tamyca_logo.png' %>" ></a>
+              <div class='row'>
+              <p style="text-align:center; float:none">More on the way!</p>
+              </div>
+          </div> 
+         
+          <div class='white-card width-600 centered use-image'>   
+              <h2>Build trust in marketplaces</h2>
+              <p>Use your Credport on any of our partner marketplaces to show you're trustworthy.</p>
+          </div> 
+      </div>
+    </div>
+
+  </section> 
+
+  <section>
+    <div class="row white-layer links">
+      <div class="twelve columns">
+        <% if current_user %>
+          <a href="https://www.credport.org<%= user_path(current_user) %>" class="links">Back to your Credport</a>
+        <% else %>
+          <a href="https://www.credport.org/login" class="links">Build a Credport</a>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</article>

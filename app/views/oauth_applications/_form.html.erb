@@ -1,0 +1,30 @@
+<%= form_for @application do |f| %>
+<% if @application.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@application.errors.count, "error") %> prohibited this Application from being saved:</h2>
+
+    <ul>
+    <% @application.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  <%= f.label :redirect_uri %><br />
+  <%= f.text_field :redirect_uri %>
+  <%= f.fields_for :entity do |entity| %>
+    <%= f.label :uid %><br />
+    <%= entity.text_field :uid %>
+    <%= f.label :name %><br />
+    <%= entity.text_field :name %>
+    <%= f.label :image %><br />
+    <%= entity.text_field :image %>
+    <%= f.label :url %><br />
+    <%= entity.text_field :url %>
+  <% end %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end -%>

@@ -1,0 +1,355 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  hello: Hello world
+  login: anmelden
+  Login: Anmelden
+  sign up: registrieren
+  log out: abmelden
+  your profile: dein profil
+  
+# API RESPONSES
+  api:
+    verification:
+      network:
+        connected: verifiziert
+
+  edit:
+    your_profile: 'Bearbeite Dein Profil'
+  edit_overlay:
+    tabs:
+      networks: Netzwerke
+      verifications: Verifizierungen
+      personal: Persönliches
+      pictures: Photos
+    email:
+      title:
+        h5: Email verifizieren
+        p: "Verifiziere deine Email indem du auf den Link in der Email klickst, die wir dir schicken."
+      add:
+        h5: Weitere Email verifizieren
+        button: Hinzufügen
+      to_verify:
+        h5: Zu überprüfende Emails
+        title_append:
+          none: ''
+          one: (Eine ausstehende Email zur Verifizierung)
+          other: "(%{count} ausstehende Emails zur Verifizierung)"
+      verify:
+        placeholder: Gebe den Code hier ein
+        h5: Verifiziere Email per Code
+        button: Verifiziere Code
+    phone:
+      title:
+        h5: Telefonnummer verifizieren
+        p: "Verifiziere deine Telefonnummer indem du den Code eingibst, die wir dir in einer SMS schicken"
+      add:
+        h5: Weitere Telefonnummer verifizieren
+        button: Hinzufügen
+        country: Wähle dein Land
+        number: Gebe deine Telefonnummer ein
+      to_verify:
+        h5: Zu überprüfende Telefonnummern
+        title_append:
+          none: ''
+          one: (Eine ausstehende Telefonnummer zur Verifizierung)
+          other: "(%{count} ausstehende Telefonnummern zur Verifizierung)"
+      verify:
+        placeholder: Gebe den Code hier ein
+        h5: Verifiziere Telefonnummer per Code
+        button: Verifiziere Code
+    webpage:
+      title:
+        h5: Verifiziere andere Seiten
+        p: "Verifiziere deine Seiten wie dein Blog, deine Homepage, oder Profile auf anderen Seiten"
+      add:
+        h5: Weitere Seite Hinzufügen
+        button: Hinzufügen
+      to_verify:
+        h5: Webpages to verify
+        p: "Du hast die folgende(n) Webseite(n) zur Überprüfung gestellt. Füge den Verifizierungscode auf der Webseite damit wir verifizieren können, dass du im Besitz dieser Webseite bist."
+        title_append:
+          none: ''
+          one: (Eine ausstehende Seite zur Verifizierung)
+          other: "(%{count} ausstehende Seiten zur Verifizierung)"
+      errors:
+        notfound: "Wir konnten den Verifizierungscode nicht auf der Seite finden"
+        timeout: "Die Suche nach dem Verifizierungscode ist fehlgeschlagen. Bitte versuche es später noch einmal."
+      success:
+        notification: "Füge den Verifizierungscode '%{verification_code}' auf deiner Website ein, damit wir anhand diesem Code den Besitz verifizieren können."
+      with_code: "with verification code '%{verification_code}'"
+
+# Badge
+
+  badge:
+    openProfile: "Öffne Profil (in Popup)"
+    overlay:
+      title: "Entdecke dieses Profile in voller Grösse: <a target='_blank' href='%{url}?&source=badgeoverlay&tlocale=de'>%{url}</a>"
+    stats:
+      overlay:
+        reviews:
+          title: 
+            none: "Keine Bewertungen auf Credport" 
+            one: "1 Bewerung auf Credport"
+            other: "1 von %{count} Bewertungen auf Credport"
+          footer:
+            none: ""
+            one: "Lese eine weitere Bewertung auf Credport"
+            other: "Lese %{count} weitere Bewertungen auf Credport"
+        cc:
+          title:
+            none: ""
+            one: "Du hast einen gemeinsamen Kontakt mit %{name}"
+            other: "Du hast %{count} gemeinesame Kontakte mit %{name}"
+          footer:
+            none: ""
+            one: "und noch einen auf Credport"
+            other: "und noch %{count} mehr auf Credport"
+        ci:
+          title:
+            none: ""
+            one: "Du hast ein gemeinsames Interesse mit %{name}"
+            other: "Du hast %{count} gemeinsame Interessen mit %{name}"
+          footer:
+            none: ""
+            one: "und noch einen auf Credport"
+            other: "und noch %{count} mehr auf Credport"
+        accounts:
+          title:
+            one: "Ein verifiziertes Konto auf Credport"
+            other: "%{count} verifizierte Konten auf Credport"
+          description:
+            one: "%{name} hat ein Konto verifiziert (auf einem Soziales Netzwerk oder Marktplatz)"
+            other: "%{name} hat %{count} Konten verifiziert (auf Sozialen Netzwerken oder Marktplätzen)"
+        verifications:
+          title:
+            one: "One Verifikation on Credport"
+            other: "%{count} Verifikationen on Credport"
+          description:
+            one: "%{name} hat eine Email Adresse oder Telefonnummer auf Credport verifiziert"
+            other: "%{name} hat %{count} Email adressen und Telefonnummern auf Credport verifiziert"
+        dos: 
+          one: "<div id='credport-button-stats-popup-header'>Du bist ein Grad von %{name} entfert</div><p>1 Grad der Trennung heisst, dass ihr beide euch kennt. Der Grad der Trennung gibt an über wie viele Sprünge in ihrem Netzwerk sie %{name} erreich können.</p>"
+          other: "<div id='credport-button-stats-popup-header'>Du bist %{count} Sprünge entfern von %{name}</div><p>Der Grad der Trennung gibt über wie viele Sprünge in ihrem Netzwerk sie %{name} erreich können.</p>"
+
+  veri_overlay:
+    h3: Füge weitere Verifizierungen hinzu
+    p: Füge weitere Verifizierungen hinzu um deine Verbindung zur Offline-Welt zu zeigen
+
+  person_overlay:
+    h3: Ändere persönliche Daten
+    p: Ändere deine persönlichen Daten mit deinem Namen und Tagline
+    name:
+      h5: "Name: "
+      button: Ändere deinen Namen
+    tagline:
+      h5: "Tagline: "
+      placeholder: Gebe deine Tagline hier ein
+      button: Ändere deine Tagline
+
+  picture_overlay:
+    h3: Ändere deine Photos
+    p: Mach dein Profile persönlicher indem du weitere Photos hochlädst
+    profile:
+      h5: Profilbilder
+      p: Mehr Profilbilder erwecken einen vertrauenswürdigeren Eindruck
+    background:
+      h5: Hintergrundbild
+      p: Ändere dein Hintergrundbild für den persönlichen Touch
+
+
+  Twitter Profile: Twitter Profil
+  Facebook Profile: Facebook Profil
+  LinkedIn Profile: Linkedin Profil
+  Email Address Verified: Email verifiziert
+  Phone Verified: Telefonnummer verifiziert
+
+  Common Connections: Gemeinsame Kontakte
+  Common Interests: Gemeinsame Interessen
+  Reviews: Bewertungen
+  Accounts: Accounts
+  Verifications: Verifizierungen
+
+  Degrees of separation: "Grad der Trennung"
+  Number of connections you both share: Anzahl gemeinsamer Kontakte
+  Number of interests you both share: Anzahl gemeinsamer Interessen
+  Number of reviews: Anzahl Bewertungen
+  How many steps away you are: Entfernung im sozialen Graphen
+  Number of verified accounts: Anzahl verifizierter Accounts
+  Number of emails/phones: Anzahl anderer Verifizierungen
+
+
+# application layout
+  TOS: Nutzungsbedingungen
+  Privacy: Datenschutz
+  About: Über
+  Marketplaces: Marktplätze
+  Use Credport: Benutze Credport
+  How it works: So funktionierts
+  API Documentation: API Dokumentation
+  Introduction: Einführung
+  For our Users: Für Nutzer
+  For Marketplaces: Für Marktplätze
+  FAQ: FAQ
+  Credport User Experience: Credport User Experience
+
+  footer:
+    description: "Wir sorgen für Vertrauen online. Benutze Credport um dem Internet zu beweisen dass du vertrauenswürdig bist."
+
+  errors:
+    messages:
+      invalid: ungültig
+      blank: fehlt
+
+  # User Profile
+  Edit Your Profile: Bearbeite dein Profil
+  Done Editing: Fertig
+  Error: Fehler
+  This is not your profile: Dies ist nicht dein Profil
+  Click to change name: Bearbeite deinen Namen
+  Success: Erfolg
+  Click to change tagline: Bearbeite deine Tagline
+  Enter your tagline here: Tippe hier deine Tagline ein
+  change-pictures: Bearbeite deine Bilder
+  Could not load FileUploader: Konnte nicht den FileUploader laden
+  Add more Verifications: Weitere Verifikationen
+  Resend Code: Sende den Code nochmals
+  BUILD PROFILE: BAUE DEIN PROFILE AUF
+  verification:
+    explanation: Netzwerke die du verbunden hast und andere Datenpunkte verifiziert durch Credport
+
+  #Sidebar_views
+  name_change: Dein Name ist nun %{name}
+  tagline_change: Deine Tagline ist nun %{tagline}
+  Edit Profile Pictures: Profilbilder bearbeiten
+  Edit Background Picture: Coverbild bearbeiten
+  choose_file: "oder wähle eine Datei"
+  Invalid File Extension: 'Ungültige Dateiendung'
+  Something went wrong: "Etwas ist schief gelaufen"
+  Progress: "Fortschritt"
+  Changing Background Picture: "Coverbild austauschen ..."
+  Background Picture changed: "Coverbild ausgetauscht"
+  Profile Picture added: "Profilbild hinzugefügt"
+  Profile Picture deleted: "Profilbild gelöscht"
+  Delete: "Löschen"
+  Deleting picture in progress: "Profilbild löschen ..."
+
+  #box_views
+  click to edit: 'klicken zum bearbeiten'
+  click to see more: 'klicke für mehr'
+  education: 'ausbildung'
+  Education_history: Ausbildung importiert von Facebook und LinkedIn
+  Reviews from across networks: Bewertungen aus den Netzwerken
+  reviews: bewertungen
+  work: arbeit
+  Work_history: "Arbeit importiert von Facebook und Linkedin"
+  common connections: 'gemeinsame kontakte'
+  See how you are connected: sieh wie du verbunden bist
+  common interests: gemeinsame interessen
+  Things you both like: interessen die ihr beide teilt
+  
+  box_views:
+    signupbox:
+      clickmore: 'klicke für mehr'
+      prompt: "Registriere dich um gemeinsame Kontakte zu %{name} zu sehen"
+      person:
+        title: "Gemeinsamer Kontakt"
+        subtitle: von deinen sozialen Netzwerken
+      info: "Registriere dich um gemeinsame Kontakte zu %{name} zu sehen"
+  # overlay views
+
+  overlay_views:
+    signup:
+      title: 'Registrierung'
+      subtitle: 'Melde dich bei Credport an wie du %{name} kennst'
+      incentive: "Bei Credport kannst du ein vertrauenswürdiges Profil erstellen mit deinen Bewertungen und Profilen von anderen Seiten. Ausserdem zeigen wir die wie du mit %{name} verbunden bist, z.B. gemeinsame Kontakte hast."
+    edit:
+      title: Bearbeite dein Profil
+  #education_views
+  Toggle Visibility: Sichtbarkeit umschalten
+  School: 'Schule:'
+  Verified by: 'Verifiziert durch:'
+  Station: 'Stufe:'
+  Major: 'Fach:'
+
+  #newuseroverlay
+  Build_credport: 'Erstelle dein Credport!'
+  Build_message: "Du kannst dein Credport Profile aufbauen indem du weitere Netzwerke und Verifizierungen hinzufügst!"
+
+  #review_views
+  reviewed: 'bewertete'
+
+  #verification_views
+  verifications: verifikationen
+  Emails to Verify: Emails zur Überprüfung
+  Enter the Code here: Gebe deinen Code hier ein
+  Verify Code: Prüfe den Code
+  Boost your credibility by adding verifications: Erhöhe deine Vertrauenswürdigkeit mit mehr Verifikationen
+  UPDATE OR ADD NETWORK: 'VERBINDE DEINE NETZWERKE'
+  Add_verifications: 'Verbinde deine Netzwerke um die Anzahl der verifizierten Accounts zu erhöhen, Bewertungen hinzuzufügen, deinen Lebenslauf und gemeinsame Verbindungen aufzuzeigen. Erfahre mehr hier: '
+  VERIFY EMAIL: FÜGE WEITERE EMAILS HINZU
+  Verify_email: "Verifiziere deine Email indem du auf den Link in der Email klickst, die wir dir schicken"
+  Add email: "Überprüfe Email"
+  VERIFY PHONE: FÜGE WEITERE TELEFONNUMMERN HINZU
+  Verify_phone: "Verifiziere deine Telefonnummer indem du den Code eingibst, die wir dir in einer SMS schicken"
+  Choose your Country: Wähle dein Land
+  Enter your Phone Number: Gebe deine Telefonnummer ein
+  Add phone: Überprüfe Telefonnummer
+  Redirecting: "Weiterleiten ..."
+
+  # website stuff
+  VERIFY WEBPAGE: FÜGE WEITERE WEBPAGES HINZU
+  Verify_webpage: "Verifiziere deine Webseite indem du einen kleinen Verifizierungscode auf der Seite einfügst"
+  Add website: "Überprüfe Webseite"
+  Check website: Durchsuche '%{title}' nach '%{verification_code}'
+  Websites to verify: Du hast die folgende(n) Webseite(n) zur Überprüfung gestellt. Füge den Verifizierungscode auf der Webseite damit wir verifizieren können, dass du im Besitz dieser Webseite bist.
+  webpage:
+    errors:
+      notfound: "Wir konnten den Verifizierungscode nicht auf der Seite finden"
+      timeout: "Die Suche nach dem Verifizierungscode ist fehlgeschlagen. Bitte versuche es später noch einmal."
+    success:
+      notification: "Füge den Verifizierungscode '%{verification_code}' auf deiner Website ein, damit wir anhand diesem Code den Besitz verifizieren können."
+    with_code: "with verification code '%{verification_code}'"
+
+  #works_views
+  Time: 'Zeitpunkt:'
+  Summary: 'Beschreibung:'
+  Title: 'Titel:'
+
+  #application.html
+  signup:
+    with_facebook: Registriere dich mit Facebook
+    with_linkedin: Registriere dich mit LinkedIn
+    with_twitter: Registriere dich mit Twitter
+    with_email: Registriere dich mit einer Emailadresse
+
+  errors: &errors
+      format: ! '%{attribute} %{message}'
+      messages:
+        accepted: muss akzeptiert werden
+        blank: muss ausgefüllt werden
+        confirmation: stimmt nicht mit der Bestätigung überein
+        empty: muss ausgefüllt werden
+        equal_to: muss genau %{count} sein
+        even: muss gerade sein
+        exclusion: ist nicht verfügbar
+        greater_than: muss größer als %{count} sein
+        greater_than_or_equal_to: muss größer oder gleich %{count} sein
+        inclusion: ist kein gültiger Wert
+        invalid: ist nicht gültig
+        less_than: muss kleiner als %{count} sein
+        less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+        not_a_number: ist keine Zahl
+        not_an_integer: muss ganzzahlig sein
+        odd: muss ungerade sein
+        record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+        taken: ist bereits vergeben
+        too_long: ist zu lang (nicht mehr als %{count} Zeichen)
+        too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
+        wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+      template:
+        body: ! 'Bitte überprüfen Sie die folgenden Felder:'
+        header:
+          one: ! 'Konnte %{model} nicht speichern: ein Fehler.'
+          other: ! 'Konnte %{model} nicht speichern: %{count} Fehler.'

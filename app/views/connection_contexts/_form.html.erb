@@ -1,0 +1,28 @@
+<%= form_for [@application, @context] do |f| %>
+<% if @context.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@context.errors.count, "error") %> prohibited this Context from being saved:</h2>
+
+    <ul>
+    <% @context.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  <%= f.label :async %>
+  <%= f.select(:async, options_for_select([['true', true], ['false', false]])) %>
+  <%= f.label :cardinality %>
+  <%= f.select(:cardinality, options_for_select([['id1', 'id1'], ['1', '1']])) %>
+  <%= f.label :connection_type %>
+  <%= f.select(:connection_type, options_for_select([['identity-identity', 'identity-identity'], ['identity-entity', 'identity-entity']])) %>
+  
+  <%= check_box_tag(:text_protocol, '1', @context.connection_context_protocols.any?{|protocol| protocol.name == 'text-protocol'}) %>
+  <%= label_tag(:text_protocol, "Implements text-protocol (has a 'text' attribute)") %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end -%>

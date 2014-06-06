@@ -1,0 +1,2 @@
+class PricedStrikeRouteScrapesController < ApplicationController
+end

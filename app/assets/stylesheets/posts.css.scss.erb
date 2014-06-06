@@ -1,0 +1,65 @@
+// Place all the styles related to the blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "_variables.css.scss";
+
+html{
+ background: url(<%= asset_path 'pattern.png' %>);
+ background-repeat: repeat;
+}
+h1 {
+  font-weight: 200;
+  text-align: center;
+}
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+aside#blognav {
+  position: absolute;
+  margin-top: 5%;
+  padding: 10px 20px;
+  float: left;
+  max-width: 250px;
+  background: white;
+  background-repeat: repeat;
+  -webkit-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  @media only screen and (max-width: $mobile_wide) {
+    display: none;
+  }
+
+}
+article {
+
+  header {
+    h2 {
+      font-weight: 200;
+    }
+
+    h5 {
+      font-weight: 500;
+    }
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 15px;
+  }
+  @include clearfix;
+  max-width: 828px;
+  margin: 0 auto;
+  @media only screen and (min-width: $mobile_wide) {
+    margin-left: 280px;
+  }
+  
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 40px;
+  background: white;
+  background-repeat: repeat;
+  -webkit-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 7px 29px -6px rgba(0, 0, 0, 0.8);
+}

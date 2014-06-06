@@ -1,0 +1,2 @@
+module PricedBaseRouteScrapesHelper
+end

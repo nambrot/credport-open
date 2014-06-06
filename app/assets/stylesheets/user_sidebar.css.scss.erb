@@ -1,0 +1,180 @@
+@import "_variables.css.scss";
+#user-sidebar {
+  .profiletooltip {
+    @include transition(all, 0.3s, ease-in-out);
+    z-index: 10;
+    opacity: 0;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+
+    &.show {
+      right: -115px;
+      opacity: 1;
+    }
+
+    &:after {
+       content:"";
+       display:block; /* reduce the damage in FF3.0 */
+       position:absolute;
+       top:10px;
+
+       left:-30px;
+       width:0;
+       border-width:15px 15px 15px;
+       border-style:solid;
+       border-color:transparent rgba(0,0,0,0.7) transparent transparent;
+    }
+  }
+  .name {
+    h1 {
+      font-size: 35px;
+      font-weight: 200;
+      font-family: "HelveticaNeue-Light", "HelveticaNeue-Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    position: relative;
+  }
+  .tagline {
+    font-family: "HelveticaNeue-Light", "HelveticaNeue-Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    p {
+      font-weight: 200;
+      padding: 0px 20px 0px 20px;
+      font-size: 16px;
+	    word-wrap: break-word;
+    }
+    position: relative;
+  }
+  .profilepic {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    #profilepic_leftcycle, #profilepic_rightcycle {
+      position: absolute;
+      top: 60px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+
+    }
+    #profilepic_leftcycle {
+      left: 20px;
+      background-image: url(<%= asset_path "left-arrow.png" %>);
+    }
+
+    #profilepic_rightcycle {
+      right: 20px;
+      background-image: url(<%= asset_path "right-arrow.png" %>);
+    }
+
+    #profilepic_viewhole {
+      height: 150px;
+      width: 150px;
+      margin: 0 auto;
+      overflow: hidden;
+      #profilepic_canvas {
+        @include transition(all, 0.3s, ease-in-out);
+        position: relative;
+        div {
+          display: inline-block;
+          width: 150px;
+          height: 150px;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-position-x: center;
+        }
+      }
+    }
+
+    ul.pageindicator {
+      list-style: none;
+      li {
+        display: inline-block;
+        border: 5px solid rgba(140,140,210, 0.6);
+        border-radius: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
+
+        &.selected {
+          border: 5px solid rgba(250,250,250, 1);
+        }
+      }
+    }
+  }
+  #editcontainer {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px #252525;
+    a {
+      display: none;
+    }
+  }
+  .verifications {
+    position: relative;
+    text-shadow: 2px 1px 1px #252525;
+    margin-left: 20px;
+    border-left: 5px solid lighten(#AB931F, 10%);
+    padding-bottom: 10px;
+    padding-left: 16px;
+    
+    h4 {
+      text-shadow: none;
+      font-size: 32px;
+      font-weight: 400;
+      font-family: $primary_font;
+      margin-bottom: 20px;
+    }
+
+    .verifications_adder {
+      overflow: hidden;
+      text-decoration: underline;
+      display: block;
+      padding: 0px;
+      @include transition (all, 0.3s, ease-in-out);
+      opacity: 0;
+      height: 0px;
+      &.show {
+        padding: 10px;
+        height: 64px;
+        opacity: 1;
+      }
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    li {
+      display: block;
+      margin-bottom: 10px;
+    } 
+  }
+  
+  color: white;
+  float: left;
+  width: 320px;
+  @media only screen and (max-width: $mobile_wide) {
+    width: 100%;
+  }
+  padding-bottom: 20px;
+  background-color: rgba(10,10,10,0.9);
+}

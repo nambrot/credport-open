@@ -1,0 +1,1 @@
+attribute :url, :title, :verification_code, :id

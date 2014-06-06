@@ -1,0 +1,91 @@
+<% set_meta_tags({
+      :title =>
+"Credport - FAQ",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'verify', 'aggregate', 'connect'],
+      :canonical => 'https://www.credport.org/howitworks',
+      :open_graph => {
+        :title => "Credport FAQ",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/faq",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<article class="landingpage">
+  <header class="white-layer">
+    <div class="row tagline">
+      <h2>FAQ</h2>
+      <h4>Learn more about Credport</h4>
+    </div>
+  </header>
+  <section class='white-layer'>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>How does Credport work?</h6>
+
+          <p>
+            You sign up, build your Credport using different accounts and information, and show it to other people to prove you're trustworthy. You can also use Credport on any of our marketplace partners to give yourself an edge when buying, selling, renting, or transacting. Think of Credport like an eBay reputation you can use anywhere.
+          </p>
+        </div>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>Do I get a Credport score?</h6>
+
+          <p>
+            No. We don't believe that there is any algorithm to predict whether you're a good driver or a babysitter besides the actual reviews you've earned doing those things. We include a wide variety of information as well as social context so that you can make your own decision as to whether someone is trustworthy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>What if I already have reviews on a particular site?</h6>
+
+          <p>
+            You can use Credport to find the most relevant reviews based on your social networks, or you can port your existing reputation anywhere you go on the web.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>How is Credport different?</h6>
+
+          <p>
+            You trust the people you actually know the most. If you know you have a common friend or connection with someone, you have the best idea of whether you can trust that person. We pull together all of your connections from different networks and marketplaces to build a complete social graph, so you can see how you're connected to anyone.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>What kind of data do you use from my accounts?</h6>
+
+          <p>
+            Check out How It Works
+            <a href="/howitworks">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>Where can I use Credport?</h6>
+
+          <p>
+            Check out Use Credport
+            <a href="/usecredport">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+<% end %>

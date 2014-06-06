@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  verification_code: MyString
+  user_id: 1
+
+two:
+  email: MyString
+  verification_code: MyString
+  user_id: 1

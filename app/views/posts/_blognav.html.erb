@@ -1,0 +1,14 @@
+<% cache 'blognav', :expires_in => 1.hour do %>
+<aside id="blognav">
+  <h3><%= link_to 'Credport Blog', posts_path %></h3>
+  <p>This is Credport's Blog talking about Collaborative Consumption, Online Identity and general musings of running a startup in Berlin as 20-somethings.</p>
+  <p>What is Credport? <a href="/">Credport</a> is your online place to unify your reputation online. <%= link_to "Learn More", root_path %></p>
+  
+  <h5>Previous Blog posts</h5>
+  <ul>
+    <% for post in Post.order("created_at DESC").limit(10) %>
+      <li><%= link_to post.title, post_path(post) %></li>
+    <% end %>
+  </ul>
+</aside>
+<% end %>

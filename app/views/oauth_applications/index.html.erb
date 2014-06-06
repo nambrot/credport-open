@@ -1,0 +1,29 @@
+<% if !@applications.blank? %>
+  <h1>Your Applications:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Identifier</th>
+        <th>Edit</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+      </tr>
+    </thead>
+    
+  
+  <% for application in @applications %>
+    <tr>
+      <td><%= link_to application.name, application_path(application)  %></td>
+      <td><%= link_to "Edit", edit_application_path(application)  %></td>
+      <td><%= application.created_at  %></td>
+      <td><%= application.updated_at %></td>
+    </tr>
+    
+  <% end %>
+  </table>
+<% else %>
+  <h1>You currently have no applications under management</h1>
+  
+<% end %>   
+
+<h3><%= link_to "Create new Application", new_application_path %></h3>  

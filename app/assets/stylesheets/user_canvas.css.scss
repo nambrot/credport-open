@@ -1,0 +1,30 @@
+@import "_variables.css.scss";
+  #user-canvas {
+    margin-left: 352px;
+    // padding: 32px;
+    -webkit-transition: all 0.2s ease-in;
+    text-align: center;
+    @media only screen and (max-width: $mobile_wide) {
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+      padding: 0px;
+      .metro-box {
+        width: 100%;
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+    &.overlay {
+      opacity: 0.4;
+      .metro-box:hover {
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+        box-shadow: none;
+        cursor: auto;
+      }
+    }  
+  }

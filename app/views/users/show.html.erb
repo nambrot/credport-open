@@ -1,0 +1,46 @@
+<script type="text/javascript">
+  window.edit_profile = <%= (current_user.nil? or current_user.to_param != params[:id]) ? 'false' : 'true' %>;
+  <% if current_user %>
+    window.current_user = {
+      id: '<%= current_user.to_param %>',
+      name: '<%= current_user.name %>',
+      image: '<%= current_user.image ? current_user.image : asset_path("user.png") %>'
+    }
+  <% else %>
+    window.current_user = null
+  <% end %>
+</script>
+<% content_for :body_background, @user.background_picture || asset_path('car.jpg') %>
+<% cache [@user, I18n.locale] do %>
+<div id="user-container">
+
+</div>
+<div id="user-loading-indicator">
+  <img src="<%= asset_path 'ajax-loader.gif' %>"><span>Loading Profile ...</span>
+</div>
+<script type="text/javascript">
+  $(function(){
+    buildUserProfile(<%= raw Rabl::Renderer.new('users/show', @user, :view_path => 'app/views', :format => 'hash', :scope => self).render['user'].to_json %>, window.edit_profile, window.current_user);
+  })
+</script>
+<% end %>
+<% if current_user == @user and session.has_key?(:redirect_hash) and session[:redirect_hash][:display] %>
+<script type="text/javascript">
+  $.gritter.add({title: '<%= session[:redirect_hash][:title] %>', text: '<a href="/redirect_back"> <%= session[:redirect_hash][:return_text] %></a>', sticky: true});
+</script>
+  
+<% end %>
+<% if session[:new_user] %>
+<% session[:new_user] = nil %>
+
+<script type="text/javascript">
+  mixpanel.alias("<%= current_user.to_param %>");
+  mixpanel.name_tag('<%= current_user.to_param %> - <%= current_user.name %>')
+   $(function(){
+      view = new NewUserOverlay();
+      view.render()
+      
+  })
+</script>
+
+<% end %>

@@ -1,0 +1,518 @@
+// animate
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+  
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@import "_variables.css.scss";
+#credport-button {
+  @include clearfix;
+  max-width: 300px;
+  background-color: #062139;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  position: relative;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  p {
+    line-height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &.credport-button-padded {
+      padding: 0px 1em 0px 1em;
+    }
+
+    &.credport-button-openProfile {
+      text-align: center;
+    }
+  }
+
+  a {
+    color: white;
+  }
+
+  p#credport-button-footer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 0.8em;
+    height: auto;
+    margin: 0;
+    border: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 50%;
+    background-color: #1EAEFF;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: #268BDE;
+  }
+  & > *:first-child::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 66%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: #2762A1;
+  }
+  & > *:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 82%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 18%;
+    background-color: #1B4170;
+  }
+  #credport-button-openProfile:hover {
+    text-decoration: underline;
+  }
+  #credport-button-stats {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    position: relative;
+    .credport-button-stats-number {
+      position: relative;
+      vertical-align: top;
+      display: inline-block;
+      background-color: rgb(0, 112, 255);
+      min-width: 50px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 0px 5px 0px 5px;
+      padding: 0px 5px 0px 5px;
+      box-shadow: 2px 2px 22px -6px black;
+
+      &:hover, &.selected {
+        cursor: pointer;
+        box-shadow: inset 0px 2px black;
+        background-color: rgb(0, 71, 255);
+      }
+
+      .credport-button-stats-number-tooltip {
+        text-align: left;
+        line-height: 1.3em;
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        bottom: 45px;
+        left: -20px;
+        min-width: 170px;
+        padding: 8px;
+        border-radius: 10px;
+        z-index: 10;
+      }
+
+      &:hover .credport-button-stats-number-tooltip {
+        display: block;
+      }
+
+      & > img {
+        height: 20px;
+        margin-top: 10px;
+        vertical-align: top;
+        margin-right: 5px;
+      }
+      .credport-button-stats-number-number {
+        line-height: 40px;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .credport-button-stats-popup {
+        display: none;
+      }
+
+    }
+
+    #credport-button-stats-canvas {
+
+      position: absolute;
+      box-shadow: 1px 3px rgba(0,0,0,0.85);
+      bottom: 30px;
+      opacity: 0;
+      text-align: left;
+      @include transition(all, ease-in, 0.15s);
+
+      &.fade-in {
+        opacity: 1;
+        bottom: 60px;
+      }
+      z-index: 10;
+      border-radius: 15px;
+
+      background-color: rgba(0,0,0,0.9);
+
+      .credport-button-stats-popup {
+        padding: 1em;
+        font-size: 0.9em;
+        #credport-button-stats-popup-header {
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+        #credport-button-stats-popup-footer {
+          font-size: 0.8em;
+          text-align: right;
+          
+        } 
+
+        .credport-button-stats-popup-inline-identity {
+          img {
+            height: 1.2em;
+            margin: 0px 5px 0px 5px;
+          }
+        }
+      }
+      #credport-button-stats-popup-common_connections {
+        #credport-button-stats-popup-common_connections-connections {
+          img {
+            vertical-align: middle;
+            height: 2.5em;
+            margin: 2px 3px 2px 3px;
+          }
+        }
+      }
+      #credport-button-stats-popup-common_interests {
+        #credport-button-stats-popup-common_interests-connections {
+          img {
+            vertical-align: middle;
+            height: 2.5em;
+            margin: 2px 3px 2px 3px;
+          }
+        }
+      }
+      #credport-button-stats-popup-accounts {
+        #credport-button-stats-popup-accounts-images {
+          ul {
+            list-style: none;
+          }
+          li {
+            margin: 0px 2px;
+            display: inline-block;
+          }
+          img {
+            height: 20px;
+          }
+        }
+      }
+      #credport-button-stats-popup-reviews {
+        padding: 1em;
+        font-size: 0.9em;
+        #credport-button-stats-reviews-header {
+          img {
+            margin-left: 5px;
+            margin-right: 5px;
+            height: 1.1em;
+            max-width: 2em;
+          }
+        }
+        #credport-button-stats-reviews-body {
+          font-style: italic;
+        }
+      }
+    }
+  } 
+}
+
+#credport-button-user-header {
+    padding: 0px 10px 0px 10px;
+    margin-top: 20px;
+    @include clearfix;
+
+    & > img {
+      width: 30%;
+      float: left;
+      border: 3px solid white;
+      box-shadow: 1px 5px 39px 0px black;
+    }
+    #credport-button-user-header-tagline {
+      margin-left: 37%;
+      line-height: 1.3em;
+      font-size: 0.9em;
+    }
+    #credport-button-user-header-name {
+      margin-left: 37%;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+    #credport-button-user-header-identities {
+      margin-top: 0.5em;
+      margin-left: 37%;
+      list-style: none;
+      
+
+      
+
+      li {
+        display: inline-block;
+        margin: 0 2px;
+        position: relative;
+        .credport-button-user-header-identity-tooltip {
+          position: absolute;
+          background-color: rgba(0,0,0,0.7);
+          left: 0px;
+          top: -30px;
+          display: none;
+          padding: 5px;
+          width: 200px;
+          z-index: 10;
+        }
+
+        &:hover .credport-button-user-header-identity-tooltip {
+          display: block;
+        }
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+}
+#credport-overlay {
+  @include transition(all, 0.5s, ease-in-out);
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  color: white;
+  background-color: #062139;
+  opacity: 0;
+  z-index: 100001;
+  &.display {
+    opacity: 1;
+  }
+  p {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-left: 10px;
+  }
+
+  .close {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      cursor: pointer;
+      display: block;
+      height: 20px;
+      width: 20px;
+      background: url(https://credport-assets.s3.amazonaws.com/assets/delete-b0cc38ddf5bdc9650533cd1f582278c1.png);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  #credport-overlay-iframe-container {
+    width: 100%;
+    height: 90%;
+    border: 0px; 
+    position: relative;
+  }
+  #credport-overlay-iframe-container .shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: inset 0px 6px 7px 0px black, inset 0px -6px 7px 0px black;
+  }
+  #credport-overlay-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+  }
+}
+#credport-button.credport-kinderfee {
+  background-color: #775f8d;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 50%;
+    background-color: darken(#8bb334, 5%);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: darken(#8bb334, 10%);
+  }
+  & > *:first-child::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 66%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: darken(#8bb334, 15%);
+  }
+  & > *:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 82%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 18%;
+    background-color: darken(#8bb334, 20%);
+  }
+
+  #credport-button-stats {
+    .credport-button-stats-number {
+      background-color: #8bb334;
+      color: #FFF;
+      &:hover {
+        box-shadow: inset 0px 8px 5px darken(#8bb334, 5%);
+      }
+    }
+  }
+}
+
+#credport-button.credport-roomsurfer {
+  background-color: #FFF;
+  color: #525252;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 50%;
+    background-color: #00D9D9;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: #00CCCC;
+  }
+  & > *:first-child::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 66%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 16%;
+    background-color: #00BBBB;
+  }
+  & > *:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 82%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 18%;
+    background-color: #00B2B2;
+  }
+
+  a {
+    color: #525252;
+  }
+
+  #credport-button-stats {
+    .credport-button-stats-number {
+      background-color: #FF7F4A;
+      color: #FFF;
+      &:hover {
+        box-shadow: inset 0px 8px 5px darken(#FF7F4A, 5%);
+      }
+    }
+  }
+
+  #credport-button-stats-canvas {
+    color: #FFF;
+  }
+}

@@ -1,0 +1,441 @@
+// = require user_canvas
+// = require user_sidebar
+// = require user_canvas_overlay
+// = require user_stats_view
+@import "_variables.css.scss";
+body {
+  margin: 0 auto;
+
+  & > #container, footer{
+      max-width: 1280px !important;
+      margin-left: auto; 
+      margin-right: auto;
+  }
+
+}
+
+
+.badge-box {
+  vertical-align: top;
+  position: relative;
+  width: 240px;
+  
+  background-image: linear-gradient(bottom, rgb(245,245,245) 25%, rgb(255,255,255) 66%);
+  background-image: -o-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(255,255,255) 66%);
+  background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(255,255,255) 66%);
+  background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(255,255,255) 66%);
+  background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(255,255,255) 66%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.25, rgb(245,245,245)),
+    color-stop(0.66, rgb(255,255,255))
+  );
+  
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 20px;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin: 10px;
+  
+  & > img {
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+  }
+  
+  & > .box {
+    width: 130px;
+    display: inline-block;
+    
+    .title {
+      margin-left: 6px;
+      font-weight: 700;
+    }
+
+    .info {
+      color: #525252;
+      margin-left: 6px;
+      
+      .tpsis {
+        margin-top: 3px;
+        
+        img {
+          margin-left: 2px;
+          width: 20px;
+        }
+      }
+    }
+    
+  }
+  
+  footer {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  &:active {
+    background-image: linear-gradient(bottom, rgb(255,252,255) 25%, rgb(245,245,245) 66%);
+    background-image: -o-linear-gradient(bottom, rgb(255,252,255) 25%, rgb(245,245,245) 66%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,252,255) 25%, rgb(245,245,245) 66%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,252,255) 25%, rgb(245,245,245) 66%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,252,255) 25%, rgb(245,245,245) 66%);
+
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.25, rgb(255,252,255)),
+      color-stop(0.66, rgb(245,245,245))
+    );
+
+    -o-box-shadow: inset 0.05em 0.15em 0.4em rgba(0,0,0,0.4),inset 0 0 0.2em rgba(255,255,255,0.3),inset 0 1px 2px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0.05em 0.15em 0.4em rgba(0,0,0,0.4),inset 0 0 0.2em rgba(255,255,255,0.3),inset 0 1px 2px rgba(0,0,0,0.9);
+    -webkit-box-shadow: inset 0.05em 0.15em 0.4em 
+    rgba(0, 0, 0, 0.4),inset 0 0 0.2em 
+    rgba(255, 255, 255, 0.3),inset 0 1px 2px 
+    rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0.05em 0.15em 0.4em 
+    rgba(0, 0, 0, 0.4),inset 0 0 0.2em 
+    rgba(255, 255, 255, 0.3),inset 0 1px 2px 
+    rgba(0, 0, 0, 0.9);
+  }
+  
+  &:hover {
+      box-shadow: inset 0px 2px 5px 1px rgba(0, 100, 255, 0.6), 0px 3px 1px 2px rgba(0, 100, 255, 0.6);
+    text-decoration: none;
+  }
+  
+  .mutual {
+    margin-top: 5px;
+    h5 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 14px;
+      text-align: right;
+    }
+    img {
+      width: 35px;
+    }
+  }
+  
+  .verifications {
+    h5 {
+      font-size: 16px;
+    }
+    .verification {
+      img {
+        margin-right: 10px;
+        width: 20px;
+        vertical-align: bottom;
+      }
+      color: #252525;
+    }
+  }
+}
+
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// 
+
+body:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+aside.info {
+  cursor: pointer;
+  span.trigger {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: 3px solid #FFF;
+    display: block;
+    border-radius: 22px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 19px;
+  }
+  p {
+    @include transition(all, 0.2s, ease-in-out);
+    z-index: 10;
+    right: -20px;
+    opacity: 0;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    position: absolute;
+    display: none;
+    top: -10px;
+    width: 200px;
+    font-style: normal;
+    line-height: 19px;
+  }
+  &:hover {
+    p {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.metro-box {
+  text-align: left;
+  vertical-align: top;
+  margin: 16px;
+  position: relative;
+  .canvas {
+    overflow: hidden;
+  }
+  &.signup-box {
+    background-color: $boxcolor2;
+  }
+  &.recommendations-box {
+    background-color: $boxcolor2;
+  }
+  &.hoverable {
+    opacity: 0;
+    top: 20px;
+    &.show {
+      opacity: 1;
+      top: 0px;
+    }
+    -webkit-transition-property: -webkit-transform, top, opacity, box-shadow;
+    -webkit-transition-duration: 0s, 0.5s, 0.5s, 0.2s;
+    -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition-property: -moz-transform, top, opacity, box-shadow;
+    -moz-transition-duration: 0s, 0.5s, 0.5s, 0.2s;
+    -moz-transition-delay: 0s;
+    -moz-transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    -o-transition-property: -o-transform, top, opacity, box-shadow;
+    -o-transition-duration: 0s, 0.5s, 0.5s, 0.2s;
+    -o-transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    -o-transition-delay: 0s;
+    transition-property: transform, top, opacity, box-shadow;
+    transition-duration: 0s, 0.5s, 0.5s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s;
+    
+    &:hover {
+      cursor: pointer;
+      @include transform(scale(1.05));
+      box-shadow: 10px 10px 20px #252525;
+    }
+  }
+  &.long {
+    height: 220px;
+    width: 340px;
+
+    .canvas {
+      height: 120px;
+      overflow: hidden;
+    }
+    &#reviewbox {        
+      .canvas p {
+        font-style: italic;
+      }
+    }
+  }
+  
+  &.square {
+    height: 220px;
+    width: 220px;
+  }
+  padding: 20px;
+  color: white;
+  display: inline-block;
+  background-color: #062139;
+  
+  h3 {
+    font-family: $primary_font;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    font-size: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+}
+#user-container {
+  width: 100%;
+  position: relative;
+}
+.verifications {
+  .object-box {
+    img {
+      max-width: 36px;
+      max-height: 36px;
+    }
+    .content-box {
+      margin-left: 46px;
+      a.title {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.object-box {
+  display: inline-block;
+  img {
+    vertical-align: top;
+    display: block;
+    max-width: 60px;
+    float: left;
+  }
+  .content-box {
+    vertical-align: top;
+    margin-left: 76px;
+    
+    .title {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .verified-by{
+  	img { 
+		max-width:30px;
+		margin-top: 4px;
+		margin-left: 20px;
+	}
+	h5{
+		padding: 25px 0px 0px;
+		margin-bottom: 4;
+		font-size: 13px !important ;
+		font-weight: bold !important;
+	}
+	.content-box{
+		margin-left: 70px;
+		.title{
+			font-size: 14px;
+		}
+		.subtitle{
+			font-size: 13px;
+		}
+	  }
+	}
+  div.verified-by { 
+	display:block;
+	margin: 10px 0 10px;
+	float: left;
+  }
+}
+
+.inline-box {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  img {
+    vertical-align: middle;
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+  }
+  span {
+    vertical-align: middle;
+  }
+  vertical-align: middle;
+  
+}
+
+#document-overlay {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0px;
+  left: 0px;
+}
+
+#document-overlay-box {
+  z-index: 1001;
+    h3 {
+      font-family: $primary_font;
+      font-weight: 200;
+    }
+    width: 440px;
+    padding: 20px 40px 20px 40px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    top:100px;
+
+     .delete {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        cursor: pointer;
+        display: block;
+        height: 20px;
+        width: 20px;
+        background: url(http://thepngproject.s3.amazonaws.com/30_ff00ff/noun_project_a7193be7-da14-4053-b0df-597c55c79aac.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+       -o-background-size: cover;
+        background-size: cover; 
+
+        &:hover:after {
+          color: white;
+          content: 'Click to dismiss';
+          position: absolute;
+          top: -40px;
+          z-index: 10;
+          width: 120px;
+          position: absolute;
+          padding: 10px;
+          background-color: rgba(0,0,0,0.7);
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          border-radius: 5px;
+          box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+        }
+       }
+  }
+
+#user-loading-indicator {
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: #FFF;
+  z-index: 1001;
+  span {
+    margin-left: 20px;
+  }
+  img {
+    vertical-align: middle;
+  }
+}

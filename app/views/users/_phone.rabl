@@ -1,0 +1,1 @@
+attribute :phone, :phone_formatted

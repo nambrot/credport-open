@@ -1,0 +1,104 @@
+<% set_meta_tags({
+      :title => "Credport - Home",
+      :description => "Credport - Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'blog'],
+      :canonical => 'http://www.credport.org/',
+      :open_graph => {
+        :title => "Credport",
+        :description => "Building Trust Online",
+        :url => "http://www.credport.org/",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+
+<article class="landingpage">
+  <header class="white-layer">
+  	<div class="row tagline">
+		<h2>Your Reputation in One Place</h2>
+	</div>
+    
+	<div id="herorow" class='row'>
+	  <div id='headerdesc' class='four columns'>
+        <p style="text-align:left">Please Note that we have suspended development of Credport.</p>
+  			<a id='one-click-signup' href="/blog/15-Thank-you-for-using-Credport" class='button rounded centered' style="text-align:center; width: 100%; font-weight: bold; font-size: 1.3em;">
+  				<span>Read more about here</span>
+  			</a>
+        <div class="signup-login">
+          <a href="/auth/facebook?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button facebook rounded'>
+            <div class="icon-button facebook-icon"></div>
+            <span>Sign up with Facebook</span>
+          </a>
+          <a href="/auth/linkedin?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button linkedin rounded'>
+            <div class="icon-button linkedin-icon"></div>
+            <span>Sign up with LinkedIn</span>
+          </a>
+          <a href="/auth/twitter?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button twitter rounded'>
+            <div class="icon-button twitter-icon"></div>
+            <span>Sign up with Twitter</span>
+          </a>
+          
+          <a href="signup" class='button black rounded'>
+            <div class="icon-button email-icon"></div>
+            <span>Sign up with Email</span>
+          </a>
+        </div> 
+	 </div>
+      <div id='headerpic' class='eight columns'>
+        <img src="<%= asset_path 'hero.png' %>">
+      </div>
+    </div> 
+  </header>
+  <section>
+    <header>
+      <h3>What is Credport?</h3>
+    </header>
+    <ul class="row">
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'landing_1.png' %>" alt="">
+          <h5>Your Online Presence</h5>
+          <p>Pull all your accounts from social networks and marketplaces into Credport to combine your online identity.</p>
+        </div>
+      </li>
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'landing_2.png' %>" alt="">
+          <h5>Your Reviews</h5>
+          <p>You can use your reviews from eBay, LinkedIn and other marketplaces and show the world your positive reputation.</p>
+        </div>
+      </li>
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'landing_3.png' %>" alt="">
+          <h5>Your Network</h5>
+          <p>Use all of your social networks to see how you are connected to anyone. See people you both know and interests you share.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="signup-row signup-login white row" style="margin:0;">
+    <div class="four columns centered">
+    <h3 style="text-align:center;">Build your Credport</h3>
+    <div class="dummy signup-login">
+      <a href="signup" class='button rounded centered' style="text-align:center;">
+        <span>Sign up</span>
+      </a>
+    </div>
+  </section>
+</article>
+<script type="text/javascript">
+    mixpanel.track("Landing Page", {
+  referer: document.referrer
+});
+    $(function(){
+      $('#one-click-signup').click(function(){
+        mixpanel.track('OneClickSignup Trigger');
+        $('#headerdesc .signup-login').addClass('show');
+        return false;
+      })
+    })
+</script>
+<% end -%>

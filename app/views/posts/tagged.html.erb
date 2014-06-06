@@ -1,0 +1,25 @@
+<h1>Posts tagged '<%= params[:tag] %>'</h1>
+<% if !@posts.blank? %>
+  <% for post in @posts %>
+    <article>
+      <header>
+        <h2>  <%= link_to post.title, blog_path(post) %></h2>
+        <h5>by <a href="<%= post.authorurl %>"><%= post.author %></a>  <%= time_ago_in_words(post.date) %> ago</h5>
+      </header>
+      <%=raw @markdown.render post.body %>
+      <footer>
+        <% if !post.tags.blank? %>
+        <p>
+         Tags:
+          <%= raw post.tags.map{|tag| "<a href='/blog/tagged/#{tag}'>#{tag}</a>"}.join(', ')%>
+          </p>
+        <% else %>
+          
+        <% end %>
+        <p><%= link_to "Click here to comment", blog_path(post) + '#comments' %></p>
+      </footer>
+    </article>
+  <% end %>
+<% else %>
+  
+<% end %>

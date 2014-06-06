@@ -1,0 +1,22 @@
+facebook:
+    consumer_key:       'consumer_key'
+    consumer_secret:    'consumer_secret'
+twitter:
+    consumer_key:       'consumer_key'
+    consumer_secret:    'consumer_secret'
+linkedin:
+    consumer_key:       'consumer_key'
+    consumer_secret:    'consumer_secret'
+ebay:
+    runame:     'runame'
+    devid:      'devid'
+    appid:      'appid'
+    certid:     'certid'
+    siteid:     '0'
+    apiurl:    'https://api.ebay.com/ws/api.dll'
+paypal:
+    key: 'key'
+    token: 'token'
+xing:
+    key: 'key'
+    secret: 'secret'

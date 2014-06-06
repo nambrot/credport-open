@@ -1,0 +1,105 @@
+<% set_meta_tags({
+      :title => "Credport - Home",
+      :description => "Credport - Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'blog'],
+      :canonical => 'http://www.credport.org/',
+      :open_graph => {
+        :title => "Credport",
+        :description => "Building Trust Online",
+        :url => "http://www.credport.org/",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+
+<article class="landingpage">
+  <header class="white-layer">
+    <div class="row tagline">
+    <h2>Dein Onlineruf in einem Profil</h2>
+  </div>
+    
+  <div id="herorow" class='row'>
+    <div id='headerdesc' class='four columns'>
+        <p style="text-align:left">Vereine deine Onlineidentitäten und benutze Credport um deine Vertrauenswürdigkeit im Netz zu erhöhen.</p>
+        <a id='one-click-signup' href="/signup" class='button rounded centered' style="text-align:center; width: 100%; font-weight: bold; font-size: 1.3em;">
+          <span>Erstelle dein Profil jetzt</span>
+        </a>
+        <div class="signup-login">
+          <a href="/auth/facebook?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button facebook rounded'>
+            <div class="icon-button facebook-icon"></div>
+            <span>Registriere dich mit Facebook</span>
+          </a>
+          <a href="/auth/twitter?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button twitter rounded'>
+            <div class="icon-button twitter-icon"></div>
+            <span>Registriere dich mit Twitter</span>
+          </a>
+          <a href="/auth/xing?origin=<%= URI.escape "#{request.protocol}#{request.host_with_port}#{request.fullpath}" %>" class='button xing rounded'>
+            <div class="icon-button xing-icon"></div>
+            <span>Registriere dich mit Xing</span>
+          </a>
+          
+          <a href="signup" class='button black rounded'>
+            <div class="icon-button email-icon"></div>
+            <span>Registriere dich per Email</span>
+          </a>
+        </div> 
+   </div>
+      <div id='headerpic' class='eight columns'>
+        <img src="<%= asset_path 'hero.png' %>">
+      </div>
+    </div> 
+  </header>
+  <section>
+    <header>
+      <h3>Mit 3 einfachen Schritten:</h3>
+    </header>
+    <ul class="row">
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'data_verify.png' %>" alt="">
+          <h5>Deine Onlinepräsenz</h5>
+          <p>Vereine deine Onlineidentitäten von deinen sozialen Netzwerken und Marktplätzen in deinem Credport Profil um zu zeigen dass du ein echter Mensch bist.</p>
+        </div>
+      </li>
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'data_aggregate.png' %>" alt="">
+          <h5>Deine Bewertungen</h5>
+          <p>Du kannst deine Bewertungen von eBay, Linkedin und anderen Marktplätzen benutzen um der Welt zu zeigen was andere über dich sagen.</p>
+        </div>
+      </li>
+      <li class="four columns">
+        <div>
+          <img src="<%= asset_path 'data_connect.png' %>" alt="">
+          <h5>Deine Netzwerke</h5>
+          <p>Benuzte deine sozialen Netwerke um zu sehen wie du verbunden bist. Credport erlaubt es dir gemeinsame Kontakte und Interessen zu erforschen.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="signup-row signup-login white row" style="margin:0;">
+    <div class="four columns centered">
+    <h3 style="text-align:center;">Erstelle dein Profil jetzt</h3>
+    <div class="dummy signup-login">
+      <a href="signup" class='button rounded centered' style="text-align:center;">
+        <span>Registrierung</span>
+      </a>
+    </div>
+  </section>
+</article>
+<script type="text/javascript">
+    mixpanel.track("Landing Page", {
+  referer: document.referrer
+});
+    $(function(){
+      $('#one-click-signup').click(function(){
+        mixpanel.track('OneClickSignup Trigger');
+        $('#headerdesc .signup-login').addClass('show');
+        return false;
+      })
+    })
+</script>
+<% end -%>
+

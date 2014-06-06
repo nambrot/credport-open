@@ -1,0 +1,154 @@
+@import "_variables.css.scss";
+#user-stats-view {
+  margin-left: 352px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  @media only screen and (max-width: $mobile_wide) {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0px;
+  }
+  &.overlay {
+    opacity: 0.4;
+    .metro-box:hover {
+      -webkit-transform: scale(1.0);
+      -moz-transform: scale(1.0);
+      -o-transform: scale(1.0);
+      transform: scale(1.0);
+      box-shadow: none;
+      cursor: auto;
+    }
+  }  
+}
+
+.metro-box.number {
+  background-color: $boxcolor1;
+  @include transition(padding, 0.2s, ease-in-out);
+  @media only screen and (max-width: $super_wide) and (min-width: $mobile_wide) {
+    @include transition(all, 0.2s, ease-in-out);
+  }
+  width: 20%;
+  height: 190px;
+  @media only screen and (max-width: $super_wide) {
+    height: 150px;
+  }
+  @media only screen and (max-width: $narrow_wide) {
+    height: 120px;
+  }
+  margin: 2%;
+  padding: 10px;
+  padding-top: 20px;
+  overflow: hidden;
+  @media only screen and (max-width: $mobile_wide) {
+    width: 20%;
+    height: 150px;
+    margin: 2%;
+  }
+
+  header {
+    img {
+      @include transition(max-height, 0.2s, ease-in-out);
+      max-height: 70px;
+      max-width: 80%;
+      padding-bottom: 5%;
+    }
+    h3 {
+      @include transition(max-height, 0.2s, ease-in-out);
+      font-size: 37px;
+      margin-bottom: 3px;
+      overflow: hidden;
+    }
+    h6 {
+      @include transition(max-height, 0.2s, ease-in-out);
+      overflow: hidden;
+      @media only screen and (max-width: $super_wide) {
+        max-height: 0;
+      }
+      margin: 0;
+      margin-top: 3px;
+      line-height: 20px;
+    }
+    text-align: center;
+  }
+
+  p {
+    @include transition(all, 0.2s, ease-in-out);
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  &:hover {
+    z-index: 2;
+    @media only screen and (max-width: $super_wide) and (min-width: $mobile_wide) {
+      padding: 5px;
+      padding-top: 0px;
+      @include transform (scale(1.6) translateX(-20px));
+      box-shadow: 10px 10px 20px rgba(10,10,10, 0.5);
+    }
+    @media only screen and (max-width: $narrow_wide) and (min-width: $mobile_wide) {
+      @include transform (scale(1.8) translateX(-20px));
+      .canvas {
+        margin-top: -10px;
+      }
+    }
+    @media only screen and (max-width: $mobile_wide) {
+      padding: 5px;
+      padding-top: 0px;
+    }
+    @media only screen and (max-width: $narrow_mobile) {
+      padding: 10px;
+      padding-top: 20px;
+      position: fixed;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: auto;
+    }
+    
+    p {
+      max-height: 99px;
+      opacity: 1;
+      @media only screen and (max-width: $super_wide) and (min-width: $mobile_wide) {
+        font-size: 10px;
+      }
+      @media only screen and (max-width: $narrow_wide) and (min-width: $mobile_wide) {
+        font-size: 8px;
+      }
+      // @media only screen and (max-width: $state3max) {
+      //   max-height: 0px;
+      // }
+    }
+    header {
+      img {
+        max-height: 0;
+        @media only screen and (max-width: $narrow_mobile) {
+          max-height: 999px;
+        }
+      }
+      h3 {
+        @media only screen and (max-width: $narrow_wide) and (min-width: $mobile_wide) {
+          margin: 0;
+        }
+      }
+      h6 {
+        @media only screen and (max-width: $super_wide) and (min-width: $mobile_wide) {
+          max-height: 100px;
+          font-size: 10px;
+          margin-bottom: 5px;
+          line-height: 14px;
+        }
+        @media only screen and (max-width: $narrow_wide) and (min-width: $mobile_wide) {
+          font-size: 9px;
+          margin: 0;
+          margin-bottom: 2px;
+        }
+        @media only screen and (max-width: $narrow_mobile) {
+          max-height: 100px;
+        }
+      }
+    }
+  }
+}

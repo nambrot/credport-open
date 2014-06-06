@@ -1,0 +1,88 @@
+
+$navcolor1: #1eaeff;
+$navcolor2: #268bde;
+$navcolor3: #2762a1;
+$navcolor4: #1b4170;
+$navcolor5: #062139;
+$boxcolor: #062139;
+$boxcolor1: $navcolor4;
+$boxcolor2: $navcolor2;
+@mixin transition($property,$duration, $ease, $delay: 0s) {
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
+  transition: $property $duration $ease $delay;
+}
+@mixin transform($property: none) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+@mixin transition-duration($duration: 1s, $property: all, $ease: ease-in-out) {
+  -webkit-transition: $property $duration $ease;
+  -moz-transition: $property $duration $ease;
+  -o-transition: $property $duration $ease;
+  -ms-transition: $property $duration $ease;
+  transition: $property $duration $ease;
+}
+@mixin animation($name, $duration, $delay: 0s) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: $duration ;
+  -moz-animation-duration: $duration ;
+  -ms-animation-duration: $duration ;
+  -o-animation-duration: $duration ;
+  animation-duration: $duration ;
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  -animation-delay: $delay;
+}
+
+@mixin clearfix {
+  &:before,
+      &:after {
+        content:" ";
+        display:table;
+      }
+
+      &:after {
+        clear:both;
+      }
+
+      // For IE 6/7 (trigger hasLayout)
+      & {
+        *zoom:1;
+      }
+}
+
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Primary Font
+$primary_font: Raleway, sans-serif;
+
+// Secondary Font
+$secondary_font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// Tertiary Font
+$tertiary_font: Gill Sans;
+
+// Width Constraints for our responsive functionality
+$super_wide: 900px;
+$narrow_wide: 800px;
+$mobile_wide: 687px;
+$narrow_mobile: 487px;

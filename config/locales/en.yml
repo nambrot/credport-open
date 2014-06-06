@@ -1,0 +1,379 @@
+  # Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  login: 'login'
+  Login: 'Login'
+  sign up: 'sign up'
+  log out: 'log out'
+  your profile: 'your profile'
+  footer:
+    description: "We're building trust online. You can use Credport to prove you're trustworthy anywhere you go on the web."
+  
+  # Error messages
+  errors:
+    self_recommendation: You can't write yourself a recommendation
+  # API RESPONSES
+
+  api:
+    verification:
+      network:
+        connected: Connected
+
+  # Edit Overlay
+  edit:
+    your_profile: 'Edit Your Profile'
+  edit_overlay:
+    tabs:
+      networks: Networks
+      verifications: Verifications
+      personal: Personal
+      pictures: Pictures
+      recommendations_to_approve: Recommendations
+    email:
+      title:
+        h5: Verify Email
+        p: "Verify your e-mail address by clicking the verification link we send you."
+      add:
+        h5: Add another Email
+        button: Add Email
+      to_verify:
+        h5: Emails to verify
+        title_append:
+          none: ''
+          one: (One outstanding Email to verify)
+          other: "(%{count} outstanding Emails to verify)"
+      verify:
+        placeholder: Enter the code here
+        h5: Verify Email by code
+        button: Verify Code
+    phone:
+      title:
+        h5: Verify Phone
+        p: "Verify your phone number by entering the verification code we send via SMS."
+      add:
+        h5: Add another Phone
+        button: Add Phone
+        country: Choose your Country
+        number: Enter your Phone Number
+      to_verify:
+        h5: Phones to verify
+        title_append:
+          none: ''
+          one: (One outstanding Phone to verify)
+          other: "(%{count} outstanding Phones to verify)"
+      verify:
+        placeholder: Enter the code here
+        h5: Verify Phone by code
+        button: Verify Code
+    webpage:
+      title:
+        h5: Verify other pages
+        p: "Verify websites you own, your blog, or your profiles on other sites"
+      add:
+        h5: Add webpage
+        button: Verify webpage
+      to_verify:
+        h5: Webpages to verify
+        p: "You have submitted the following webpage(s). Please copy and paste the code onto the page somewhere so that we can verify your ownership."
+        title_append:
+          none: ''
+          one: (One outstanding Webpage to verify)
+          other: "(%{count} outstanding Webpages to verify)"
+      errors:
+        notfound: "Could not find verification code on webpage."
+        timeout: "Webpage check timed out. Please try again later."
+      success:
+        notification: "Please include the verification code '%{verification_code}' on your web page and click on Scan so we can verify the ownership"
+      with_code: "with verification code '%{verification_code}'"
+
+
+  VERIFY WEBPAGE: VERIFY OTHER PAGES
+  Verify_webpage: "Verify websites you own, your blog, or your profiles on other sites"
+  Add website: Add webpage
+  Check website: Scan '%{title}' for '%{verification_code}'
+  Websites to verify: You have submitted the following webpage(s). Please copy and paste the code onto the page somewhere so that we can verify your ownership.
+  webpage:
+    errors:
+      notfound: "Could not find verification code on webpage."
+      timeout: "Webpage check timed out. Please try again later."
+    success:
+      notification: "Please include the verification code '%{verification_code}' on your web page and click on Scan so we can verify the ownership"
+    with_code: "with verification code '%{verification_code}'"
+
+
+  veri_overlay:
+    h3: Add more Verifications
+    p: Add more verifications to your profile to show links to the offline world.
+
+  person_overlay:
+    h3: Change Personal Data
+    p: Give your profile a personal touch by setting your name and tagline.
+    name:
+      h5: "Name: "
+      button: Change Name
+    tagline:
+      h5: "Tagline: "
+      placeholder: Enter your tagline here
+      button: Change Tagline
+
+  picture_overlay:
+    h3: Change your Pictures
+    p: Change your picture to make your profile more personal.
+    profile:
+      h5: Profile Pictures
+      p: Add more profile Pictures to make it look better
+    background:
+      h5: Background Picture
+      p: Change your background picture for your personal touch
+
+
+  # Badge
+
+  badge:
+    openProfile: "Open Profile (in Popup)"
+    overlay:
+      title: "Check out this Credport profile in full size: <a target='_blank' href='%{url}?&source=badgeoverlay'>%{url}</a>"
+    stats:
+      overlay:
+        reviews:
+          title: 
+            none: "No Reviews on Credport" 
+            one: "1 Review on Credport"
+            other: "1 of %{count} Reviews on Credport"
+          footer:
+            none: ""
+            one: "Open Profile on Credport to see one more review"
+            other: "Open profile on Credport to see %{count} more reviews"
+        cc:
+          title:
+            none: ""
+            one: "You share one Common Connection with %{name}"
+            other: "You share %{count} Common Connections with %{name}"
+          footer:
+            none: ""
+            one: "and one more on Credport"
+            other: "and %{count} more on Credport"
+        ci:
+          title:
+            none: ""
+            one: "You share one Common Interest with %{name}"
+            other: "You share %{count} Common Interests with %{name}"
+          footer:
+            none: ""
+            one: "and one more on Credport"
+            other: "and %{count} more on Credport"
+        accounts:
+          title:
+            one: "One verified account on Credport"
+            other: "%{count} verified accounts on Credport"
+          description:
+            one: "%{name} has connected one account (social network or marketplace)"
+            other: "%{name} has connected %{count} accounts from social networks and marketplaces from around the web"
+        verifications:
+          title:
+            one: "One Verification on Credport"
+            other: "%{count} Verification on Credport"
+          description:
+            one: "%{name} has verified one email or phone number on Credport"
+            other: "%{name} has verified %{count} pieces of information like email address or phone number on Credport."
+        dos: 
+          one: "<div id='credport-button-stats-popup-header'>You are one degree away from %{name}</div><p>1 Degree of seperation means that you are directly conected to %{name}</p>"
+          other: "<div id='credport-button-stats-popup-header'>You are %{count} degrees away from %{name}</div><p>2 = You both know the same person, 3 = You know someone who is 2nd degree connected to %{name}</p>"
+  
+  Common Connections: Common Connections
+  Common Interests: Common Interests
+  Reviews: Reviews
+  Accounts: Accounts
+  Verifications: Verifications
+
+  Degrees of separation: Degrees of separation
+  Number of connections you both share: Number of connections you both share
+  Number of interests you both share: Number of interests you both share
+  Number of reviews: Number of reviews
+  How many steps away you are: How many steps away you are
+  Number of verified accounts: Number of verified accounts
+  Number of emails/phones: Number of emails/phones
+
+  # application layout
+  TOS: TOS
+  Privacy: Privacy
+  About: About
+  Marketplaces: Marketplaces
+  Use Credport: Use Credport
+  How it works: How it works
+  API Documentation: API Documentation
+  Introduction: Introduction
+  For our Users: For our Users
+  For Marketplaces: For Marketplaces
+  FAQ: FAQ
+  Credport User Experience: Credport User Experience
+
+  # User Profile
+  Edit Your Profile: Edit your Profile
+  Done Editing: Done Editing
+  How it works: How it works
+  Error: Error
+  This is not your profile: This is not your profile
+  Click to change name: Click to change name
+  Success: Success
+  Click to change tagline: Click to change tagline
+  Enter your tagline here: Enter your tagline here
+  change-pictures: Click to edit your profile and background pictures
+  Could not load FileUploader: Could not load FileUploader
+  Add more Verifications: Add more Verifications
+  Resend Code: Resend Code
+  BUILD PROFILE: BUILD PROFILE
+  verification:
+    explanation: Networks you've connected and pieces of data verified by Credport
+
+
+  #Sidebar_views
+  name_change: Name changed to %{name}
+  tagline_change: Tagline changed to %{tagline}
+  Edit Profile Pictures: Edit Profile Pictures
+  Edit Background Picture: Edit Background Picture
+  choose_file: "or choose your file: "
+  Invalid File Extension: 'Invalid File Extension'
+  Something went wrong: "Something went wrong"
+  Progress: "Progress"
+  Changing Background Picture: "Changing Background Picture ..."
+  Background Picture changed: "Background Picture changed"
+  Profile Picture added: "Profile Picture added"
+  Profile Picture deleted: "Profile Picture deleted"
+  Delete: "Delete"
+  Deleting picture in progress: "Deleting picture in progress ..."
+
+  #box_views
+  click to edit: 'click to edit'
+  click to see more: 'click to see more'
+  education: 'education'
+  Education_history: Education history imported from Facebook or LinkedIn
+  Reviews from across networks: Reviews from across networks
+  reviews: reviews
+  work: work
+  Work_history: "Work history imported from Facebook or LinkedIn"
+  common connections: 'common connections'
+  See how you are connected: See how you are connected
+  common interests: common interests
+  Things you both like: Things you both like
+  
+  box_views:
+    recommendationsbox:
+      title: Recommendations
+      prompt:
+        none: "You currently have no reviews. Ask your contacts for a recommendation!"
+        one: "You currently have only one review. Ask your contacts for a recommendation!"
+        other: "You currently have %{count} reviews. Ask your contacts for more recommendations!"
+      prompt2:
+        none: ""
+        one: "You have one recommendation to approve."
+        other: "You have %{count} recommendations to approve."
+      clickmore: 'click to request'
+      info: "Some good ol info"
+    signupbox:
+      clickmore: click to see more
+      prompt: "Sign up to see how you are connected to %{name}"
+      person:
+        title: 'Friend of a Friend'
+        subtitle: in your network
+      info: "Sign up to see how you are connected to %{name}"
+  # overlay views
+
+  overlay_views:
+    signup:
+      title: 'Sign up'
+      subtitle: 'Build your own Credport to see how you know %{name}'
+      incentive: "With Credport, you can build your own trustworthy profile as well as see how connected you are to %{name} across multiple networks."
+    edit:
+      title: "Edit your profile"
+    recommendation_request:
+      title: Recommendations
+      subtitle: Request Recommendations from your contacts to improve your profile
+      review_paragraph:
+        zero: "You currently have no reviews. Go Request some!"
+        one: "You currently have only one review. Go get some more"
+        other: "You have %{count} reviews. not enough get more"
+    recommendation_new:
+      title: "Write a Recommendation"
+      subtitle: ''
+
+  #education_views
+  Toggle Visibility: Toggle Visibility
+  School: 'School:'
+  Verified by: 'Verified by:'
+  Station: 'Station:'
+  Major: 'Major:'
+
+  #newuseroverlay
+  Build_credport: 'Build your Credport!'
+  Build_message: "You can complete your Credport by adding more networks and verifications, as well as choosing your picture. We're finishing up a few things - expect some changes to the site and places to use your Credport coming soon!"
+
+  #recommendation_views
+  rec_approved: 'Recommendation successfully approved'
+  rec_deleted: "Recommendation successfully deleted"
+  rec_descrip1: 'said he/she is'
+  rec_descrip2: 'of yours and recommended you with this statement:'
+  Approve: 'Approve'
+  Emails_sent: 'Emails sent'
+  ask_headline: 'Ask people you know to write you a recommendation on Credport:'
+  ask_p: 'Use the following link: '
+  ask_p2: ', or use social networks:'
+  ask_fbook: 'Ask on Facebook'
+  ask_twitter: 'Ask on Twitter'
+  ask_email: 'Ask via email'
+  ask_email1: 'Email Addresses - separated by commas'
+  ask_email2: 'Optional: Include a message:'
+  write_p: 'is asking for a recommmendation to improve his/her reputation on Credport. Go ahead and write one :)'
+  write_h4: 'Your Recommendation'
+  write_list: 'Some things to consider'
+  write_list1: 'Tell us how you know '
+  write_list2: 'Why should other people get to know '
+  write_list3: 'Anything else you want to share'
+  write_prompt: 'You are '
+  write_prompt1: 'a Friend'
+  write_prompt2: 'a Colleague'
+  write_prompt3: 'a Relative'
+  write_prompt4: 'another acquaintance'
+  write_prompt5: ' of '
+  write_prompt6: 'and want to say that:'
+  write_nosign: 'Create a Credport account!'
+  write_nosign1: 'In order to write a review, you need to create a Credport so we know who to attribute the review to. Credport is a single place to put your online reputation - sign up below, or '
+  write_finished: 'You have provided the following recommendation:'
+
+  #review_views
+  reviewed: 'reviewed'
+
+  #verification_views
+  verifications: verifications
+  Emails to Verify: Emails to Verify
+  Enter the Code here: Enter the Code here
+  Verify Code: Verify Code
+  Boost your credibility by adding verifications: Boost your credibility by adding verifications
+  UPDATE OR ADD NETWORK: 'UPDATE OR ADD NETWORK'
+  Add_verifications: 'Add networks to increase the number of verified accounts, add reviews and ratings, display your work and education history, and show others how they know you. Learn more here:'
+  VERIFY EMAIL: Verify Email
+  Verify_email: "Verify your e-mail address by clicking the verification link we send you."
+  Add email: Add email
+  VERIFY PHONE: VERIFY PHONE
+  Verify_phone: "Verify your phone number by entering the verification code we send you."
+  
+  Choose your Country: Choose your Country
+  Enter your Phone Number: Enter your Phone Number
+  Add phone: Add phone
+  Redirecting: "Redirecting ..."
+
+
+  #works_views
+  Time: 'Time:'
+  Summary: 'Summary:'
+  Title: 'Title:'
+
+  #application.html
+  signup:
+    with_facebook: Sign Up with Facebook
+    with_linkedin: Sign Up with LinkedIn
+    with_twitter: Sign Up with Twitter
+    with_email: Sign up via Email
+

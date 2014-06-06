@@ -1,0 +1,135 @@
+<h1>Application</h1>
+<div class="row">
+  <div class="eight columns">
+    <h3>Settings:</h3>
+    <h4>Link to authorization code:</h4>
+    <p><%= link_to 'Authorize', oauth_authorization_path(:client_id => @application.doorkeeper_application.uid, :redirect_uri => @application.doorkeeper_application.redirect_uri, :response_type => 'code' ) %></p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Identifier: </th>
+          <td><%= @application.name %></td>
+        </tr>
+        <tr>
+          <th>Key:</th>
+          <td><%= @application.doorkeeper_application.uid %></td>
+        </tr>
+        <tr>
+          <th>Secret:</th>
+          <td><%= @application.doorkeeper_application.secret %></td>
+        </tr>
+        <tr>
+          <th>Redirect URI:</th>
+          <td><%= @application.doorkeeper_application.redirect_uri %></td>
+        </tr>
+      </tbody>
+    </table>
+    <%= link_to "Edit Application", edit_application_path(@application)  %>
+    <h3>Application Object</h3>
+    <p>The Object that represents your application through the contexts. It should be used by third parties to give a sense of context.</p>
+    <div class="object-box">
+      <img src="<%= @application.entity.image %>" alt=" ">
+      <div class="content-box">
+        <div class="title"><%= link_to @application.entity.name, @application.entity.url %></div>
+        <div class="subtitle"><%= @application.entity.context.title %></div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="four columns">
+    <% if @application.user %>
+      <h3>Application Owner</h3>
+      <div id="credport-button">
+      </div>
+      <script type="text/javascript">
+        window.credport = {
+          user: {
+            id: '<%= @application.user.to_param %>'
+          },
+          buttontext: "We have partnered with Credport to help you build a portable trustworthy profile. Credport increases your chance of a transaction (like a good eBay rating) and lets you bring your reputation anywhere"
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src   = 'https://s3.amazonaws.com/credport-assets/assets/badge.1.1.js';
+            script.async = true;
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+          })();
+      </script>
+    <% end %>
+  </div>
+</div>
+
+<h3>Data Contexts on Credport</h3>
+
+<% if !@application.connection_contexts.blank? %>
+  <h4>Connection Contexts</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Async</th>
+        <th>Cardinality</th>
+        <th>Connection Type</th>
+        <th>Properties</th>
+      </tr>
+    </thead>
+  <% for context in @application.connection_contexts %>
+    <tr>
+      <td><%= context.name %></td>
+      <td><%= context.async %></td>
+      <td><%= context.cardinality %></td>
+      <td><%= context.connection_type %></td>
+      <td><%= context.properties %></td>
+    </tr>
+  <% end %>
+  </table>
+<% else %>
+  <h6>There are currently now ConnectionContexts associated with this application</h6>
+<% end %>
+
+<p><%= link_to "Create a new ConnectionContext", new_application_connection_context_path(@application) %></p>
+
+<% if !@application.identity_contexts.blank? %>
+  <h4>Identity Contexts</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+  <% for context in @application.identity_contexts %>
+    <tr>
+      <td><%= context.name %></td>
+      <td><%= context.title %></td>
+    </tr>
+  <% end %>
+  </table>
+<% else %>
+  <h6>There are currently now IdentityContexts associated with this application</h6>
+<% end %>
+
+<p><%= link_to "Create a new IdentityContext", new_application_identity_context_path(@application) %></p>
+
+<% if !@application.entity_contexts.blank? %>
+  <h4>Entity Contexts</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+  <% for context in @application.entity_contexts %>
+    <tr>
+      <td><%= context.name %></td>
+      <td><%= context.title %></td>
+    </tr>
+  <% end %>
+  </table>
+<% else %>
+  <h6>There are currently now EntityContexts associated with this application</h6>
+<% end %>
+
+<p><%= link_to "Create a new EntityContext", new_application_entity_context_path(@application) %></p>

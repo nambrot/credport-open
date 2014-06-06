@@ -1,0 +1,25 @@
+<%= render 'blognav' %>
+
+<% if !@posts.blank? %>
+  <% cache ['index', @posts.first] do %>
+  <% for post in @posts %>
+    <article>
+      <header>
+        <h2>  <%= link_to post.title, post_path(post) %></h2>
+        <h5>by <%= link_to post.user.name, user_path(post.user) %>  <%= time_ago_in_words(post.updated_at) %> ago</h5>
+      </header>
+      <%=raw @markdown.render (post.summary.blank? ? post.body : post.summary) %>
+      <footer>
+        <% if !post.summary.blank? %>
+          <p><%= link_to "Read more", post_path(post)  %></p>
+        <% else %>
+          <p><%= link_to "Click here to comment", post_path(post) + '#comments' %></p>
+        <% end %>
+        
+      </footer>
+    </article>
+  <% end %>
+  <% end %>
+<% else %>
+  
+<% end %>

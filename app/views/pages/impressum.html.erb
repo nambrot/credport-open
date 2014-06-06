@@ -1,0 +1,54 @@
+<% set_meta_tags({
+      :title =>
+"Credport - Impressum",
+      :description => "Building Trust Online",
+      :keywords => ['Credport'],
+      :canonical => 'https://www.credport.org/impressum',
+      :open_graph => {
+        :title => "Credport Impressum",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/impressum",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<article class="landingpage">
+  <header class="white-layer">
+    <div class="row tagline">
+      <h2>Impressum</h2>
+    </div>
+  </header>
+  <section class='white-layer'>
+    <div class='row'>
+      <div class='white-card-list'>
+        <div class='white-card centered head-image'>
+          <h6 class='faq-head'>Credport is product of Blakeks Inc., a corporation registered in Delaware, USA</h6>
+
+          <p>
+            Blakeks Inc.<br>
+            1 Broadway<br>
+            Cambridge, MA 02142<br>
+            United States<br>
+            Email: info@credport.org<br>
+            Phone: +1 (419) 318-2010
+          </p>
+
+          <p>
+            German Office:<br>
+            Schlesisches Strasse 27<br>
+            10997 Berlin, Germany<br>
+            Phone: +49 176 93287216
+          </p>
+
+          <p>
+            Directors: Nam Chu Hoai, Connor McEwen<br>
+            Delaware File Number: 5195323
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+<% end %>

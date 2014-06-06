@@ -1,0 +1,201 @@
+<% set_meta_tags({
+      :title => "Credport - About",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'blog'],
+      :canonical => 'https://www.credport.org/about',
+      :open_graph => {
+        :title => "Credport About",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/about",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<article class="aboutpage">
+  <header class="white-layer">
+    <div class="tagline row ">
+        <h2 style="margin:0 auto 10px;">About</h2>
+    </div>
+  	<div class="row about-info">
+    <div class="three columns offset-by-one">
+  		<h2>Credport</h2>
+  		<div class="object-box">
+  			<img src=<%= asset_path "credport_75.png"%> >
+  			<div class="content-box">
+  				<div class="title">Credport</div>
+  				<div class="subtitle">Company</div>
+  			</div>
+  		</div>
+  		<div class="credport-profile">
+       <a class='url button' href="http://www.credport.org">credport.org</a>
+  		</div>
+      <div class="credport-profile">
+       <a class='email button black' href="mailto:info@credport.org">info@credport.org</a>
+      </div>
+    </div>
+    <div class="four columns ">
+      <h2>Why Credport?</h2>
+      <p> We're working on Credport because we really believe in the power of building trust between people. Our goal is to help people to share with anyone the same way they do with their neighbors. </p>
+    </div>
+	<div class="four columns" style="margin-top:50px;">
+	  <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fcredport&amp;width=292&amp;height=62&amp;colorscheme=dark&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;appId=339403882822622" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
+      </br>
+    </br>
+      <a href="https://twitter.com/credport" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @credport</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- Place this tag where you want the badge to render. -->
+    <div class="g-plus" data-href="//plus.google.com/106051065682069549221" data-rel="publisher"></div>
+
+    <!-- Place this tag after the last badge tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </header>
+  <section class="white-layer">
+  	<div class="row tagline">
+  		<h2 style="margin:0 auto 10px;">Team</h2>
+  	</div>
+	<div class="row about-info">
+		<div class="four columns padded-column">
+			<h2 class='fn'>Nam Chu Hoai</h2>
+			<div class="object-box">
+				<img src=<%=asset_path "headshot_nam.png"%> alt="Nam">
+				<div class="content-box">
+					<div class="title">Product</div>
+					<div class="subtitle">Berlin</div>
+				</div>
+			</div>
+			<div class="credport-profile">
+				<a class='url button' href="https://www.credport.org/u/2a681" data-no-turbolink>Credport Profile</a>
+			</div>
+			<div class="credport-profile">
+				<a class='email button black' href="mailto:nam@credport.org">nam@credport.org</a>
+			</div>
+		</div>
+		<div class="four columns padded-column">
+			<h2 class='fn'>Connor McEwen</h2>
+			<div class="object-box">
+				<img src=<%=asset_path "headshot_connor.png"%> alt="Nam">
+				<div class="content-box">
+					<div class="title">Business Development</div>
+					<div class="subtitle">Ohio</div>
+				</div>
+			</div>
+			<div class="credport-profile">
+				<a class='url button' href="https://www.credport.org/u/3a681" data-no-turbolink>Credport Profile</a>
+			</div>
+			<div class="credport-profile">
+				<a class='email button black' href="mailto:connor@credport.org">connor@credport.org</a>
+			</div>
+		</div>
+		<div class="four columns padded-column">
+			<h2 class='fn'>Samir Ahmed</h2>
+			<div class="object-box">
+				<img src=<%=asset_path "headshot_samir.png"%> alt="Nam">
+				<div class="content-box">
+					<div class="title">Development</div>
+					<div class="subtitle">New Delhi</div>
+				</div>
+			</div>
+			<div class="credport-profile">
+				<a class='url button' href="https://www.credport.org/u/7a681" data-no-turbolink>Credport Profile</a>
+			</div>
+			<div class="credport-profile">
+				<a class='email button black' href="mailto:samir@credport.org">samir@credport.org</a>
+			</div>
+		</div>
+  </section>
+  <section class="white-layer">
+  	<div class="row tagline">
+  		<h2 style="margin:0 auto 10px;">Support of ...</h2>
+  	</div>
+  	<div class="row about-info">
+		<div class="four columns padded-column">
+  			<h2>Summer@Highland</h2>
+  			
+  			<div class="object-box">
+  				<%= image_tag "highland.png" %>
+  				<div class="content-box">
+  					<div class="title">Boston, MA</div>
+  				</div>
+  			</div>
+        <div class="credport-profile">
+          <a class='url button' href="http://www.hcp.com/summer">HCP</a>
+        </div>   
+		</div>
+		<div class="four columns  padded-column">
+  			<h2>Startupbootcamp</h2>
+  			
+  			<div class="object-box">
+  				<%= image_tag "sbc.png" %>
+  				<div class="content-box">
+  					<div class="title">Berlin, DE</div>
+  				</div>
+  			</div>
+        <div class="credport-profile">
+          <a class='url button' href="http://www.startupbootcamp.com/berlin">SBC Berlin</a>
+        </div>   
+		</div>
+		<div class="four columns padded-column">
+  			<h2>HY Berlin</h2>
+  			
+  			<div class="object-box">
+  				<%= image_tag "hy_family.png" %>
+  				<div class="content-box">
+  					<div class="title">Berlin, DE</div>
+  				</div>
+  			</div>
+        <div class="credport-profile">
+          <a class='url button' href="http://www.hyberlin.com/index.php/credport.html">HY Berlin Credport</a>
+        </div>   
+		</div>
+	</div>
+  </section>
+  <section class="white-layer">
+    <div class="tagline row">
+  		<h2 style="margin:0 auto 20px;">Photo and Icon Attribution</h2>
+    </div>
+    <div class="row about-info">
+		<div class="four columns">
+			<li>The Noun Project</li>
+			<li>Sam Ahmed, from The Noun Project</li>
+			<li>Alessandro Suraci, from The Noun Project</li>
+			<li>Pedro Lalli, from The Noun Project</li>
+			<li>___Lo, from The Noun Project</li>
+			<li>Ana Carolina Santos, from The Noun Project</li>
+			<li>Anas Ramadan, from The Noun Project</li>
+			<li>Ben Rex Furneaux, from The Noun Project</li>
+			<li>Camila Bertoco, from The Noun Project</li>
+		</div>
+		<div class="four columns">
+			<li>Charlene Chen, from The Noun Project</li>
+			<li>Convoy Interactive, from The Noun Project</li>
+			<li>Hrag Chanchanian, from The Noun Project</li>
+			<li>Hue Nicolas, from The Noun Project</li>
+			<li>Jake Nelsen, from The Noun Project</li>
+			<li>James Fenton, from The Noun Project</li>
+			<li>jayme davis, from The Noun Project</li>
+			<li>Luis Prado, from The Noun Project</li>
+		</div>
+		<div class="four columns">
+			<li>Michael Young, from The Noun Project</li>
+			<li>P.J. Onori, from The Noun Project</li>
+			<li>Roger Cline, from The Noun Project</li>
+			<li>T. Weber, from The Noun Project</li>
+			<li>Thomas Hirter, from The Noun Project</li>
+			<li>Tobias F. Wolf, from The Noun Project</li>
+			<li>VuWorks, from The Noun Project</li>
+			<li>Yellow, from The Noun Project</li>
+		</div>
+    </div>
+  </section>
+
+</article>
+<% end -%>

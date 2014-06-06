@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <%= display_meta_tags :site => '' %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script>
+    I18n.defaultLocale = "<%= I18n.default_locale %>";
+    I18n.locale = "<%= I18n.locale %>";
+    I18n.fallbacks = true;
+  </script>
+  <%= javascript_include_tag params[:controller] %>
+  <%= stylesheet_link_tag params[:controller] %>
+  <%= csrf_meta_tags %>
+  <!--<%= favicon_link_tag '/favicon.ico' %>-->
+  <!--[if lt IE 9]>
+<script type="text/javascript" src="cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,500' rel='stylesheet' type='text/css'>  
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("<%= Rails.configuration.mixpanel_key %>");</script><!-- end Mixpanel -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35606485-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link href="https://plus.google.com/106051065682069549221" rel="publisher" />
+</head>
+<body style="<%= content_for?(:body_background) ? "background: url(#{ yield :body_background }) no-repeat center center fixed;   -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" : '' %> ">
+
+<div id="container">
+<section>
+  <ul class="nav-bar hide-for-small">
+    <li class="brand"><a href="/">CREDPORT</a></li>
+    <% if current_user %>
+       <li class="options second"><%= link_to t('log out'), logout_path %></li>
+       <li class="options first" data-no-turbolink><%= link_to t("your profile"), user_path(current_user) %></li>
+    <% else %>
+        <li class="options second"><%= link_to t("sign up"), signup_path %></li>
+        <li class="options first"><%= link_to t('login'), login_path %></li>
+    <% end %>
+      <li class="options first"><!--a href="/about">about</a--></li>
+  </ul>
+  <ul class="nav-bar row show-for-small">
+    <li class="brand  mobile-brand mobile-one columns"><a href="/">CREDPORT</a></li>
+        <% if current_user %>
+       <li class="options mobile-third  mobile-one columns"><%= link_to t('log out'), logout_path %></li>
+       <li class="options mobile-second mobile-one columns" data-no-turbolink><%= link_to t("your profile"), user_path(current_user) %></li>
+    <% else %>
+        <li class="options mobile-third mobile-one columns"><%= link_to t("sign up"), signup_path %></li>
+        <li class="options mobile-second mobile-one columns"><%= link_to t('login'), login_path %></li>
+    <% end %>
+      <li class="options mobile-first mobile-one columns"><!--a href="/about">about</a--></li>
+  </ul>
+</section>
+  <%= yield %>
+  <div class="push"></div>
+</div>
+
+<footer class='row'>
+
+
+  <section>
+    <h5>Credport</h5>
+    <ul>
+      <li><a href="/about"><%= t :About %></a></li>
+      <li><a href="/blog"><%= t :Blog %></a></li>
+      <li><a href="/tos"><%= t :TOS %></a></li>
+      <li><a href="/privacy"><%= t :Privacy %></a></li>
+      <li><a href="/impressum"><%= t :Impressum %></a></li>
+    </ul>
+  </section>
+  <section>
+    <h5><%= t 'For Marketplaces' %></h5>
+    <ul>
+      <li><a href="/marketplaces"><%= t 'Introduction' %></a></li>
+      <li><a href="/docs/ux"><%= t 'Credport User Experience' %></a></li>
+      <li><a href="/docs/api"><%= t 'API Documentation' %></a></li>
+    </ul>
+  </section>
+  <section>
+    <h5><%= t 'For our Users' %></h5>
+    <ul>
+      <li><a href="/usecredport"><%= t 'Use Credport' %></a></li>
+      <li><a href="/howitworks"><%= t 'How it works' %></a></li>
+      <li><a href="/faq"><%= t 'FAQ' %></a></li>
+    </ul>
+    <h5>Language/Sprache</h5>
+    <select name="locale" id="locale">
+      <option value="en" <%= I18n.locale.to_s == 'en' ? 'selected' : '' %>>English</option>
+      <option value="de" <%= I18n.locale.to_s == 'de' ? 'selected' : '' %>>Deutsch</option>
+    </select>
+  </section>
+  <section class="images">
+    <p><a href="https://privacy.truste.com/privacy-seal/Blakeks-Inc./validation?validationId=1267f3c2-b6a9-4ec2-a0e9-439c7605adf8" title="Blakeks Inc. Privacy Seal Certification" target="_blank"><img style="border:none" alt="TRUSTe Certified Privacy Seal" src="https://privacy-policy.truste.com/privacy-seal/credport.org/TRUSTe-Certified-Privacy-Seal.png"></a><a href="http://mixpanel.com/f/partner"><img src="https://mixpanel.com/site_media/images/partner/badge_light.png" alt="Real Time Web Analytics" /></a></p>
+  </section>
+  <section class='align-left'>
+      <h5>Credport</h5>
+      <p><%= t 'footer.description' %></p>
+  </section>
+</footer>
+<script type="text/javascript">
+
+// TODO: Make these javascript snippets page cacheable
+// <%= flash.to_json %>
+<% if current_user %>
+  mixpanel.identify("<%= current_user.to_param %>")
+<% end %>
+
+$(function () {
+
+  <%- flash.each do |key, msg| -%>
+      $.gritter.add({title: '<%= key.capitalize %>', text: '<%= msg %>'});
+  <%- end -%>
+
+  $('#locale').change(function(e){
+    $.post('/utility/setLocale', {locale: e.target.value}, function(e){
+      if(e === '1'){
+        window.location.reload()
+      }
+      else{
+        $.gritter.add({title: 'Error', text: 'Could not change locale to ' + e.target.value });
+      }
+    })
+  })
+
+})
+
+</script>
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8891-148-10-7213');/*]]>*/</script><noscript><a href="https://www.olark.com/site/8891-148-10-7213/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->
+</body>
+</html>

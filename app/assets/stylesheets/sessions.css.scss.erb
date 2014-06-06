@@ -1,0 +1,69 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "_variables.css.scss";
+
+.object-box {
+  display: inline-block;
+  img {
+    vertical-align: top;
+    display: block;
+    width: 60px;
+    float: left;
+  }
+  .content-box {
+    vertical-align: top;
+    margin-left: 76px;
+    
+    .title {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $mobile_wide){
+ body{min-width:900px;}
+}
+
+.metro-box {
+      vertical-align: top;
+      margin: 16px;
+      position: relative;
+      -webkit-transition: all 1s ease-in;
+      overflow: hidden;
+      
+      &.long {
+        height: 180px;
+        width: 300px;
+      }
+      
+      &.square {
+        height: 180px;
+        width: 150px;
+      }
+      padding: 20px;
+      color: white;
+      display: inline-block;
+      background-color: #062139;
+      
+      h3 {
+        font-family: $primary_font;
+    font-weight: 200;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      
+      footer {
+        font-size: 10px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+      }
+    }

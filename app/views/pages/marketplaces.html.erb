@@ -1,0 +1,88 @@
+<% set_meta_tags({
+      :title => "Credport - Marketplaces",
+      :description => "Building Trust Online",
+      :keywords => ['collaborative consumption', 'sharing economy', 'trust', 'marketplaces', 'reputation', 'reviews'],
+      :canonical => 'https://www.credport.org/marketplaces',
+      :open_graph => {
+        :title => "Credport Marketplaces",
+        :description => "Building Trust Online",
+        :url => "https://www.credport.org/marketplaces",
+        :type => 'website',
+        :image => ActionController::Base.helpers.asset_path("credportsquare.png"),
+        :site_name => 'Credport'
+      }
+      }) %>
+<% cache [I18n.locale, params[:id]] do %>
+<nav class='three columns mobile-three' id='docsidebar'>
+  <ul class="vertical tabs">
+    <li class="header active">
+      <a href="/marketplaces">Credport for Marketplaces</a>
+    </li>
+    <li class="">
+      <a href="/docs/ux">User Experience</a>
+    </li>
+    <li class="">
+      <a href="/docs/api">API Documentation</a>
+      <ul>
+        <li><a href="/docs/api#badge">Badge Display</a></li>
+        <li><a href="/docs/api#fullapi">Full API</a></li>
+        <li><a href="/docs/api#postidentity">Post an Identity</a></li>
+        <li><a href="/docs/api#postreview">Post a Review</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="mailto:info@credport.org" target="_blank">Email Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="show-for-small" id='docsidebartrigger'>
+  <a href="#docsidebar" class="button">Show Navigation</a>
+</div> 
+<article class="nine columns">
+  <header class="header-1" style="background-image: url(<%= asset_path 'car.jpg' %>)">
+    <div class="gradient">
+      <h2>Improve your conversion rate</h2>
+       <h4>Credport helps you convert more new users to your site</h4>
+    </div>
+    
+  </header>
+  <div class="white-card-list">
+        <div class='white-card centered left-image'>
+            <img src="<%= asset_path 'road_barrier.png' %>">
+            <h2>Trust is a Barrier</h2>
+            <p class="left-align">In a thesis survey, "47% saw trust as a reason to not participate in collaborative consumption on a peer to peer basis." Nearly half of the people showing up to your site are leaving because they see trust as an issue - prove that it's not a problem by using Credport.</p>
+        </div> 
+       
+        <div class='white-card centered left-image'>   
+            <img src="<%= asset_path 'stars.png' %>">
+            <h2>Reputation Drives Transactions</h2>
+            <p>On average, users on eBay with strong reputations sold items at 7% higher rate and at a price 8.1% higher than users with no reputation. A study by Blablacar found that users trusted others with a complete profile and ratings almost as much as they did a friend. Credport helps new users on your site to build a strong reputation instantly by leveraging existing reviews and verified information.</p>
+        </div> 
+
+        <div class='white-card centered left-image'>
+      
+            <img class='small' src="<%= asset_path 'exchange.png' %>">
+            <h2>Bring New Users from Partners</h2>
+            <p>Partnering with Credport brings a population of people already plugged into peer to peer marketplaces and the sharing economy. We promote your marketplace as a place to use Credport, and users from your site will take their account and reviews everywhere to advertise your company.</p>
+          
+        </div> 
+
+        <div class='white-card centered left-image'>
+      
+            <h2>How exactly does it work?</h2>
+
+            <a href="/docs/ux" class='button rounded centered' style="text-align:center;">
+              <span>See here</span>
+            </a>
+          
+        </div> 
+
+        <div class='white-card centered left-image'>
+          <p>Sources:
+            http://www.katieschulist.com/wp-content/uploads/2013/01/Katherine-Schulist-IBSA-thesis-UNCW.pdf
+            http://presnick.people.si.umich.edu/papers/postcards/PostcardsFinalPrePub.pdf
+            http://www.betrustman.com/</p>
+        </div>
+  </div>
+</article>
+<% end -%>
